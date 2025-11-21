@@ -94,7 +94,7 @@ export default function UrbanCentersSection() {
                         {/* CARD 2 */}
                         <Card
                             title="Donate"
-                            text="Extend a hand to someone in need. Donate today and change a life"
+                            text="Extend a hand to someone in need. Donate today and change a life."
                         />
 
                         {/* CARD 3 */}
@@ -107,7 +107,7 @@ export default function UrbanCentersSection() {
                 </div>
 
                 {/* White background AFTER the cards */}
-                <div className="bg-white h-[200px] mt-32"></div>
+                <div className="bg-white h-[200px] mt-30"></div>
             </div>
 
 
