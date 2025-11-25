@@ -17,7 +17,6 @@ export default function Home() {
      <OurInspiration />
      <NewsletterBanner />
      <LatestNews />
-     <FundraiseCard />
      <UrbanCentersSection />
      
      <Whatwedo />

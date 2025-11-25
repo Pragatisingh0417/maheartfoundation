@@ -39,23 +39,18 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
       bio: `Ntaribo is a career diplomat. He currently serves as Director of Protocol, Ceremonies and Consular Affairs at the Ministry of External Relations in Yaounde, Cameroon. Prior to this appointment, he served as First Secretary at the Cameroon High Commission in Ottawa, and as deputy to the head of cabinet for Chantal Biya, Cameroon’s First Lady, at the Circle of Friends of Cameroon, a charitable organization initiated by Cameroon’s first lady. He holds a bachelor’s degree in English Private Law from University of Yaounde and a doctorat de troisième cycle in International Relations from the International Relations Institute of Cameroon (IRIC).`,
     },
      {
-      name: "PAULA AZOH-MBI",
+      name: "ALISA TONGG",
       role: "Director",
-      image: "/Bod-2.png",
-      bio: `Paula studied at the American International School of Johannesburg (AISJ) where she completed High School and obtained the International Baccalaureate in June 2024. She looks forward to reading Law at the University of Pretoria in South Africa in the new academic year. Paula took up her mother’s seat on the board when she turned 18.`,
+      image: "/Bod-6.jpg",
+      bio: `An award-winning celebrant and storyteller, Alisa is an everyday philanthropist and ordained minister who brings the Aloha Spirit everywhere she goes. She is also the founder of the Bacon & Lox Society, a creative collective and celebration congregation, and a former Director of the MIT Freshman/Alumni Summer Internship Program. Whether it’s creating a new food + wine festival to rebrand a region, championing fresher food in school cafeterias, serving on the board of a pediatric cancer charity or fundraising for her local non-profit hospital, Alisa uses her 20+ years experience of event planning, fundraising and community relations to make a lasting impact. She enjoys a reputation for creating community through her speaking engagements, the ceremonies she performs and the events she creates.`,
     },
      {
-      name: "PAULA AZOH-MBI",
+      name: "DENISE ALLEN-MACARTNEY",
       role: "Director",
-      image: "/Bod-2.png",
-      bio: `Paula studied at the American International School of Johannesburg (AISJ) where she completed High School and obtained the International Baccalaureate in June 2024. She looks forward to reading Law at the University of Pretoria in South Africa in the new academic year. Paula took up her mother’s seat on the board when she turned 18.`,
+      image: "/Bod-7.jpg",
+      bio: `An ordained minister, Denise pastors Gloucester Presbyterian Church in Ottawa, thanks to which she keeps discovering God’s deep compassion for people and their neighbourhoods. Earlier, she served six years as Director of Communications for Fidus Systems, an electronic design services company. Through her own business, Dynamic Writing, Denise provided training and communications consulting services to government agencies, corporate, and non-profit clients across Canada. She has served on the boards of The Presbyterian College, Montreal, and The Canadian Bible Society. Denise studied at Carleton University, Ottawa; McGill University, Montreal; and the Montreal School of Theology. She and her husband, Allen, have two children and six grandchildren. She enjoys wilderness canoeing, cross-country skiing, cycling, and hiking.`,
     },
-     {
-      name: "PAULA AZOH-MBI",
-      role: "Director",
-      image: "/Bod-2.png",
-      bio: `Paula studied at the American International School of Johannesburg (AISJ) where she completed High School and obtained the International Baccalaureate in June 2024. She looks forward to reading Law at the University of Pretoria in South Africa in the new academic year. Paula took up her mother’s seat on the board when she turned 18.`,
-    },
+     
   ];
 
   return (

@@ -10,7 +10,7 @@ export default function FactsAndStatsPage() {
       <section className="relative w-full h-[300px] md:h-[360px]">
         <Image
           // local uploaded file path (your tooling will convert this to a URL)
-          src="/mnt/data/45351f7b-ef76-4a3b-b339-18678ea6ae61.png"
+          src="/imgi_15_IMG_1500-scaled.webp"
           alt="Heart disease facts"
           fill
           className="object-cover"
@@ -152,8 +152,8 @@ export default function FactsAndStatsPage() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link href="/heart-health/healthy-heart-tips" className="px-6 py-3 bg-red-500 rounded-full text-white font-semibold">Tips For A Healthy Heart</Link>
-            <Link href="/heart-health/what-is-heart-disease" className="px-6 py-3 border border-white rounded-full text-white">What is heart disease?</Link>
+            <Link href="/tips-for-a-healthy-heart" className="px-6 py-3 bg-red-500 rounded-full text-white font-semibold">Tips For A Healthy Heart</Link>
+            <Link href="/what-is-heart-disease" className="px-6 py-3 border border-white rounded-full text-white">What is heart disease?</Link>
           </div>
         </div>
       </section>

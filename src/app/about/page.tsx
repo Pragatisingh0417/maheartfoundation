@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 
 export default function AboutPage() {
   return (
@@ -59,13 +61,14 @@ export default function AboutPage() {
             accessibility, awareness, and medical support.
           </p>
         </motion.div>
-
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          className="mt-10 px-8 py-3 bg-red-600 hover:bg-red-700 transition text-white rounded-full font-semibold flex items-center gap-2 mx-auto shadow-lg"
-        >
-          More On Heart Disease <ChevronRight size={18} />
-        </motion.button>
+<Link href="/heart-health">
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    className="mt-10 px-8 py-3 bg-red-600 hover:bg-red-700 transition text-white rounded-full font-semibold flex items-center gap-2 mx-auto shadow-lg"
+  >
+    More On Heart Disease <ChevronRight size={18} />
+  </motion.button>
+</Link>
       </section>
 
       {/* ======================================

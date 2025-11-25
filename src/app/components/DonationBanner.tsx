@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import Image from "next/image";
 
@@ -61,15 +62,20 @@ export default function DonationBanner() {
             You can donate via PayPal, Credit Card, or Mobile Money.
           </p>
 
-          <div className="mt-6 flex flex-col gap-4">
-            <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold shadow-lg hover:bg-red-700 transition">
-              Donate With Credit Card
-            </button>
+         <div className="mt-6 flex flex-col gap-4">
+  <Link href="/donate-with-mobile-money" className="w-full">
+  <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold shadow-lg hover:bg-red-700 transition">
+    Donate With Credit Card
+  </button>
+  </Link>
 
-            <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold shadow-lg hover:bg-red-700 transition">
-              Donate With Mobile Money
-            </button>
-          </div>
+  <Link href="/donate-with-mobile-money" className="w-full">
+    <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold shadow-lg hover:bg-red-700 transition">
+      Donate With Mobile Money
+    </button>
+  </Link>
+
+</div>
 
           <p className="mt-4 text-xs text-gray-400 text-center">
             Thanks.

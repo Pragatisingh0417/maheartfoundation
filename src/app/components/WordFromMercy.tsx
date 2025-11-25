@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function WordFromMercy() {
   return (
@@ -18,9 +20,12 @@ export default function WordFromMercy() {
           In 2009, at the age of 37, heart disease radically crippled me, mutilated me, and transformed me into a completely dependent, almost hopeless woman. I deeply mourned the loss of my four limbs for years, but gradually I began to appreciate the gift of life itself. I became aware that heart disease is a major global public health challenge, especially in developing countries, and that it is responsible for one-third of all deaths worldwide. Moreover, many people die without fighting for their lives. I believe that my experience could be a catalyst and testimony in the face of this enormous health challenge.
         </p>
 
-        <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
-          Learn more
-        </button>
+       <Link href="/word-from-mercy">
+  <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
+    Learn more
+  </button>
+</Link>
+
       </div>
 
       {/* RIGHT — Image */}

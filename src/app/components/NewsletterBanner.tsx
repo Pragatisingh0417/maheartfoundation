@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function NewsletterBanner() {
   return (
@@ -11,9 +12,12 @@ export default function NewsletterBanner() {
         </h2>
 
         {/* BUTTON */}
-        <button className="px-8 py-3 bg-red-500 text-white rounded-full text-lg font-semibold shadow-md hover:bg-red-600 transition">
-          Sign In
-        </button>
+        <Link href="/get-involved">
+  <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
+    Learn more
+  </button>
+</Link>
+        
       </div>
     </section>
   );

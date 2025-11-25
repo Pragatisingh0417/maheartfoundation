@@ -84,9 +84,9 @@ function NewsCard({ image, title, description }: CardProps) {
           {description}
         </p>
 
-        <button className="mt-6 w-full bg-red-500 hover:bg-red-600 transition py-3 rounded-full font-semibold">
+        {/* <button className="mt-6 w-full bg-red-500 hover:bg-red-600 transition py-3 rounded-full font-semibold">
           Read Now
-        </button>
+        </button> */}
       </div>
     </div>
   );
