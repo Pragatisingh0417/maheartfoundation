@@ -27,30 +27,22 @@ export default function WordFromMercy() {
           </h2>
 
           <div className="space-y-4 text-gray-700 leading-relaxed mt-6 text-[15px]">
-            <p>
-              In 2009, at the age of 37, heart disease radically crippled me, mutilated me, 
-              and transformed me into a completely dependent, almost hopeless woman…
-            </p>
+          <p className="mt-4 text-gray-700 leading-relaxed">
+  I wish you a warm welcome to the website of the Mercy Azoh-Mbi Heart Foundation.
+</p>
+        <p className="mt-4 text-gray-700 leading-relaxed">
+In 2009, heart disease radically maimed, mutilated and morphed me into a helpless, almost hopeless woman. I was barely 37 years old. I deeply mourned the loss of my four limbs for years, but gradually began to appreciate the ultimate gift of life itself.        </p>
 
-            <p>
-              I lost my hands and legs, but not my voice. With that voice, I can mobilize others 
-              and help the many people—especially women—suffering from heart disease…
-            </p>
-
-            <p>
-              I invite you to join us in this fight to raise awareness and prevent heart disease…
-            </p>
-
-            <p>
-              Perhaps you will become a member of the Foundation. Perhaps you will volunteer…  
-              Your contribution can help make this work sustainable and expand it from 
-              community to community.
-            </p>
-
-            <p>
-              Thank you for your contribution and commitment to making a positive and 
-              lasting impact on the lives of others.
-            </p>
+<p className="mt-4 text-gray-700 leading-relaxed">
+  Upon realizing that heart disease is a major global public health challenge, especially in developing countries, and that far too many people simply die without a battle for survival, I reckoned that my life could be a galvanizing tale and testimony to this daunting health challenge.
+</p>
+<p className="mt-4 text-gray-700 leading-relaxed">Without hands and legs, I can still use my voice to mobilize others
+   to extend a helping hand to the many people, young and old, suffering from heart disease around the world, often without
+    proper knowledge about the disease, treatment opportunities and options available to them, and the means to cure themselves. 
+    This is the reason behind the Mercy Azoh-Mbi Heart Foundation.   </p>
+    <p>  I invite you to join us in the effort to educate and prevent heart disease  and in the process, positively touch and transform lives. We are comforted that we may become comforters.</p>
+    <p>Perhaps you’ll become a member of the Foundation. Perhaps you’ll provide suggestions to help us better achieve our mission. Perhaps you’ll volunteer to provide help in our administrative services or events. Perhaps you’ll volunteer to do front-line work on the ground in a developing country. Perhaps you can help financially. Your gift can help this work become sustainable and even expand from community to community, and perhaps from country to country around the world so that people do not die needlessly from heart disease.</p>
+    <p> Thank you for your contribution and commitment toward making a positive and lasting impact on the lives of many.</p>
           </div>
 
           {/* <motion.button
@@ -78,7 +70,7 @@ export default function WordFromMercy() {
             className="w-full h-full"
           >
             <Image
-              src="/lady-image.webp"
+              src="/Mercy Azoh-Mbi2.jpg"
               alt="Mercy"
               fill
               className="object-cover"

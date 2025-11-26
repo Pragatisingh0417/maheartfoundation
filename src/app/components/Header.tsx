@@ -16,13 +16,13 @@ export default function Header() {
       <div className="flex w-full">
 
         {/* LEFT BLUE LOGO BLOCK */}
-        <div className="bg-[#0175C2] w-[260px] flex justify-center items-center py-3">
+        <div className="bg-[#0175C2] w-[350px] flex justify-center items-center py-3">
           <Link href="/">
             <Image
-              src="/heart-logo.png"
+              src="/NEW LOGO (1).JPG"
               alt="Foundation Logo"
-              width={85}
-              height={85}
+              width={200}
+              height={100}
               className="object-contain"
             />
           </Link>

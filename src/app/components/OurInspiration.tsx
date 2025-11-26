@@ -25,8 +25,7 @@ export default function OurInspiration() {
         </h2>
 
         <p className="mt-4 text-gray-700 leading-relaxed">
-          Shortly after arriving in Ottawa with her two young children following her husband’s appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s life would take a dramatic turn. On October 23, 2009, she complained of fatigue, fever, a headache, blurred vision … Read more
-        </p>
+Shortly after arriving in Ottawa with her two young children following her husband’s appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s life would take a dramatic turn. On October 23, 2009, she complained of fatigue, fever, a headache, blurred vision … and was rushed to hospital for what she thought was a routine ailment. Amid the H1N1 crisis, Emergency Room staff overlooked her medical history, misdiagnosed her condition, prescribed Tamiflu, and sent her home, only to be rushed again to the emergency department two days later following a rapid deterioration of her condition. When she was placed in a wheelchair shortly thereafter, little did she know that she had just taken her last steps on her own two feet. She was in fact in the throes of endocarditis, a virulent infection of the heart valves. She soon slipped into a coma and spent several weeks wavering between life and death.        </p>
 
        <Link href="/about">
   <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">

@@ -15,10 +15,19 @@ export default function WordFromMercy() {
         <h2 className="mt-2 text-4xl font-extrabold text-[#FD201F]">
           A Word from Mercy
         </h2>
-
+<p className="mt-4 text-gray-700 leading-relaxed">
+  I wish you a warm welcome to the website of the Mercy Azoh-Mbi Heart Foundation.
+</p>
         <p className="mt-4 text-gray-700 leading-relaxed">
-          In 2009, at the age of 37, heart disease radically crippled me, mutilated me, and transformed me into a completely dependent, almost hopeless woman. I deeply mourned the loss of my four limbs for years, but gradually I began to appreciate the gift of life itself. I became aware that heart disease is a major global public health challenge, especially in developing countries, and that it is responsible for one-third of all deaths worldwide. Moreover, many people die without fighting for their lives. I believe that my experience could be a catalyst and testimony in the face of this enormous health challenge.
-        </p>
+In 2009, heart disease radically maimed, mutilated and morphed me into a helpless, almost hopeless woman. I was barely 37 years old. I deeply mourned the loss of my four limbs for years, but gradually began to appreciate the ultimate gift of life itself.        </p>
+
+<p className="mt-4 text-gray-700 leading-relaxed">
+  Upon realizing that heart disease is a major global public health challenge, especially in developing countries, and that far too many people simply die without a battle for survival, I reckoned that my life could be a galvanizing tale and testimony to this daunting health challenge.
+</p>
+<p className="mt-4 text-gray-700 leading-relaxed">Without hands and legs, I can still use my voice to mobilize others
+   to extend a helping hand to the many people, young and old, suffering from heart disease around the world, often without
+    proper knowledge about the disease, treatment opportunities and options available to them, and the means to cure themselves. 
+    This is the reason behind the Mercy Azoh-Mbi Heart Foundation.   </p>
 
        <Link href="/word-from-mercy">
   <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
@@ -29,12 +38,12 @@ export default function WordFromMercy() {
       </div>
 
       {/* RIGHT — Image */}
-      <div className="w-full h-[420px] relative rounded-2xl overflow-hidden shadow-lg">
+      <div className="w-full h-[520px] relative rounded-2xl overflow-hidden shadow-lg">
         <Image
-          src="/lady-image.webp"
+          src="/Mercy Azoh-Mbi2.jpg"
           alt="Mercy profile"
           fill
-          className="object-cover"
+          className="rounded-xl shadow-lg object-cover w-full "
         />
       </div>
     </section>
