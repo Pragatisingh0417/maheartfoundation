@@ -2,6 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function WhatWeDo() {
   const items = [
@@ -77,9 +79,17 @@ export default function WhatWeDo() {
           ))}
         </div>
 
-        <button className="mt-10 mb-20 bg-[#FF3B30] hover:bg-red-600 transition px-8 py-2 rounded-full text-white font-semibold">
+        {/* <button className="mt-10 mb-20 bg-[#FF3B30] hover:bg-red-600 transition px-8 py-2 rounded-full text-white font-semibold">
           Learn more
-        </button>
+        </button> */}
+
+         <Link href="/about">
+  <button className="mt-10 mb-20 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
+    Learn more
+  </button>
+</Link>  
+
+
       </div>
 
       {/* Bottom slanted shape */}
