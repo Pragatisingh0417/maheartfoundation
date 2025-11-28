@@ -12,7 +12,7 @@ export default function FooterSection() {
       {/* TOP: Logo + Social Icons */}
       <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-6">
         <Image
-          src="/heart-logo.png"
+          src="/new-logo.png"
           alt="Logo"
           width={140}
           height={140}
