@@ -1,87 +1,140 @@
 "use client";
-import Link from "next/link";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const slides = [
+  {
+    image: "/heart-banner-image.png",
+    title: "Stronger Hearts,",
+    subtitle: "Stronger Futures",
+  },
+  {
+    image: "/images/Lady demonstrating CPR.jpeg",
+    title: "Learn CPR.",
+    subtitle: "Save a Life",
+  },
+  {
+    image: "/images/World Heart Day Image.jpg",
+    title: "World Heart Day 2025",
+    subtitle: "Care for Your Heart",
+  },
+  {
+    image: "/images/Image of book - Miracle of Mercy.jpg",
+    title: "Knowledge Saves Lives",
+    subtitle: "One Heart at a Time",
+  },
+];
 
 export default function DonationBanner() {
+  const [current, setCurrent] = useState(0);
+
+  // Auto slide
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 7000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+  };
+
   return (
-    <section className="relative w-full h-[650px] sm:h-[700px] md:h-[600px] lg:h-[650px] overflow-hidden">
+    <section className="relative w-full h-[650px] overflow-hidden">
 
-      {/* FULL BACKGROUND IMAGE */}
-      <Image
-        src="/heart-banner-image.png"
-        alt="donation banner"
-        fill
-        priority
-        className="object-cover object-center"
-      />
+      {/* SLIDER */}
+      <div
+        className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {slides.map((slide, index) => (
+          <div key={index} className="relative min-w-full h-full">
+            <Image
+              src={slide.image}
+              alt={`slide-${index}`}
+              fill
+              priority={index === 0}
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/40"></div>
+          </div>
+        ))}
+      </div>
 
-      {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      {/* CONTENT */}
+      <div className="relative max-w-7xl h-full mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 pt-16 z-10">
 
-      <div className="relative max-w-7xl h-full mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0 pt-16 md:pt-0">
-
-        {/* LEFT: Heading */}
-        <div className="text-left text-white max-w-xl md:max-w-2xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow-xl">
-            Stronger Hearts,
+        {/* LEFT TEXT (changes per slide) */}
+        <div className="text-white max-w-xl">
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-xl">
+            {slides[current].title}
             <br />
-            Stronger Futures
+            {slides[current].subtitle}
           </h1>
 
-          {/* Red underline */}
-          <svg
-            viewBox="0 0 200 20"
-            className="mt-4 w-40 h-6 sm:w-52 sm:h-8"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          {/* Gold underline */}
+          <svg viewBox="0 0 200 20" className="mt-4 w-52 h-8">
             <path
               d="M0 12 C40 -6 160 24 200 4"
-              stroke="#e11d2b"
+              stroke="#d4af37"
               strokeWidth="6"
               strokeLinecap="round"
               fill="none"
-              opacity="0.95"
             />
           </svg>
         </div>
 
-        {/* RIGHT: Donation Box */}
-        <div className="w-full max-w-md bg-white rounded-2xl p-6 sm:p-8 shadow-xl backdrop-blur-sm bg-white/95">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-center">
+        {/* DONATION BOX */}
+        <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl">
+          <h2 className="text-2xl font-bold text-gray-900 text-center">
             MAKE A DONATION
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base text-gray-600 text-center">
+          <p className="mt-4 text-gray-600 text-center">
             Your donation will go a long way in helping us achieve our mission.
-            You can visit our website to donate online or send a check to the Foundation.
-            We are a registered Canadian charity, and you will receive a tax receipt.
           </p>
 
-          <p className="mt-4 text-sm sm:text-base text-red-500 text-center">
-            You can donate via PayPal, Credit Card, or Mobile Money.
-          </p>
-
-         <div className="mt-6 flex flex-col gap-4">
-  <Link href="/donate-with-mobile-money" className="w-full">
-  <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold shadow-lg hover:bg-red-700 transition">
-    Donate With Credit Card
-  </button>
-  </Link>
-
-  <Link href="/donate-with-mobile-money" className="w-full">
-    <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold shadow-lg hover:bg-red-700 transition">
-      Donate With Mobile Money
-    </button>
-  </Link>
-
-</div>
-
-          <p className="mt-4 text-xs text-gray-400 text-center">
-            Thanks.
-          </p>
+          <Link href="/donate" className="block mt-6">
+            <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold hover:bg-red-700 transition">
+              DONATE NOW
+            </button>
+          </Link>
         </div>
+      </div>
 
+      {/* ARROWS */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-gold text-black w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-[#b8962e]"
+      >
+        ‹
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-gold text-black w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-[#b8962e]"
+      >
+        ›
+      </button>
+
+      {/* DOTS */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`w-3 h-3 rounded-full transition ${
+              current === index ? "bg-gold" : "bg-white/50"
+            }`}
+          />
+        ))}
       </div>
     </section>
   );

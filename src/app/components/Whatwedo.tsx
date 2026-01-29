@@ -40,7 +40,7 @@ export default function WhatWeDo() {
   ];
 
   return (
-    <section className="relative w-full bg-[#0C75DA] pb-20 pt-24 px-4 overflow-hidden ">
+    <section className="relative w-full bg-[#b8962e] pb-20 pt-24 px-4 overflow-hidden ">
       {/* Top slanted shape */}
       <div className="absolute top-0 left-0 w-full h-24 bg-white [clip-path:polygon(0_0,100%_0,100%_60%,70%_100%,0_100%)]"></div>
 
@@ -54,7 +54,7 @@ export default function WhatWeDo() {
           {items.map((item, i) => (
             <div
               key={i}
-              className="flex items-start gap-4 border-dashed border-white border-4 rounded-xl p-10 bg-[#0C75DA] shadow-lg"
+              className="flex items-start gap-4  border-white border-2 rounded-xl p-10 bg-[#b8962e] shadow-lg"
             >
               <div className="w-[186px] h-[px186] rounded-full flex items-center justify-center bg-white overflow-hidden">
   <Image

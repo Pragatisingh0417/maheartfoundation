@@ -222,7 +222,7 @@ export default function WhatWeDoPage() {
             Donate Now
           </a>
           <a
-            href="/get-involved"
+            href="/contact"
             className="px-8 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition"
           >
             Volunteer / Join Us

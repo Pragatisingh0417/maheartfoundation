@@ -69,7 +69,7 @@ type CardProps = {
 
 function NewsCard({ image, title, description }: CardProps) {
   return (
-    <div className="bg-[#0B72D9] rounded-2xl overflow-hidden shadow-lg">
+    <div className="bg-[#d4af37] rounded-2xl overflow-hidden shadow-lg">
       
       {/* IMAGE */}
       <div className="relative w-full h-64">

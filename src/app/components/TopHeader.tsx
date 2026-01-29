@@ -4,30 +4,23 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export default function TopHeader() {
   return (
     // Hides this entire top bar on mobile
-    <div className="hidden md:block w-full bg-[#0A75CE] text-white">
+    <div className="hidden md:block w-full bg-[#b8962e] text-white">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-2 px-4 text-sm">
 
         {/* Left Side */}
         <div className="flex flex-wrap items-center gap-6">
           <div className="flex items-center gap-2">
-            <FaPhoneAlt size={14} />
-            <span>+237 682–084–962</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <MdEmail size={16} />
-            <span>info@maheartfoundation.org</span>
+            <span> <a href="/contact" className="w-25 h-10 rounded-full flex items-center justify-center bg-white/10 hover:bg-white/20 transition"> Contact us </a></span>
           </div>
         </div>
 
         {/* Right Side */}
         <div className="flex items-center gap-4">
-          <span>Contact us</span>
 
         {/* SOCIALS */}
 <div className="flex items-center gap-4">
@@ -46,6 +39,15 @@ export default function TopHeader() {
   >
     <div className="w-10 h-10 rounded-full flex items-center justify-center bg-white/10 hover:bg-white/20 transition">
       <FaLinkedinIn className="cursor-pointer hover:text-gray-200 text-xl md:text-base" />
+    </div>
+  </Link>
+
+  <Link
+    href=""
+    target="_blank"
+  >
+    <div className="w-10 h-10 rounded-full flex items-center justify-center bg-white/10 hover:bg-white/20 transition">
+      <FaInstagram className="cursor-pointer hover:text-gray-200 text-xl md:text-base" />
     </div>
   </Link>
 </div>

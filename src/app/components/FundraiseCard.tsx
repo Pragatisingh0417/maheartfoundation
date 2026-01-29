@@ -104,7 +104,7 @@ export default function ReviewSlider() {
               </div>
 
               {/* MAIN CARD */}
-              <div className="bg-[#007BFF] text-white rounded-xl px-10 pt-16 pb-10 shadow-xl text-center">
+              <div className="bg-[#b8962e] text-white rounded-xl px-10 pt-16 pb-10 shadow-xl text-center">
                 <h2 className="text-2xl font-bold mb-4">{card.title}</h2>
 
                 <p className="text-sm leading-relaxed mb-6">

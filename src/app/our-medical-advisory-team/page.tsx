@@ -125,7 +125,7 @@ export default function MedicalAdvisoryTeam() {
         <p className="text-gray-700 text-lg">
           Interested in collaborating or joining as an advisor?
         </p>
-       <Link href="/get-involved">
+       <Link href="/contact">
   <motion.button
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}

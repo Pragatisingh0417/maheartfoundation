@@ -106,12 +106,12 @@ export default function MobileMoneyDonationPage() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-6 flex flex-col sm:flex-row justify-center gap-4"
           >
-            <Link href="/get-involved">
+            <Link href="/contact">
               <button className="px-6 py-3 bg-red-600 text-white rounded-full shadow hover:bg-red-700 transition">
                 Contact Us for Details
               </button>
             </Link>
-            <Link href="/get-involved">
+            <Link href="/contact">
               <button className="px-6 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition">
                 Other Donation Methods
               </button>

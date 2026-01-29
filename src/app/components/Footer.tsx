@@ -8,7 +8,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export default function FooterSection() {
   return (
-    <footer className="w-full bg-[#007BFF] text-white pt-14 pb-10 px-6 md:px-16">
+    <footer className="w-full bg-[#b8962e] text-white pt-14 pb-10 px-6 md:px-16">
       {/* TOP: Logo + Social Icons */}
       <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-6">
         <Image
@@ -94,7 +94,7 @@ export default function FooterSection() {
             </li>
 
             <li className="hover:text-gray-200 cursor-pointer">
-              <Link href="/get-involved">Contact Us</Link>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
