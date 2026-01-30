@@ -16,9 +16,9 @@ export default function Header() {
   const [corporateSub, setCorporateSub] = useState(false);
   const [involvedDropdown, setInvolvedDropdown] = useState(false);
   const [newsDropdown, setNewsDropdown] = useState(false);
-
   const [mobileMenu, setMobileMenu] = useState(false);
 
+  
   // 🔑 Hover delay ref (GLOBAL FIX)
   const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
 
