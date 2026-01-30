@@ -33,6 +33,11 @@ export default function MercySection() {
           <p className="text-gray-700 leading-relaxed mb-4">
             In 2009, heart disease radically maimed, mutilated and morphed me
             into a helpless, almost hopeless woman. I was barely 37 years old.
+            I deeply mourned the loss of my four limbs for years, but gradually began to appreciate the ultimate gift of life itself.
+          </p>
+ <p className="text-gray-700 leading-relaxed mb-4">
+
+            Upon realizing that heart disease is a major global public health challenge, especially in developing countries, and that far too many people simply die without a battle for survival, I reckoned that my life could be a galvanizing tale and testimony to this daunting health challenge.
           </p>
 
           <Link href="/word-from-mercy">
@@ -49,16 +54,11 @@ export default function MercySection() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            Upon realizing that heart disease is a major global public health
-            challenge, especially in developing countries, and that far too
-            many people simply die without a battle for survival, Mercy’s life
-            became a galvanizing testimony to this daunting health challenge.
+            Shortly after arriving in Ottawa with her two young children following her husband’s appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s life would take a dramatic turn. On October 23, 2009, she complained of fatigue, fever, a headache, blurred vision … and was rushed to hospital for what she thought was a routine ailment. Amid the H1N1 crisis, Emergency Room staff overlooked her medical history, misdiagnosed her condition, prescribed Tamiflu, and sent her home, only to be rushed again to the emergency department two days later following a rapid deterioration of her condition.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-10">
-            Without hands and legs, Mercy continues to use her voice to mobilize
-            others to extend a helping hand to people suffering from heart
-            disease around the world.
+          When she was placed in a wheelchair shortly thereafter, little did she know that she had just taken her last steps on her own two feet. She was in fact in the throes of endocarditis, a virulent infection of the heart valves. She soon slipped into a coma and spent several weeks wavering between life and death.
           </p>
 
           {/* Newsletter */}

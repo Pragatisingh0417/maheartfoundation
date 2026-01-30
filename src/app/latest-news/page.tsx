@@ -9,7 +9,7 @@ export default function LatestNewsPage() {
             {/* ============================
           HERO SECTION
       ============================= */}
-            <section className="bg-blue-900 text-white py-20 px-6 text-center">
+            <section className="bg-black text-white py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold">
                     Latest News
                 </h1>
@@ -25,7 +25,7 @@ export default function LatestNewsPage() {
 
                 <div className="bg-white p-10 shadow-md border rounded-2xl">
 
-                    <h2 className="text-2xl font-bold text-blue-900 mb-4">
+                    <h2 className="text-2xl font-bold text-red-600 mb-4">
                         Outreach Activities
                     </h2>
 
@@ -48,8 +48,8 @@ export default function LatestNewsPage() {
 
                             {/* Campaign 1 */}
                             <Link href="/franky-campaign">
-                                <div className="p-6 bg-blue-50 border border-blue-200 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition">
-                                    <h3 className="text-xl font-semibold text-blue-900">
+                                <div className="p-6 bg-red-50 border border-red-200 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition">
+                                    <h3 className="text-xl font-semibold text-red-600">
                                         Franky Campaign
                                     </h3>
                                 </div>
@@ -57,8 +57,8 @@ export default function LatestNewsPage() {
 
                             {/* Campaign 2 */}
                             <Link href="/mevick-campaign">
-                                <div className="p-6 bg-blue-50 border border-blue-200 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition">
-                                    <h3 className="text-xl font-semibold text-blue-900">
+                                <div className="p-6 bg-red-50 border border-red-200 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition">
+                                    <h3 className="text-xl font-semibold text-red-600">
                                         Mevick Campaign
                                     </h3>
                                 </div>
@@ -66,8 +66,8 @@ export default function LatestNewsPage() {
 
                             {/* Campaign 3 */}
                             <Link href="/salvation-campaign">
-                                <div className="p-6 bg-blue-50 border border-blue-200 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition">
-                                    <h3 className="text-xl font-semibold text-blue-900">
+                                <div className="p-6 bg-red-50 border border-red-200 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition">
+                                    <h3 className="text-xl font-semibold text-red-600">
                                         Salvation Campaign
                                     </h3>
                                 </div>
@@ -75,8 +75,8 @@ export default function LatestNewsPage() {
 
                             {/* Campaign 4 */}
                             <Link href="/dylet-bible-school-campaign">
-                                <div className="p-6 bg-blue-50 border border-blue-200 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition">
-                                    <h3 className="text-xl font-semibold text-blue-900">
+                                <div className="p-6 bg-red-50 border border-red-200 rounded-2xl shadow-sm cursor-pointer hover:shadow-md transition">
+                                    <h3 className="text-xl font-semibold text-red-600">
                                         Bible School Campaign
                                     </h3>
                                 </div>

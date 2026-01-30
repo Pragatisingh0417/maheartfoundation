@@ -37,7 +37,7 @@ export default function OutreachActivities() {
                 build safer schools and healthier futures.
               </p>
 
-              <Link href="/outreach/schools">
+              <Link href="/school-Outreach">
                 <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition">
                   Learn More
                 </button>
@@ -60,7 +60,7 @@ export default function OutreachActivities() {
                 emergencies and reduce preventable heart-related deaths.
               </p>
 
-              <Link href="/outreach/community">
+              <Link href="/community-Outreach">
                 <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition">
                   Learn More
                 </button>
@@ -83,7 +83,7 @@ export default function OutreachActivities() {
                 respond confidently during medical emergencies.
               </p>
 
-              <Link href="/outreach/corporate">
+              <Link href="/corporate-Outreach">
                 <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition">
                   Learn More
                 </button>

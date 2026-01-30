@@ -12,18 +12,18 @@ const slides = [
   },
   {
     image: "/images/Lady demonstrating CPR.jpeg",
-    title: "Learn CPR.",
-    subtitle: "Save a Life",
+    title: "",
+    subtitle: "",
   },
   {
     image: "/images/World Heart Day Image.jpg",
-    title: "World Heart Day 2025",
-    subtitle: "Care for Your Heart",
+    title: "",
+    subtitle: "",
   },
   {
     image: "/images/Image of book - Miracle of Mercy.jpg",
-    title: "Knowledge Saves Lives",
-    subtitle: "One Heart at a Time",
+    title: "",
+    subtitle: "",
   },
 ];
 
@@ -48,7 +48,6 @@ export default function DonationBanner() {
 
   return (
     <section className="relative w-full h-[650px] overflow-hidden">
-
       {/* SLIDER */}
       <div
         className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
@@ -63,15 +62,14 @@ export default function DonationBanner() {
               priority={index === 0}
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/10"></div>
           </div>
         ))}
       </div>
 
       {/* CONTENT */}
       <div className="relative max-w-7xl h-full mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 pt-16 z-10">
-
-        {/* LEFT TEXT (changes per slide) */}
+        {/* LEFT TEXT */}
         <div className="text-white max-w-xl">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-xl">
             {slides[current].title}
@@ -80,7 +78,7 @@ export default function DonationBanner() {
           </h1>
 
           {/* Gold underline */}
-          <svg viewBox="0 0 200 20" className="mt-4 w-52 h-8">
+          {/* <svg viewBox="0 0 200 20" className="mt-4 w-52 h-8">
             <path
               d="M0 12 C40 -6 160 24 200 4"
               stroke="#d4af37"
@@ -88,25 +86,27 @@ export default function DonationBanner() {
               strokeLinecap="round"
               fill="none"
             />
-          </svg>
+          </svg> */}
         </div>
 
-        {/* DONATION BOX */}
-        <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl">
-          <h2 className="text-2xl font-bold text-gray-900 text-center">
-            MAKE A DONATION
-          </h2>
+        {/* DONATION BOX – ONLY FIRST SLIDE */}
+        {current === 0 && (
+          <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl">
+            <h2 className="text-2xl font-bold text-gray-900 text-center">
+              MAKE A DONATION
+            </h2>
 
-          <p className="mt-4 text-gray-600 text-center">
-            Your donation will go a long way in helping us achieve our mission.
-          </p>
+            <p className="mt-4 text-gray-600 text-center">
+              Your donation will go a long way in helping us achieve our mission.
+            </p>
 
-          <Link href="/donate" className="block mt-6">
-            <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold hover:bg-red-700 transition">
-              DONATE NOW
-            </button>
-          </Link>
-        </div>
+            <Link href="/donate" className="block mt-6">
+              <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold hover:bg-red-700 transition">
+                DONATE NOW
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
 
       {/* ARROWS */}

@@ -12,12 +12,7 @@ export default function BoardOfDirectors() {
 
 `,
     },
-    {
-      name: "PAULA AZOH-MBI",
-      role: "Director",
-      image: "/Bod-2.png",
-      bio: `Paula studied at the American International School of Johannesburg (AISJ) where she completed High School and obtained the International Baccalaureate in June 2024. She looks forward to reading Law at the University of Pretoria in South Africa in the new academic year. Paula took up her mother’s seat on the board when she turned 18.`,
-    },
+    
      {
       name: "JAY M. NFONOYIM",
       role: "Director",
@@ -26,12 +21,7 @@ export default function BoardOfDirectors() {
 
 He studied at the Universidad Tenologica De Santiago and did his Intensive Care training at the Icahn School of Medicine at Mt. Sinai. He is a member of the American Board of Internal Medicine.`,
     },
-     {
-      name: "PAUL T. AYAH",
-      role: "Secretary & CEO",
-      image: "/Bod-4.jpg",
-      bio: `Paul held various positions in industry (translator, product manager, recruiting and training manager) until 1995 before founding STF Traducation, a language services firm that provides translation and language training services to government and corporate clients. He studied concurrently at Keele University and University of London, as well as Université de Montréal and McGill University. A committed community servant, Paul was president of the Goodwill Association in 2005 and 2006, president of the Association of Cameroonians in Canada (ACC) from 2008 to 2010 and is currently a co-chair of the Sasse Alumni Association. He has also served as a big brother for the Big Brothers and Big Sisters of Montreal. Paul is a member of the Ordre de traducteurs, terminologues et interprètes agréés du Québec.`,
-    },
+     
      {
       name: "NTARIBO ASHU-AGBORNGAH",
       role: "Treasurer",
@@ -50,13 +40,25 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
       image: "/Bod-7.jpg",
       bio: `An ordained minister, Denise pastors Gloucester Presbyterian Church in Ottawa, thanks to which she keeps discovering God’s deep compassion for people and their neighbourhoods. Earlier, she served six years as Director of Communications for Fidus Systems, an electronic design services company. Through her own business, Dynamic Writing, Denise provided training and communications consulting services to government agencies, corporate, and non-profit clients across Canada. She has served on the boards of The Presbyterian College, Montreal, and The Canadian Bible Society. Denise studied at Carleton University, Ottawa; McGill University, Montreal; and the Montreal School of Theology. She and her husband, Allen, have two children and six grandchildren. She enjoys wilderness canoeing, cross-country skiing, cycling, and hiking.`,
     },
-     
+
+    {
+      name: "PAULA AZOH-MBI",
+      role: "Director",
+      image: "/Bod-2.png",
+      bio: `Paula studied at the American International School of Johannesburg (AISJ) where she completed High School and obtained the International Baccalaureate in June 2024. She looks forward to reading Law at the University of Pretoria in South Africa in the new academic year. Paula took up her mother’s seat on the board when she turned 18.`,
+    },
+     {
+      name: "PAUL T. AYAH",
+      role: "Secretary & CEO",
+      image: "/Bod-4.jpg",
+      bio: `Paul held various positions in industry (translator, product manager, recruiting and training manager) until 1995 before founding STF Traducation, a language services firm that provides translation and language training services to government and corporate clients. He studied concurrently at Keele University and University of London, as well as Université de Montréal and McGill University. A committed community servant, Paul was president of the Goodwill Association in 2005 and 2006, president of the Association of Cameroonians in Canada (ACC) from 2008 to 2010 and is currently a co-chair of the Sasse Alumni Association. He has also served as a big brother for the Big Brothers and Big Sisters of Montreal. Paul is a member of the Ordre de traducteurs, terminologues et interprètes agréés du Québec.`,
+    },
   ];
 
   return (
     <main className="w-full">
       {/* HERO */}
-      <section className="bg-blue-900 py-24 text-center text-white">
+      <section className="bg-black py-24 text-center text-white">
         <h1 className="text-5xl font-extrabold drop-shadow-lg tracking-wide">Board Of Directors</h1>
         <p className="mt-4 text-lg opacity-90 max-w-2xl mx-auto">
           Meet the dedicated leaders guiding the Mercy Azoh-Mbi Heart Foundation
