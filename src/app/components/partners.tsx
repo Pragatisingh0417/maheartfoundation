@@ -5,11 +5,11 @@ import Image from "next/image";
 const partners = [
   {
     name: "Partner One",
-    logo: "/partners/partner-1.png",
+    logo: "/LUKMEF-Logo (2).jpg",
   },
   {
     name: "Partner Two",
-    logo: "/partners/partner-2.png",
+    logo: "/50-years-ohi-rgb-logo.svg",
   },
   {
     name: "Partner Three",
@@ -60,7 +60,7 @@ export default function Partners() {
                 alt={partner.name}
                 width={140}
                 height={80}
-                className="object-contain grayscale hover:grayscale-0 transition"
+                className="object-contain   transition"
               />
             </div>
           ))}

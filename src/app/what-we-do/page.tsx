@@ -94,7 +94,7 @@ export default function WhatWeDoPage() {
 
       {/* Programs / Initiatives */}
       <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, idx) => (
             <motion.div
               key={program.name}
@@ -119,116 +119,9 @@ export default function WhatWeDoPage() {
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section className="bg-red-50 py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl font-extrabold text-gray-900"
-          >
-            Our Impact
-          </motion.h2>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8"
-          >
-            <div className="bg-white rounded-xl shadow p-6">
-              <p className="text-4xl font-bold text-red-600">10,000+</p>
-              <p className="mt-2 text-gray-700">People Screened</p>
-            </div>
-            <div className="bg-white rounded-xl shadow p-6">
-              <p className="text-4xl font-bold text-red-600">5,000+</p>
-              <p className="mt-2 text-gray-700">Undergoing Treatment Support</p>
-            </div>
-            <div className="bg-white rounded-xl shadow p-6">
-              <p className="text-4xl font-bold text-red-600">20+</p>
-              <p className="mt-2 text-gray-700">Community Outreach Campaigns</p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    
 
-      {/* Story / Case Study */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="relative h-80 w-full rounded-2xl overflow-hidden shadow-lg">
-            <Image
-              src="/HEART-image.jpg"
-              alt="Impact Story"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <motion.h3
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-2xl font-bold text-gray-900"
-            >
-              Mercy's Story: A Life Transformed
-            </motion.h3>
-            <motion.p
-              initial={{ opacity: 0, x: -10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="mt-4 text-gray-700"
-            >
-              In 2009, Mercy’s life changed forever when she was diagnosed…  
-              (short story about her experience, struggle, recovery, and impact)
-            </motion.p>
-            <Link href="/word-from-mercy">
-  <button className="mt-4 px-8 py-3 bg-red-600 text-white rounded-full shadow hover:bg-red-700 transition">
-    Read Full Story
-  </button>
-</Link>
-            {/* <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full shadow hover:bg-red-700 transition">
-              Read Full Story
-            </button> */}
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action / Get Involved */}
-      <section className="bg-white py-16 px-4 text-center">
-        <motion.h4
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-2xl font-bold text-gray-900"
-        >
-          Want to Help Make a Change?
-        </motion.h4>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-6 flex justify-center gap-4"
-        >
-          <a
-            href="/donate"
-            className="px-8 py-3 bg-red-600 text-white rounded-full shadow hover:bg-red-700 transition"
-          >
-            Donate Now
-          </a>
-          <a
-            href="/contact"
-            className="px-8 py-3 border-2 border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition"
-          >
-            Volunteer / Join Us
-          </a>
-        </motion.div>
-      </section>
+      
     </div>
   );
 }

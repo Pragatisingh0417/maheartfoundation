@@ -17,7 +17,7 @@ const advisors: Advisor[] = [
   {
     name: "Paul T. Ayah",
     role: "CEO",
-    photo: "/",
+    photo: "/Paul T. Ayah - CEO.jpg",
     shortBio: "",
     credentials: "",
     
@@ -27,7 +27,7 @@ const advisors: Advisor[] = [
   {
     name: "Dr. Sese Ekolle",
     role: "Cameroon Country Manager",
-    photo: "/",
+    photo: "/Dr. Sese Ekolle - Cameroon Country Manager.jpeg",
     shortBio: "",
     credentials: "",
   },
@@ -35,7 +35,7 @@ const advisors: Advisor[] = [
   {
     name: "Joy Fajong",
     role: "Administrative Assistant",
-    photo: "/",
+    photo: "/Joy Fajong - Administrative Coordinator.jpeg",
     shortBio: "",
     credentials: "",
   },

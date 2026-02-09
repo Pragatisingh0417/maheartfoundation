@@ -92,14 +92,14 @@ export default function FactsAndStatsPage() {
 
           {/* Callouts / Facts Box */}
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
+            <div className="bg-blue-50 border-l-4 border-gray-500 p-6 rounded-lg">
               <h3 className="font-semibold text-lg">Fast fact</h3>
               <p className="mt-2 text-sm">
                 About 47% of sudden cardiac deaths occur outside a hospital — many people don't act on early warning signs.
               </p>
             </div>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
+            <div className="bg-blue-50 border-l-4 border-gray-500 p-6 rounded-lg">
               <h3 className="font-semibold text-lg">Economic impact</h3>
               <p className="mt-2 text-sm">
                 The global economic burden of CVD is massive and rising, with huge impacts on healthcare systems and productivity.
@@ -115,10 +115,10 @@ export default function FactsAndStatsPage() {
             </p>
 
             <ul className="mt-3 list-disc pl-6 space-y-2 text-sm">
-              <li><a className="text-blue-700 underline" href="#">Heart disease facts and stats (global)</a></li>
-              <li><a className="text-blue-700 underline" href="#">In the United States — detailed stats</a></li>
-              <li><a className="text-blue-700 underline" href="#">What is heart disease? (overview)</a></li>
-              <li><Link href="/heart-health/healthy-heart-tips" className="text-blue-700 underline">Tips for a healthy heart</Link></li>
+              <li> <Link href="/heart-disease-facts-and-statistics"></Link> <a className="text-gray-700 underline" href="#">Heart disease facts and stats (global)</a></li>
+              <li><a className="text-gray-700 underline" href="#">In the United States — detailed stats</a></li>
+              <li> <Link href="/what-is-heart-disease"> </Link> <a className="text-gray-700 underline" href="#">What is heart disease? (overview)</a></li>
+              <li><Link href="/heart-health/healthy-heart-tips" className="text-gray-700 underline">Tips for a healthy heart</Link></li>
             </ul>
           </div>
         </article>
@@ -128,10 +128,10 @@ export default function FactsAndStatsPage() {
           <div className="sticky top-28 bg-white border rounded-lg p-6 shadow-sm">
             <h4 className="font-bold text-lg">On this page</h4>
             <nav className="mt-4 text-sm">
-              <a className="block py-2 text-blue-700 hover:underline" href="#worldwide">World-wide</a>
-              <a className="block py-2 text-blue-700 hover:underline" href="#us">In the United States</a>
-              <a className="block py-2 text-blue-700 hover:underline" href="#early-action">Early Action</a>
-              <a className="block py-2 text-blue-700 hover:underline" href="#resources">Resources</a>
+              <a className="block py-2 text-gray-700 hover:underline" href="#worldwide">World-wide</a>
+              <a className="block py-2 text-gray-700 hover:underline" href="#us">In the United States</a>
+              <a className="block py-2 text-gray-700 hover:underline" href="#early-action">Early Action</a>
+              <a className="block py-2 text-gray-700 hover:underline" href="#resources">Resources</a>
             </nav>
           </div>
 
@@ -144,7 +144,7 @@ export default function FactsAndStatsPage() {
       </section>
 
       {/* FOOTER CTA */}
-      <section className="w-full bg-blue-900 text-white py-12">
+      <section className="w-full bg-[#b8962e] text-white py-12">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-bold">Want more heart health resources?</h3>

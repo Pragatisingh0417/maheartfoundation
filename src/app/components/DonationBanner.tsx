@@ -21,7 +21,7 @@ const slides = [
     subtitle: "",
   },
   {
-    image: "/images/Image of book - Miracle of Mercy.jpg",
+    image: "/banner image qq copy 1.webp",
     title: "",
     subtitle: "",
   },

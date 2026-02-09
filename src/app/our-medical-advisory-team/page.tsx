@@ -7,7 +7,6 @@ import Link from "next/link";
 
 type Advisor = {
   name: string;
-  role: string;
   photo: string;
   shortBio: string;
   credentials: string;
@@ -17,7 +16,6 @@ type Advisor = {
 const advisors: Advisor[] = [
   {
     name: "Dr. Nche Zama",
-    role: "Director of Cardiovascular and Thoracic Surgery",
     photo: "/Dr. Nche Zama.webp",
     shortBio: "",
     credentials: "",
@@ -26,7 +24,6 @@ const advisors: Advisor[] = [
   },
   {
     name: "Dr. Thierry Mesana",
-    role: "President & CEO",
     photo: "/Dr. Thierry Mesana.jpg",
     shortBio: "",
     credentials: "",
@@ -36,7 +33,6 @@ const advisors: Advisor[] = [
   
   {
     name: "Dr. Gopichand Mannam",
-    role: "Medical Doctor",
     photo: "/Dr. Gopichand Mannam.webp",
     shortBio: "",
     credentials: "",
@@ -45,12 +41,20 @@ const advisors: Advisor[] = [
   },
   {
     name: "Dr. Mpoki M. Ulisubisya",
-    role: "Medical Doctor",
     photo: "/Dr. Mpoki M. Ulisubisya.jpg",
     shortBio: "",
     credentials: "",
     fullBio:
       "A former Cardiac Anaesthesiologist at the Jakaya Kikwete Cardiac Institute (Muhimbili National Hospital) in Dar Es Salaam and one of the first doctors to be trained as a Cardiothoracic Anaesthesiologist in Tanzania, Dr. Mpoki serves as the High Commissioner of Tanzania to Canada",
+  },
+
+  {
+    name: "Dr. Jay M. Nfonoyim",
+    photo: "/Dr. Jay M. Nfonoyim.jpg",
+    shortBio: "",
+    credentials: "",
+    fullBio:
+      "Dr. Jay Nfonoyim is Program Director, Chief of Critical Care and Clinical Medicine at the Richmond University Medical Center, and Clinical Assistant Professor of Medicine at New York Medical College. He also served as director of the Surgical Trauma ICU at Elmhurst Hospital Center and Assistant Professor of Surgery at Mt. Sinai Medical School. He has close to four decades of experience in the field of medicine. His areas of expertise are Saddle Pulmonary Embolism, Emphysema, and Angioplasty.",
   },
 ];
 
@@ -96,7 +100,6 @@ export default function MedicalAdvisoryTeam() {
               <h3 className="text-xl font-bold text-gray-800">
                 {advisor.name}
               </h3>
-              <p className="text-sm text-gray-500">{advisor.role}</p>
               <p className="mt-3 text-gray-700">{advisor.shortBio}</p>
               <p className="mt-2 text-gray-600 italic text-sm">
                 {advisor.credentials}

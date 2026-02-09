@@ -83,7 +83,7 @@ export default function WhatWeDo() {
           Learn more
         </button> */}
 
-         <Link href="/about">
+         <Link href="/what-we-do">
   <button className="mt-10 mb-20 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
     Learn more
   </button>

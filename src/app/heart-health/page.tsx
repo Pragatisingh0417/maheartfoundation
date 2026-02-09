@@ -9,7 +9,7 @@ export default function HeartHealthPage() {
       {/* ============================
           HERO SECTION
       ============================= */}
-      <section className="bg-blue-900 text-white py-20 px-6 text-center">
+      <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
           Heart Health
         </h1>
@@ -30,7 +30,7 @@ export default function HeartHealthPage() {
             href="/what-is-heart-disease"
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
-            <h3 className="text-xl font-bold text-blue-900">
+            <h3 className="text-xl font-bold text-gray-900">
               What Is Heart Disease?
             </h3>
           </Link>
@@ -40,7 +40,7 @@ export default function HeartHealthPage() {
             href="/heart-disease-facts-and-statistics"
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
-            <h3 className="text-xl font-bold text-blue-900">
+            <h3 className="text-xl font-bold text-gray-900">
               Heart Disease Facts & Stats
             </h3>
           </Link>
@@ -50,7 +50,7 @@ export default function HeartHealthPage() {
             href="/tips-for-a-healthy-heart"
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
-            <h3 className="text-xl font-bold text-blue-900">
+            <h3 className="text-xl font-bold text-gray-900">
               Tips For A Healthy Heart
             </h3>
           </Link>

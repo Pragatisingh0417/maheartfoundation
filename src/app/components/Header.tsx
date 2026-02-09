@@ -12,11 +12,12 @@ export default function Header() {
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [healthDropdown, setHealthDropdown] = useState(false);
   const [outreachDropdown, setOutreachDropdown] = useState(false);
+    const [involvedDropdown, setInvolvedDropdown] = useState(false);
+  const [newsDropdown, setNewsDropdown] = useState(false);
+
   const [schoolSub, setSchoolSub] = useState(false);
   const [communitySub, setCommunitySub] = useState(false);
   const [corporateSub, setCorporateSub] = useState(false);
-  const [involvedDropdown, setInvolvedDropdown] = useState(false);
-  const [newsDropdown, setNewsDropdown] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const toggleMobile = () => setMobileMenu(!mobileMenu);
 const closeMobile = () => setMobileMenu(false);
@@ -51,7 +52,7 @@ const closeMobile = () => setMobileMenu(false);
 
 
   {/* ================= MOBILE MENU ================= */}
-{mobileMenu && (
+{mobileMenu && ( 
 <div className="fixed inset-0 z-[9999] bg-black text-white md:hidden animate-slideIn">
 
 <div className="px-6 py-6">
@@ -146,7 +147,7 @@ const closeMobile = () => setMobileMenu(false);
     </div>
   </div>
 )}
-
+ 
 
   {/* DESKTOP RIGHT */}
   <div className="hidden md:flex items-center gap-10 text-[16px] font-medium px-36">
