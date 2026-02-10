@@ -54,42 +54,18 @@ export default function WhatWeDoPage() {
   return (
     <div className="w-full bg-white">
       {/* Hero */}
-     <section className="relative w-full h-[420px] flex items-center justify-center text-center overflow-hidden">
+    {/* HERO */}
+      <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold">
+What We Do
+        </h1>
+        <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
+Our mission is to prevent heart disease through education, early intervention, and community support.
 
-  {/* Background Image */}
-  <Image
-    src="/HEART-image.jpg"  // ← change to your image name
-    alt="What we do background"
-    fill
-    className="object-cover"
-  />
 
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
 
-  {/* Content */}
-  <div className="relative z-10 px-6">
-    <motion.h1
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg"
-    >
-      What We Do
-    </motion.h1>
-
-    <motion.p
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.2 }}
-      className="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto drop-shadow"
-    >
-      Our mission is to prevent heart disease through education, early intervention, 
-      and community support.
-    </motion.p>
-  </div>
-
-</section>
+        </p>
+      </section>
 
 
       {/* Programs / Initiatives */}

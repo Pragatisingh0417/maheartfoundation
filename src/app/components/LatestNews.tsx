@@ -9,7 +9,7 @@ export default function LatestNews() {
         
         {/* TITLE */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-black">Latest News</h2>
+          <h2 className="text-4xl font-extrabold text-red-600">LATEST NEWS</h2>
 
           {/* Red underline */}
           <svg
@@ -41,14 +41,14 @@ export default function LatestNews() {
           {/* CARD 2 */}
           <NewsCard
             image="/Mercy-Azoh-Mbi-Heart-Foundation.jpg"
-            title="OFFICIAL LAUNCH OF THE MERCY AZOH-MBI HEART FOUNDATION OTTAWA"
-            description="OFFICIAL LAUNCH OF THE MERCY AZOH-MBI HEART FOUNDATION The Mercy Azoh-Mbi Heart Foundation will be officially launched in OTTAWA on..."
+            title="OFFICIAL LAUNCH OF THE MERCY AZOH-MBI HEART FOUNDATION IN OTTAWA"
+            description=""
           />
 
           {/* CARD 3 */}
           <NewsCard
             image="/imgi_15_IMG_1500-scaled.webp"
-            title="OFFICIAL LAUNCH OF THE MERCY AZOH-MBI HEART FOUNDATION Yde"
+            title="OFFICIAL LAUNCH OF THE MERCY AZOH-MBI HEART FOUNDATION IN YAOUNDE"
             description="OFFICIAL LAUNCH OF THE MERCY AZOH-MBI HEART FOUNDATION "
           />
         </div>

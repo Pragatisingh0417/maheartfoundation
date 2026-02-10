@@ -9,7 +9,7 @@ export default function FrankyCampaignPage() {
       {/* ============================
           HERO SECTION
       ============================= */}
-      <section className="bg-blue-900 text-white py-20 px-6 text-center">
+      <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
           Franky Secondary School Campaign
         </h1>
@@ -39,7 +39,7 @@ export default function FrankyCampaignPage() {
           </div>
 
           {/* ========== Heading ========== */}
-          <h2 className="text-2xl font-bold text-blue-900 mb-6">
+          <h2 className="text-2xl font-bold text-red-600 mb-6">
             About the Campaign
           </h2>
 

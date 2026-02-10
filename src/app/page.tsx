@@ -13,7 +13,6 @@ export default function Home() {
     <div className="">
      <DonationBanner />
     <MercySection />
-     <NewsletterBanner />
      <LatestNews />
      <Whatwedo />
      <GetInvolved />

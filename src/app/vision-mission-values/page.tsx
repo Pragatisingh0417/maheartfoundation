@@ -13,31 +13,16 @@ export default function VissionPage() {
       {/* ======================================
           HERO SECTION
       ====================================== */}
-      <section className="relative w-full h-[550px] overflow-hidden">
-        <Image
-          src="/CameroonOffice.png"
-          alt="About Mercy Foundation"
-          fill
-          className="object-cover scale-110"
-        />
+     {/* HERO */}
+      <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold">
+          OUR MISSION VISSION AND VALUES
+        </h1>
+        <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
+Dedicated to creating a world where heart health is accessible for all.
 
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="absolute inset-0 flex flex-col justify-center px-6 max-w-6xl mx-auto text-white"
-        >
-          <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-xl leading-snug">
-            About The Mercy Azoh-Mbi Heart Foundation
-          </h1>
-
-          <p className="mt-5 text-xl max-w-2xl opacity-90 tracking-wide">
-            Dedicated to creating a world where heart health is accessible for all.
-          </p>
-        </motion.div>
+        </p>
       </section>
 
       {/* ======================================

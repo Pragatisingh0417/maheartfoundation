@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image"
+import Image from "next/image";
 import Link from "next/link";
-;
 
 type Advisor = {
   name: string;
@@ -20,10 +19,7 @@ const advisors: Advisor[] = [
     photo: "/Paul T. Ayah - CEO.jpg",
     shortBio: "",
     credentials: "",
-    
   },
-  
-  
   {
     name: "Dr. Sese Ekolle",
     role: "Cameroon Country Manager",
@@ -31,7 +27,6 @@ const advisors: Advisor[] = [
     shortBio: "",
     credentials: "",
   },
-
   {
     name: "Joy Fajong",
     role: "Administrative Assistant",
@@ -43,80 +38,88 @@ const advisors: Advisor[] = [
 
 export default function ManagementTeam() {
   return (
-    <div className="w-full bg-gray-50 py-16 px-4">
-      {/* Hero Section */}
+    <section className="w-full bg-gray-50 py-24 px-6">
+      {/* HERO */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-3xl mx-auto text-center mb-12"
+        className="max-w-4xl mx-auto text-center mb-20"
       >
-        <h1 className="text-4xl font-extrabold text-gray-900">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
           Our Management Team
         </h1>
-        <p className="mt-4 text-lg text-gray-700">
-          Meet the distinguished experts guiding our mission, research, and care.
-        </p>
+        <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          Meet the professionals who steer the Foundation's administartion and opeartions</p>
       </motion.div>
 
-      {/* Advisors Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* TEAM GRID */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {advisors.map((advisor, idx) => (
           <motion.div
             key={advisor.name}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1, duration: 0.6 }}
-            className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden"
+            className="group bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
           >
-            <div className="relative h-60 w-full bg-white flex items-center justify-center">
-  <Image
-    src={advisor.photo}
-    alt={advisor.name}
-    fill
-    className="object-contain p-4"
-  />
-</div>
+            {/* IMAGE */}
+            <div className="relative w-full h-[300px] bg-gray-100 flex items-center justify-center overflow-hidden rounded-t-3xl">
+              <Image
+                src={advisor.photo}
+                alt={advisor.name}
+                fill
+                className="object-contain p-6 transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
 
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-800">
+            {/* CONTENT */}
+            <div className="px-8 py-8 text-center">
+              <h3 className="text-xl font-bold text-gray-900">
                 {advisor.name}
               </h3>
-              <p className="text-sm text-gray-500">{advisor.role}</p>
-              <p className="mt-3 text-gray-700">{advisor.shortBio}</p>
-              <p className="mt-2 text-gray-600 italic text-sm">
-                {advisor.credentials}
+
+              <p className="mt-1 text-sm font-semibold tracking-wide text-red-600 uppercase">
+                {advisor.role}
               </p>
 
-              {/* Expand / Modal Button */}
-              
+              <div className="w-12 h-[2px] bg-yellow-500 mx-auto my-5" />
+
+              <p className="text-gray-700 leading-relaxed">
+                {advisor.shortBio}
+              </p>
+
+              <p className="mt-3 text-sm italic text-gray-500">
+                {advisor.credentials}
+              </p>
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-        className="mt-16 text-center"
+        transition={{ duration: 0.6, delay: 0.4 }}
+        className="mt-24 text-center"
       >
-        <p className="text-gray-700 text-lg">
+        <p className="text-lg text-gray-700">
           Interested in collaborating or joining as an advisor?
         </p>
-       <Link href="/contact">
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="mt-4 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition"
-  >
-    Contact Us
-  </motion.button>
-</Link>
+
+        <Link href="/contact">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="mt-6 px-10 py-4 bg-red-600 text-white rounded-full font-semibold shadow-lg hover:bg-red-700 transition"
+          >
+            Contact Us
+          </motion.button>
+        </Link>
       </motion.div>
-    </div>
+    </section>
   );
 }

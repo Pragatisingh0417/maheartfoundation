@@ -55,7 +55,7 @@ export default function FooterSection() {
 
       {/* ================= BOTTOM ================= */}
       <div className="mt-16 pt-6 border-t border-[#d4af37]/20 text-center text-xs text-gray-400">
-        © {new Date().getFullYear()}{" "}
+        © {new Date().getFullYear()}{" "} The Mercy Azoh-Mbi Heart Foundation. All rights reserved. Designed by: 
         <a
           href="https://gemwebservices.com/"
           target="_blank"
@@ -63,7 +63,6 @@ export default function FooterSection() {
         >
           GEM WEB SERVICES
         </a>{" "}
-        All rights reserved.
       </div>
     </footer>
   );

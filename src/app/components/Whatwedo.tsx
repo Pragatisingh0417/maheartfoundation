@@ -40,17 +40,15 @@ export default function WhatWeDo() {
   ];
 
   return (
-    <section className="relative w-full bg-[#b8962e] pb-20 pt-24 px-4 overflow-hidden ">
-      {/* Top slanted shape */}
-      <div className="absolute top-0 left-0 w-full h-24 bg-white [clip-path:polygon(0_0,100%_0,100%_60%,70%_100%,0_100%)]"></div>
+    <section className="relative w-full bg-[#b8962e] p-10  overflow-hidden ">
 
-      <div className="relative max-w-6xl mx-auto text-center mt-5">
-        <h2 className="text-white text-3xl font-bold tracking-wider mb-3">WHAT WE DO</h2>
+      <div className="relative max-w-6xl mx-auto text-center ">
+        <h2 className="text-red-600 text-3xl font-bold tracking-wider mb-3 mt-10">WHAT WE DO</h2>
 
         <div className="w-32 h-[2px] bg-red-500 mx-auto mb-10"></div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           {items.map((item, i) => (
             <div
               key={i}
@@ -79,21 +77,12 @@ export default function WhatWeDo() {
           ))}
         </div>
 
-        {/* <button className="mt-10 mb-20 bg-[#FF3B30] hover:bg-red-600 transition px-8 py-2 rounded-full text-white font-semibold">
-          Learn more
-        </button> */}
 
-         <Link href="/what-we-do">
-  <button className="mt-10 mb-20 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
-    Learn more
-  </button>
-</Link>  
+        
 
 
       </div>
 
-      {/* Bottom slanted shape */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-white [clip-path:polygon(0_40%,30%_0,100%_0,100%_100%,0_100%)]"></div>
-    </section>
+        </section>
   );
 }

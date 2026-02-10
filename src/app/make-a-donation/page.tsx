@@ -48,20 +48,10 @@ export default function MakeADonationPage() {
           transition={{ duration: 0.8 }}
           className="text-gray-700 leading-relaxed text-lg"
         >
-          Your donation will go a long way in helping us achieve our mission. 
-          You can donate online or send a check to the Foundation at the address 
-          indicated in this brochure. We are a duly registered Canadian charity; 
-          you will receive a tax receipt for your donation.
+         Your Support helps us expand heart awareness, testing, education life-saving outreach programs around the world
         </motion.p>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-4 text-gray-700 leading-relaxed text-lg"
-        >
-          You can choose to donate using PayPal, Credit Card, or Mobile Money.
-        </motion.p>
+        
 
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
@@ -69,7 +59,7 @@ export default function MakeADonationPage() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="mt-10 text-3xl font-bold text-red-600 flex items-center gap-2"
         >
-          <Heart className="text-red-600" /> Donate Now
+          <Heart className="text-red-600" /> Give from the heart ...give for a heart!
         </motion.h3>
       </section>
 
