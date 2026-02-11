@@ -28,7 +28,7 @@ export default function CorporateOutreachPage() {
         {/* PAGE HEADER */}
         <div className="mb-14">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Community Outreach
+            Corporate Outreach
           </h1>
           <div className="w-24 h-1 bg-[#d4af37] mt-4 rounded-full"></div>
           <p className="mt-6 text-gray-600 max-w-2xl">

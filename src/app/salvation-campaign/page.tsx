@@ -25,17 +25,22 @@ export default function SalvationcampaignPage() {
                 {/* White Card */}
                 <div className="bg-white p-10 shadow-lg border rounded-2xl">
 
-                    {/* ========== Image ========== */}
-                    <div className="w-full mb-8">
-                        {/* Replace with real image */}
-                        <div className="w-full h-72 bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
-                            Image Placeholder (Fig 1)
-                        </div>
+                   {/* ========== Image ========== */}
+<div className="w-full mb-8">
+  <div className="relative w-full h-72 rounded-xl overflow-hidden">
+    <Image
+      src="/Corporate-1.png"
+      alt="Miracle of Mercy Book"
+      fill
+      className="object-cover"
+      priority
+    />
+  </div>
 
-                        <p className="text-sm text-gray-600 mt-2 italic">
-                            Fig 1: A group picture with Salvation Baptist Church men/ women group and MA Heart Team, Yaounde -Cameroon
-                        </p>
-                    </div>
+  <p className="text-sm text-gray-600 mt-2 italic">
+    Fig 1: A group picture with Salvation Baptist Church men/ women group and MA Heart Team, Yaounde -Cameroon
+  </p>
+</div>
 
                     {/* ========== Heading ========== */}
                     <h2 className="text-2xl font-bold text-blue-900 mb-6">

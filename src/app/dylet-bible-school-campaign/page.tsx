@@ -28,8 +28,15 @@ BIBLE SCHOOL AND CHURCH CAMPAIGN                </h1>
                     <div className="w-full mb-8">
                         {/* Replace with real image */}
                         <div className="w-full h-72 bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
-                            Image Placeholder (Fig 1)
-                        </div>
+<div className="relative w-full h-72 rounded-xl overflow-hidden">
+    <Image
+      src="/community.jpg"
+      alt="Miracle of Mercy Book"
+      fill
+      className="object-cover"
+      priority
+    />
+  </div>                        </div>
 
                         <p className="text-sm text-gray-600 mt-2 italic">
                             Fig 1: Hall view of participants ready for free screening against NCDs at Dylet Bible School -Biyemassi Yaounde

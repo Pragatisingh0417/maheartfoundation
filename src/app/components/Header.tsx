@@ -44,7 +44,7 @@ export default function Header() {
               alt="Mercy Azoh-Mbi Heart Foundation Logo"
               width={180}
               height={180}
-              className="object-contain mb-2"
+              className="object-contain mb-2 h-[80px]"
               priority
             />
           </Link>
@@ -225,7 +225,7 @@ export default function Header() {
             alt="Logo"
             width={120}
             height={120}
-            className="object-contain"
+            className="object-contain h-[60px]"
           />
         </Link>
 

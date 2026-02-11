@@ -8,13 +8,13 @@ const campaigns = [
     title: "Salvation Bapist Church",
     location: "Yaounde, Cameroon",
     image: "/Corporate-1.png",
-    href: "/franky-campaign",
+    href: "/salvation-campaign",
   },
   {
     title: "Dylet Bible School Campaign",
     location: "Yaounde, Cameroon",
     image: "/community.jpg",
-    href: "/mevick-school-campaign",
+    href: "/dylet-bible-school-campaign",
   },
    {
     title: "Babadjou Rural Campaign",
