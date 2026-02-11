@@ -266,16 +266,16 @@ export default function Header() {
     <MobileLink href="/salvation-campaign" onClick={closeMobile}>
       Salvation Baptist Church
     </MobileLink>
-    <MobileLink href="/outreach/community#events" onClick={closeMobile}>
+    <MobileLink href="/" onClick={closeMobile}>
       Babadjou Rural Campaign
     </MobileLink>
   </MobileAccordion>
 
   <MobileAccordion label="Corporate Outreach" nested>
-    <MobileLink href="/outreach/corporate" onClick={closeMobile}>
+    <MobileLink href="/outreach/corporate-outreach" onClick={closeMobile}>
       CSPH
     </MobileLink>
-    <MobileLink href="/outreach/corporate#book" onClick={closeMobile}>
+    <MobileLink href="/outreach/" onClick={closeMobile}>
       CAMTEL
     </MobileLink>
   </MobileAccordion>
