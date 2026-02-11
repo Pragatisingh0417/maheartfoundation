@@ -71,7 +71,7 @@ export default function Header() {
         <div className="flex items-center h-[64px] bg-amber-50 px-10">
 
           {/* CENTER NAV */}
-          <nav className="mx-auto flex gap-10 text-[#b8962e] font-medium">
+          <nav className="mx-auto flex gap-10 text-[#b8962e] ">
 
             <Link href="/">Home</Link>
 
@@ -110,7 +110,7 @@ export default function Header() {
   </span>
 
   {outreachDropdown && (
-    <div className="absolute top-8 left-1/2 -translate-x-1/2 bg-white shadow-xl rounded-xl py-3 w-64 z-50">
+    <div className="absolute top-8 left-1/2 -translate-x-1/2  bg-white shadow-xl rounded-xl py-3 w-64 z-50">
 
       {/* SCHOOL OUTREACH */}
       <SubMenu
