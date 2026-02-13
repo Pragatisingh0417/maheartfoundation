@@ -37,23 +37,23 @@ Dedicated to creating a world where heart health is accessible for all.
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="text-4xl font-bold">Our Vision</h2>
-          <p className="text-red-600 mt-2 text-lg font-semibold">
+          {/* <p className="text-red-600 mt-2 text-lg font-semibold">
             Cardiovascular health for everyone
-          </p>
+          </p> */}
 
           <p className="mt-8 text-lg text-gray-700 leading-relaxed">
             We aim to reduce global deaths from cardiovascular diseases through
             accessibility, awareness, and medical support.
           </p>
         </motion.div>
-<Link href="/heart-health">
+{/* <Link href="/heart-health">
   <motion.button
     whileHover={{ scale: 1.05 }}
     className="mt-10 px-8 py-3 bg-red-600 hover:bg-red-700 transition text-white rounded-full font-semibold flex items-center gap-2 mx-auto shadow-lg"
   >
     More On Heart Disease <ChevronRight size={18} />
   </motion.button>
-</Link>
+</Link> */}
       </section>
 
       {/* ======================================

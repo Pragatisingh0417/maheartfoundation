@@ -4,19 +4,13 @@ import Link from "next/link";
 
 const newsletters = {
   2025: [
-    { title: "January – March 2025", link: "#" },
-    { title: "April – June 2025", link: "#" },
-    { title: "July – September 2025", link: "#" },
-    { title: "October – December 2025", link: "#" },
+    { title: "January – March 2025", link: "https://mailchi.mp/0c13ccb9a683/ma-heart-foundation-newsletter?e=[UNIQID]" },
+    { title: "April – June 2025", link: " https://us6.campaign-archive.com/?e=[UNIQID]&u=7e43703b99354f7560eeb6ace&id=7e1b6437a4" },
+    { title: "July – September 2025", link: "https://mailchi.m/584e7d84f50f/quarterly-newsletter-of-the-mercy-azoh-mbi-foundation-1082527?e=[UNIQID]" },
+    { title: "October – December 2025", link: "https://us6.campaign-archive.com/?e=[UNIQID]&u=7e43703b99354f7560eeb6ace&id=9e7b5e8bce" },
   ],
 
-  // Example future year
-  // 2026: [
-  //   { title: "January – March 2026", link: "#" },
-  //   { title: "April – June 2026", link: "#" },
-  //   { title: "July – September 2026", link: "#" },
-  //   { title: "October – December 2026", link: "#" },
-  // ],
+  
 };
 
 export default function NewsletterPage() {
@@ -47,6 +41,8 @@ export default function NewsletterPage() {
                   <Link
                     key={index}
                     href={edition.link}
+                        target="_blank"
+
                     className="group block p-6 border rounded-2xl text-center hover:bg-gray-50 hover:shadow-md transition focus:outline-none focus:ring-2 focus:ring-red-500"
                   >
                     <p className="font-medium text-gray-800 group-hover:text-red-600 transition">
