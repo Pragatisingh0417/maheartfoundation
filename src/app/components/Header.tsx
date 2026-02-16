@@ -89,86 +89,95 @@ export default function Header() {
               <MenuLink href="/our-partners">Our Partners</MenuLink>
             </Dropdown>
 
-          {/* OUTREACH */}
-<div
-  className="relative"
-  onMouseEnter={() => {
-    clearHover();
-    setOutreachDropdown(true);
-  }}
-  onMouseLeave={() =>
-    delayedClose(() => {
-      setOutreachDropdown(false);
-      setSchoolSub(false);
-      setCommunitySub(false);
-      setCorporateSub(false);
-    })
-  }
->
-  <span className="flex items-center gap-1 cursor-pointer text-[#b8962e] hover:text-[#d4af37]">
-    Outreach <ChevronDown size={16} />
-  </span>
 
-  {outreachDropdown && (
-    <div className="absolute top-8 left-1/2 -translate-x-1/2  bg-white shadow-xl rounded-xl py-3 w-64 z-50">
+            <Dropdown label="Get Involved" open={involvedDropdown}
+              onOpen={() => { clearHover(); setInvolvedDropdown(true); }}
+              onClose={() => delayedClose(() => setInvolvedDropdown(false))}
+            >
+              <MenuLink href="/fundraise">Fundraise</MenuLink>
+              <MenuLink href="/volunteer">Volunteer</MenuLink>
+              <MenuLink href="/make-a-donation">Donate</MenuLink>
+            </Dropdown>
+            {/* OUTREACH */}
+            <div
+              className="relative"
+              onMouseEnter={() => {
+                clearHover();
+                setOutreachDropdown(true);
+              }}
+              onMouseLeave={() =>
+                delayedClose(() => {
+                  setOutreachDropdown(false);
+                  setSchoolSub(false);
+                  setCommunitySub(false);
+                  setCorporateSub(false);
+                })
+              }
+            >
+              <span className="flex items-center gap-1 cursor-pointer text-[#b8962e] hover:text-[#d4af37]">
+                Outreach <ChevronDown size={16} />
+              </span>
 
-      {/* SCHOOL OUTREACH */}
-      <SubMenu
-        label="School Outreach"
-        open={schoolSub}
-        onOpen={() => {
-          clearHover();
-          setSchoolSub(true);
-          setCommunitySub(false);
-          setCorporateSub(false);
-        }}
-        onClose={() => delayedClose(() => setSchoolSub(false))}
-      >
-        <MenuLink href="/franky-campaign">Franky School Campaign</MenuLink>
-        <MenuLink href="/mevick-school-campaign">Mevick School Campaign</MenuLink>
-        <MenuLink href="/">World Heart Day @ Nil High School</MenuLink> 
-        <MenuLink href="/">Lycée Bilingue Mbalmayo</MenuLink>
-      </SubMenu>
+              {outreachDropdown && (
+                <div className="absolute top-8 left-1/2 -translate-x-1/2  bg-white shadow-xl rounded-xl py-3 w-64 z-50">
 
-      {/* COMMUNITY OUTREACH */}
-      <SubMenu
-        label="Community Outreach"
-        open={communitySub}
-        onOpen={() => {
-          clearHover();
-          setCommunitySub(true);
-          setSchoolSub(false);
-          setCorporateSub(false);
-        }}
-        onClose={() => delayedClose(() => setCommunitySub(false))}
-      >
-        <MenuLink href="/salvation-campaign">Salvation Baptist Church</MenuLink>
-        <MenuLink href="/">
-          Babadjou Rural Campaign
-        </MenuLink>
-        <MenuLink href="/">Dylet Bible School Campaign</MenuLink>
-         <MenuLink href="/">Babadjou Rural Campaign</MenuLink>
-      </SubMenu>
+                  {/* SCHOOL OUTREACH */}
+                  <SubMenu
+                    label="School Outreach"
+                    open={schoolSub}
+                    onOpen={() => {
+                      clearHover();
+                      setSchoolSub(true);
+                      setCommunitySub(false);
+                      setCorporateSub(false);
+                    }}
+                    onClose={() => delayedClose(() => setSchoolSub(false))}
+                  >
+                    <MenuLink href="/franky-campaign">Franky School Campaign</MenuLink>
+                    <MenuLink href="/mevick-school-campaign">Mevick School Campaign</MenuLink>
+                    <MenuLink href="/">World Heart Day @ Nil High School</MenuLink>
+                    <MenuLink href="/">Lycée Bilingue Mbalmayo</MenuLink>
+                  </SubMenu>
 
-      {/* CORPORATE OUTREACH */}
-      <SubMenu
-        label="Corporate Outreach"
-        open={corporateSub}
-        onOpen={() => {
-          clearHover();
-          setCorporateSub(true);
-          setSchoolSub(false);
-          setCommunitySub(false);
-        }}
-        onClose={() => delayedClose(() => setCorporateSub(false))}
-      >
-        <MenuLink href="/outreach/corporate">CSPH</MenuLink>
-        <MenuLink href="/outreach/corporate#book">CAMTEL</MenuLink>
-      </SubMenu>
+                  {/* COMMUNITY OUTREACH */}
+                  <SubMenu
+                    label="Community Outreach"
+                    open={communitySub}
+                    onOpen={() => {
+                      clearHover();
+                      setCommunitySub(true);
+                      setSchoolSub(false);
+                      setCorporateSub(false);
+                    }}
+                    onClose={() => delayedClose(() => setCommunitySub(false))}
+                  >
+                    <MenuLink href="/salvation-campaign">Salvation Baptist Church</MenuLink>
+                    <MenuLink href="/">
+                      Babadjou Rural Campaign
+                    </MenuLink>
+                    <MenuLink href="/">Dylet Bible School Campaign</MenuLink>
+                    <MenuLink href="/">Babadjou Rural Campaign</MenuLink>
+                  </SubMenu>
 
-    </div>
-  )}
-</div>
+                  {/* CORPORATE OUTREACH */}
+                  <SubMenu
+                    label="Corporate Outreach"
+                    open={corporateSub}
+                    onOpen={() => {
+                      clearHover();
+                      setCorporateSub(true);
+                      setSchoolSub(false);
+                      setCommunitySub(false);
+                    }}
+                    onClose={() => delayedClose(() => setCorporateSub(false))}
+                  >
+                    <MenuLink href="/outreach/corporate">CSPH</MenuLink>
+                    <MenuLink href="/outreach/corporate#book">CAMTEL</MenuLink>
+                  </SubMenu>
+
+                </div>
+              )}
+            </div>
 
 
             <Dropdown label="Heart Health" open={healthDropdown}
@@ -180,14 +189,6 @@ export default function Header() {
               <MenuLink href="/tips-for-a-healthy-heart">Healthy Heart Tips</MenuLink>
             </Dropdown>
 
-            <Dropdown label="Get Involved" open={involvedDropdown}
-              onOpen={() => { clearHover(); setInvolvedDropdown(true); }}
-              onClose={() => delayedClose(() => setInvolvedDropdown(false))}
-            >
-              <MenuLink href="/fundraise">Fundraise</MenuLink>
-              <MenuLink href="/volunteer">Volunteer</MenuLink>
-              <MenuLink href="/make-a-donation">Donate</MenuLink>
-            </Dropdown>
 
             <Dropdown label="News" open={newsDropdown}
               onOpen={() => { clearHover(); setNewsDropdown(true); }}
@@ -235,80 +236,80 @@ export default function Header() {
       </div>
 
       {mobileMenu && (
-  <div className="fixed inset-0 bg-black text-white z-50 md:hidden overflow-y-auto">
-    <div className="px-6 py-6">
-      <div className="flex justify-between items-center mb-6">
-        <span className="text-lg font-semibold">Menu</span>
-        <button onClick={closeMobile} className="text-2xl">✕</button>
-      </div>
+        <div className="fixed inset-0 bg-black text-white z-50 md:hidden overflow-y-auto">
+          <div className="px-6 py-6">
+            <div className="flex justify-between items-center mb-6">
+              <span className="text-lg font-semibold">Menu</span>
+              <button onClick={closeMobile} className="text-2xl">✕</button>
+            </div>
 
-      <MobileLink href="/" onClick={closeMobile}>Home</MobileLink>
+            <MobileLink href="/" onClick={closeMobile}>Home</MobileLink>
 
-      <MobileAccordion label="About Us">
-        <MobileLink href="/vision-mission-values" onClick={closeMobile}>Mission, Vision, Values</MobileLink>
-        <MobileLink href="/word-from-mercy" onClick={closeMobile}>Word From Mercy</MobileLink>
-        <MobileLink href="/our-inspiration" onClick={closeMobile}>Our Inspiration</MobileLink>
-        <MobileLink href="/what-we-do" onClick={closeMobile}>What We Do</MobileLink>
-        <MobileLink href="/board-of-directors" onClick={closeMobile}>Board of Directors</MobileLink>
-      </MobileAccordion>
+            <MobileAccordion label="About Us">
+              <MobileLink href="/vision-mission-values" onClick={closeMobile}>Mission, Vision, Values</MobileLink>
+              <MobileLink href="/word-from-mercy" onClick={closeMobile}>Word From Mercy</MobileLink>
+              <MobileLink href="/our-inspiration" onClick={closeMobile}>Our Inspiration</MobileLink>
+              <MobileLink href="/what-we-do" onClick={closeMobile}>What We Do</MobileLink>
+              <MobileLink href="/board-of-directors" onClick={closeMobile}>Board of Directors</MobileLink>
+            </MobileAccordion>
 
-      <MobileAccordion label="Outreach">
-  <MobileAccordion label="School Outreach" nested>
-    <MobileLink href="/franky-campaign" onClick={closeMobile}>
-      Franky School Campaign
-    </MobileLink>
-    <MobileLink href="/mevick-school-campaign" onClick={closeMobile}>
-      Mevick School Campaign
-    </MobileLink>
-  </MobileAccordion>
+            <MobileAccordion label="Outreach">
+              <MobileAccordion label="School Outreach" nested>
+                <MobileLink href="/franky-campaign" onClick={closeMobile}>
+                  Franky School Campaign
+                </MobileLink>
+                <MobileLink href="/mevick-school-campaign" onClick={closeMobile}>
+                  Mevick School Campaign
+                </MobileLink>
+              </MobileAccordion>
 
-  <MobileAccordion label="Community Outreach" nested>
-    <MobileLink href="/salvation-campaign" onClick={closeMobile}>
-      Salvation Baptist Church
-    </MobileLink>
-    <MobileLink href="/" onClick={closeMobile}>
-      Babadjou Rural Campaign
-    </MobileLink>
-  </MobileAccordion>
+              <MobileAccordion label="Community Outreach" nested>
+                <MobileLink href="/salvation-campaign" onClick={closeMobile}>
+                  Salvation Baptist Church
+                </MobileLink>
+                <MobileLink href="/" onClick={closeMobile}>
+                  Babadjou Rural Campaign
+                </MobileLink>
+              </MobileAccordion>
 
-  <MobileAccordion label="Corporate Outreach" nested>
-    <MobileLink href="/outreach/corporate-outreach" onClick={closeMobile}>
-      CSPH
-    </MobileLink>
-    <MobileLink href="/outreach/" onClick={closeMobile}>
-      CAMTEL
-    </MobileLink>
-  </MobileAccordion>
-</MobileAccordion>
+              <MobileAccordion label="Corporate Outreach" nested>
+                <MobileLink href="/outreach/corporate-outreach" onClick={closeMobile}>
+                  CSPH
+                </MobileLink>
+                <MobileLink href="/outreach/" onClick={closeMobile}>
+                  CAMTEL
+                </MobileLink>
+              </MobileAccordion>
+            </MobileAccordion>
 
 
-      <MobileAccordion label="Heart Health">
-        <MobileLink href="/what-is-heart-disease" onClick={closeMobile}>What is Heart Disease?</MobileLink>
-        <MobileLink href="/heart-disease-facts-and-statistics" onClick={closeMobile}>Facts & Statistics</MobileLink>
-        <MobileLink href="/tips-for-a-healthy-heart" onClick={closeMobile}>Healthy Heart Tips</MobileLink>
-      </MobileAccordion>
+            <MobileAccordion label="Heart Health">
+              <MobileLink href="/what-is-heart-disease" onClick={closeMobile}>What is Heart Disease?</MobileLink>
+              <MobileLink href="/heart-disease-facts-and-statistics" onClick={closeMobile}>Facts & Statistics</MobileLink>
+              <MobileLink href="/tips-for-a-healthy-heart" onClick={closeMobile}>Healthy Heart Tips</MobileLink>
+            </MobileAccordion>
 
-      <MobileAccordion label="Get Involved">
-        <MobileLink href="/fundraise" onClick={closeMobile}>Fundraise</MobileLink>
-        <MobileLink href="/volunteer" onClick={closeMobile}>Volunteer</MobileLink>
-        <MobileLink href="/make-a-donation" onClick={closeMobile}>Donate</MobileLink>
-      </MobileAccordion>
+            <MobileAccordion label="Get Involved">
+              <MobileLink href="/fundraise" onClick={closeMobile}>Fundraise</MobileLink>
+              <MobileLink href="/volunteer" onClick={closeMobile}>Volunteer</MobileLink>
+              <MobileLink href="/make-a-donation" onClick={closeMobile}>Donate</MobileLink>
+            </MobileAccordion>
 
-      <MobileAccordion label="News">
-        <MobileLink href="/latest-news" onClick={closeMobile}>Latest News</MobileLink>
-        <MobileLink href="/newsletter" onClick={closeMobile}>Newsletter</MobileLink>
-        <MobileLink href="/jobs" onClick={closeMobile}>Jobs</MobileLink>
-      </MobileAccordion>
+            <MobileAccordion label="News">
+              <MobileLink href="/latest-news" onClick={closeMobile}>Latest News</MobileLink>
+              <MobileLink href="/newsletter" onClick={closeMobile}>Newsletter</MobileLink>
+              <MobileLink href="/jobs" onClick={closeMobile}>Jobs</MobileLink>
+            </MobileAccordion>
 
-      {/* ACTION BUTTON */}
-      <Link href="/make-a-donation" onClick={closeMobile}>
-        <button className="w-full mt-6 bg-red-600 py-3 rounded-full font-semibold">
-          DONATE
-        </button>
-      </Link>
-    </div>
-  </div>
-)}
+            {/* ACTION BUTTON */}
+            <Link href="/make-a-donation" onClick={closeMobile}>
+              <button className="w-full mt-6 bg-red-600 py-3 rounded-full font-semibold">
+                DONATE
+              </button>
+            </Link>
+          </div>
+        </div>
+      )}
 
     </header>
   );
