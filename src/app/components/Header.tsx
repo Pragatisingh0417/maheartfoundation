@@ -1,198 +1,141 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export default function Header() {
-  const [aboutDropdown, setAboutDropdown] = useState(false);
-  const [healthDropdown, setHealthDropdown] = useState(false);
-  const [outreachDropdown, setOutreachDropdown] = useState(false);
-  const [involvedDropdown, setInvolvedDropdown] = useState(false);
-  const [newsDropdown, setNewsDropdown] = useState(false);
+  const pathname = usePathname();
 
-  const [schoolSub, setSchoolSub] = useState(false);
-  const [communitySub, setCommunitySub] = useState(false);
-  const [corporateSub, setCorporateSub] = useState(false);
-
-  const [mobileMenu, setMobileMenu] = useState(false);
-  const toggleMobile = () => setMobileMenu(!mobileMenu);
-  const closeMobile = () => setMobileMenu(false);
-
-  const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
-
-  const clearHover = () => {
-    if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
-  };
-
-  const delayedClose = (fn: () => void) => {
-    hoverTimeout.current = setTimeout(fn, 200);
-  };
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="w-full sticky top-0 z-50">
-      {/* ================= DESKTOP HEADER GRID ================= */}
-      <div className="hidden md:grid grid-cols-[190px_1fr]">
+    <header className="w-full sticky top-0 z-[999]">
 
-        {/* ===== LEFT BRAND COLUMN (SPANS BOTH ROWS) ===== */}
-        <div className="row-span-2 flex flex-col justify-center px-10 bg-black">
+      {/* ================= DESKTOP ================= */}
+      <div className="hidden lg:grid grid-cols-[220px_1fr]">
+
+        {/* LOGO COLUMN */}
+        <div className="row-span-2 flex flex-col justify-center px-8 bg-black">
           <Link href="/">
             <Image
               src="/MaHeartFoundationLogo-final.jpg"
-              alt="Mercy Azoh-Mbi Heart Foundation Logo"
-              width={180}
-              height={180}
-              className="object-contain mb-2 h-[80px]"
+              alt="Logo"
+              width={170}
+              height={170}
+              className="object-contain h-[80px]"
               priority
             />
           </Link>
-
-          <p className="text-[#d4af37] text-[10px] font-medium leading-tight">
+          <p className="text-[#d4af37] text-[10px]">
             Health and hope from Heart to Heart
           </p>
         </div>
 
-        {/* ===== TOP RIGHT ROW ===== */}
+        {/* TOP RIGHT BAR */}
         <div className="flex items-center justify-end px-10 h-[80px] bg-black gap-8">
-          <Link href="/contact" className="text-[#b8962e] hover:text-[#d4af37]">
+          <Link href="/contact" className="text-[#d4af37] hover:text-white">
             Contact Us
           </Link>
 
           <div className="flex gap-4">
-            <Social href="https://www.facebook.com/people/MA-Heart-Foundation/61574807995896/?sk=about" target="blank" ><FaFacebookF /></Social>
-            <Social href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F106902013%2Fadmin%2Fdashboard%2F" target="blank" ><FaLinkedinIn /></Social>
-            <Social href="https://instagram.com"><FaInstagram /></Social>
+            <Social href="#"><FaFacebookF /></Social>
+            <Social href="#"><FaLinkedinIn /></Social>
+            <Social href="#"><FaInstagram /></Social>
           </div>
         </div>
 
-        {/* ===== BOTTOM RIGHT ROW ===== */}
-        <div className="flex items-center h-[64px] bg-amber-50 px-10">
+        {/* NAVIGATION BAR */}
+        <div className="flex items-center h-[70px] bg-amber-50 px-10 relative">
 
-          {/* CENTER NAV */}
-          <nav className="mx-auto flex gap-10 text-[#b8962e] ">
+          <nav className="mx-auto flex gap-12 font-semibold tracking-wide">
 
-            <Link href="/">Home</Link>
+            <MainLink href="/" label="HOME" pathname={pathname} />
 
-            <Dropdown label="About Us" open={aboutDropdown}
-              onOpen={() => { clearHover(); setAboutDropdown(true); }}
-              onClose={() => delayedClose(() => setAboutDropdown(false))}
+            <Dropdown
+              label="ABOUT US"
+              active={activeMenu === "about"}
+              setActive={() => setActiveMenu("about")}
+              clear={() => setActiveMenu(null)}
             >
               <MenuLink href="/vision-mission-values">Mission, Vision, Values</MenuLink>
               <MenuLink href="/word-from-mercy">Word From Mercy</MenuLink>
               <MenuLink href="/our-inspiration">Our Inspiration</MenuLink>
               <MenuLink href="/what-we-do">What We Do</MenuLink>
-              <MenuLink href="/board-of-directors">Board of Directors</MenuLink>
+              <MenuLink href="/board-of-directors">Board Of Directors</MenuLink>
               <MenuLink href="/our-medical-advisory-team">Medical Advisory Board</MenuLink>
               <MenuLink href="/management-team">Management Team</MenuLink>
               <MenuLink href="/our-partners">Our Partners</MenuLink>
             </Dropdown>
 
-
-            <Dropdown label="Get Involved" open={involvedDropdown}
-              onOpen={() => { clearHover(); setInvolvedDropdown(true); }}
-              onClose={() => delayedClose(() => setInvolvedDropdown(false))}
+            <Dropdown
+              label="GET INVOLVED"
+              active={activeMenu === "involved"}
+              setActive={() => setActiveMenu("involved")}
+              clear={() => setActiveMenu(null)}
             >
               <MenuLink href="/fundraise">Fundraise</MenuLink>
               <MenuLink href="/volunteer">Volunteer</MenuLink>
               <MenuLink href="/make-a-donation">Donate</MenuLink>
             </Dropdown>
+
             {/* OUTREACH */}
-            <div
-              className="relative"
-              onMouseEnter={() => {
-                clearHover();
-                setOutreachDropdown(true);
+            <Dropdown
+              label="OUTREACH"
+              active={activeMenu === "outreach"}
+              setActive={() => setActiveMenu("outreach")}
+              clear={() => {
+                setActiveMenu(null);
+                setActiveSubMenu(null);
               }}
-              onMouseLeave={() =>
-                delayedClose(() => {
-                  setOutreachDropdown(false);
-                  setSchoolSub(false);
-                  setCommunitySub(false);
-                  setCorporateSub(false);
-                })
-              }
             >
-              <span className="flex items-center gap-1 cursor-pointer text-[#b8962e] hover:text-[#d4af37]">
-                Outreach <ChevronDown size={16} />
-              </span>
+              <SubMenu
+                label="School Outreach"
+                active={activeSubMenu === "school"}
+                setActive={() => setActiveSubMenu("school")}
+              >
+                <MenuLink href="/franky-campaign">Franky School Campaign</MenuLink>
+                <MenuLink href="/mevick-school-campaign">Mevick School Campaign</MenuLink>
+              </SubMenu>
 
-              {outreachDropdown && (
-                <div className="absolute top-8 left-1/2 -translate-x-1/2  bg-white shadow-xl rounded-xl py-3 w-64 z-50">
+              <SubMenu
+                label="Community Outreach"
+                active={activeSubMenu === "community"}
+                setActive={() => setActiveSubMenu("community")}
+              >
+                <MenuLink href="/salvation-campaign">Salvation Baptist Church</MenuLink>
+              </SubMenu>
 
-                  {/* SCHOOL OUTREACH */}
-                  <SubMenu
-                    label="School Outreach"
-                    open={schoolSub}
-                    onOpen={() => {
-                      clearHover();
-                      setSchoolSub(true);
-                      setCommunitySub(false);
-                      setCorporateSub(false);
-                    }}
-                    onClose={() => delayedClose(() => setSchoolSub(false))}
-                  >
-                    <MenuLink href="/franky-campaign">Franky School Campaign</MenuLink>
-                    <MenuLink href="/mevick-school-campaign">Mevick School Campaign</MenuLink>
-                    <MenuLink href="/">World Heart Day @ Nil High School</MenuLink>
-                    <MenuLink href="/">Lycée Bilingue Mbalmayo</MenuLink>
-                  </SubMenu>
+              <SubMenu
+                label="Corporate Outreach"
+                active={activeSubMenu === "corporate"}
+                setActive={() => setActiveSubMenu("corporate")}
+              >
+                <MenuLink href="/outreach/corporate">CSPH</MenuLink>
+              </SubMenu>
+            </Dropdown>
 
-                  {/* COMMUNITY OUTREACH */}
-                  <SubMenu
-                    label="Community Outreach"
-                    open={communitySub}
-                    onOpen={() => {
-                      clearHover();
-                      setCommunitySub(true);
-                      setSchoolSub(false);
-                      setCorporateSub(false);
-                    }}
-                    onClose={() => delayedClose(() => setCommunitySub(false))}
-                  >
-                    <MenuLink href="/salvation-campaign">Salvation Baptist Church</MenuLink>
-                    <MenuLink href="/">
-                      Babadjou Rural Campaign
-                    </MenuLink>
-                    <MenuLink href="/">Dylet Bible School Campaign</MenuLink>
-                    <MenuLink href="/">Babadjou Rural Campaign</MenuLink>
-                  </SubMenu>
-
-                  {/* CORPORATE OUTREACH */}
-                  <SubMenu
-                    label="Corporate Outreach"
-                    open={corporateSub}
-                    onOpen={() => {
-                      clearHover();
-                      setCorporateSub(true);
-                      setSchoolSub(false);
-                      setCommunitySub(false);
-                    }}
-                    onClose={() => delayedClose(() => setCorporateSub(false))}
-                  >
-                    <MenuLink href="/outreach/corporate">CSPH</MenuLink>
-                    <MenuLink href="/outreach/corporate#book">CAMTEL</MenuLink>
-                  </SubMenu>
-
-                </div>
-              )}
-            </div>
-
-
-            <Dropdown label="Heart Health" open={healthDropdown}
-              onOpen={() => { clearHover(); setHealthDropdown(true); }}
-              onClose={() => delayedClose(() => setHealthDropdown(false))}
+            <Dropdown
+              label="HEART HEALTH"
+              active={activeMenu === "health"}
+              setActive={() => setActiveMenu("health")}
+              clear={() => setActiveMenu(null)}
             >
-              <MenuLink href="/what-is-heart-disease">What is Heart Disease?</MenuLink>
+              <MenuLink href="/what-is-heart-disease">What Is Heart Disease?</MenuLink>
               <MenuLink href="/heart-disease-facts-and-statistics">Facts & Statistics</MenuLink>
               <MenuLink href="/tips-for-a-healthy-heart">Healthy Heart Tips</MenuLink>
             </Dropdown>
 
-
-            <Dropdown label="News" open={newsDropdown}
-              onOpen={() => { clearHover(); setNewsDropdown(true); }}
-              onClose={() => delayedClose(() => setNewsDropdown(false))}
+            <Dropdown
+              label="NEWS"
+              active={activeMenu === "news"}
+              setActive={() => setActiveMenu("news")}
+              clear={() => setActiveMenu(null)}
             >
               <MenuLink href="/latest-news">Latest News</MenuLink>
               <MenuLink href="/newsletter">Newsletter</MenuLink>
@@ -200,7 +143,7 @@ export default function Header() {
             </Dropdown>
           </nav>
 
-          {/* RIGHT ACTIONS */}
+          {/* RIGHT CTA BUTTONS (RESTORED) */}
           <div className="ml-auto flex items-center gap-4">
             <Link href="/make-a-donation">
               <button className="bg-red-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-red-700">
@@ -215,204 +158,134 @@ export default function Header() {
               Login
             </Link>
           </div>
+
         </div>
       </div>
 
-      {/* ================= MOBILE HEADER ================= */}
-      <div className="md:hidden flex items-center justify-between bg-black px-4 h-[72px]">
-        <Link href="/">
-          <Image
-            src="/MaHeartFoundationLogo-final.jpg"
-            alt="Logo"
-            width={120}
-            height={120}
-            className="object-contain h-[60px]"
-          />
-        </Link>
-
-        <button onClick={toggleMobile} className="text-white text-3xl">
-          ☰
-        </button>
+      {/* MOBILE */}
+      <div className="lg:hidden flex items-center justify-between bg-black px-4 h-[70px]">
+        <Image src="/MaHeartFoundationLogo-final.jpg" alt="Logo" width={120} height={120} />
+        <button onClick={() => setMobileOpen(true)} className="text-white text-3xl">☰</button>
       </div>
 
-      {mobileMenu && (
-        <div className="fixed inset-0 bg-black text-white z-50 md:hidden overflow-y-auto">
-          <div className="px-6 py-6">
-            <div className="flex justify-between items-center mb-6">
-              <span className="text-lg font-semibold">Menu</span>
-              <button onClick={closeMobile} className="text-2xl">✕</button>
-            </div>
+      {mobileOpen && (
+        <div className="fixed inset-0 bg-black text-white z-[999] overflow-y-auto p-6">
+          <button onClick={() => setMobileOpen(false)} className="mb-6">✕</button>
 
-            <MobileLink href="/" onClick={closeMobile}>Home</MobileLink>
+          <MobileAccordion label="ABOUT US">
+            <MobileLink href="/vision-mission-values">Mission, Vision, Values</MobileLink>
+            <MobileLink href="/word-from-mercy">Word From Mercy</MobileLink>
+          </MobileAccordion>
 
-            <MobileAccordion label="About Us">
-              <MobileLink href="/vision-mission-values" onClick={closeMobile}>Mission, Vision, Values</MobileLink>
-              <MobileLink href="/word-from-mercy" onClick={closeMobile}>Word From Mercy</MobileLink>
-              <MobileLink href="/our-inspiration" onClick={closeMobile}>Our Inspiration</MobileLink>
-              <MobileLink href="/what-we-do" onClick={closeMobile}>What We Do</MobileLink>
-              <MobileLink href="/board-of-directors" onClick={closeMobile}>Board of Directors</MobileLink>
-            </MobileAccordion>
+          <MobileAccordion label="GET INVOLVED">
+            <MobileLink href="/fundraise">Fundraise</MobileLink>
+            <MobileLink href="/volunteer">Volunteer</MobileLink>
+          </MobileAccordion>
 
-            <MobileAccordion label="Outreach">
-              <MobileAccordion label="School Outreach" nested>
-                <MobileLink href="/franky-campaign" onClick={closeMobile}>
-                  Franky School Campaign
-                </MobileLink>
-                <MobileLink href="/mevick-school-campaign" onClick={closeMobile}>
-                  Mevick School Campaign
-                </MobileLink>
-              </MobileAccordion>
+          <MobileAccordion label="OUTREACH">
+            <MobileLink href="/franky-campaign">Franky School Campaign</MobileLink>
+            <MobileLink href="/mevick-school-campaign">Mevick School Campaign</MobileLink>
+          </MobileAccordion>
 
-              <MobileAccordion label="Community Outreach" nested>
-                <MobileLink href="/salvation-campaign" onClick={closeMobile}>
-                  Salvation Baptist Church
-                </MobileLink>
-                <MobileLink href="/" onClick={closeMobile}>
-                  Babadjou Rural Campaign
-                </MobileLink>
-              </MobileAccordion>
+          <MobileAccordion label="HEART HEALTH">
+            <MobileLink href="/what-is-heart-disease">What Is Heart Disease?</MobileLink>
+          </MobileAccordion>
 
-              <MobileAccordion label="Corporate Outreach" nested>
-                <MobileLink href="/outreach/corporate-outreach" onClick={closeMobile}>
-                  CSPH
-                </MobileLink>
-                <MobileLink href="/outreach/" onClick={closeMobile}>
-                  CAMTEL
-                </MobileLink>
-              </MobileAccordion>
-            </MobileAccordion>
-
-
-            <MobileAccordion label="Heart Health">
-              <MobileLink href="/what-is-heart-disease" onClick={closeMobile}>What is Heart Disease?</MobileLink>
-              <MobileLink href="/heart-disease-facts-and-statistics" onClick={closeMobile}>Facts & Statistics</MobileLink>
-              <MobileLink href="/tips-for-a-healthy-heart" onClick={closeMobile}>Healthy Heart Tips</MobileLink>
-            </MobileAccordion>
-
-            <MobileAccordion label="Get Involved">
-              <MobileLink href="/fundraise" onClick={closeMobile}>Fundraise</MobileLink>
-              <MobileLink href="/volunteer" onClick={closeMobile}>Volunteer</MobileLink>
-              <MobileLink href="/make-a-donation" onClick={closeMobile}>Donate</MobileLink>
-            </MobileAccordion>
-
-            <MobileAccordion label="News">
-              <MobileLink href="/latest-news" onClick={closeMobile}>Latest News</MobileLink>
-              <MobileLink href="/newsletter" onClick={closeMobile}>Newsletter</MobileLink>
-              <MobileLink href="/jobs" onClick={closeMobile}>Jobs</MobileLink>
-            </MobileAccordion>
-
-            {/* ACTION BUTTON */}
-            <Link href="/make-a-donation" onClick={closeMobile}>
-              <button className="w-full mt-6 bg-red-600 py-3 rounded-full font-semibold">
-                DONATE
-              </button>
-            </Link>
-          </div>
+          <MobileAccordion label="NEWS">
+            <MobileLink href="/latest-news">Latest News</MobileLink>
+          </MobileAccordion>
         </div>
       )}
-
     </header>
   );
 }
 
-/* ================= HELPERS ================= */
+/* COMPONENTS */
 
-function Social({ href, children }: any) {
+function Dropdown({ label, active, setActive, clear, children }: any) {
   return (
-    <Link
-      href={href}
-      target="_blank"
-      className="w-9 h-9 flex items-center justify-center rounded-full bg-[#d4af37] text-gray-800 hover:text-white"
+    <div
+      className="relative"
+      onMouseEnter={setActive}
+      onMouseLeave={clear}
     >
-      {children}
-    </Link>
+      <button className="uppercase text-red-600 font-semibold flex items-center gap-1 h-[70px]">
+        {label}
+        <ChevronDown size={16} />
+      </button>
+
+      {active && (
+        <div className="absolute top-full left-0 bg-white shadow-2xl rounded-2xl py-4 w-64 z-50">
+          {children}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SubMenu({ label, active, setActive, children }: any) {
+  return (
+    <div className="relative" onMouseEnter={setActive}>
+      <div className="px-4 py-2 text-red-600 font-medium flex justify-between items-center hover:bg-[#d4af37] hover:text-white cursor-pointer">
+        {label}
+        <ChevronDown size={14} className="-rotate-90" />
+      </div>
+
+      {active && (
+        <div className="absolute top-0 left-full bg-white shadow-2xl rounded-2xl py-3 w-64 z-50">
+          {children}
+        </div>
+      )}
+    </div>
   );
 }
 
 function MenuLink({ href, children }: any) {
   return (
-    <Link href={href} className="block px-4 py-2 hover:bg-[#d4af37] hover:text-white">
+    <Link href={href} className="block px-4 py-2 text-red-600 hover:bg-[#d4af37] hover:text-white">
       {children}
     </Link>
   );
 }
 
-function Dropdown({
-  label,
-  open,
-  onOpen,
-  onClose,
-  children,
-}: any) {
-  return (
-    <div
-      className="relative"
-      onMouseEnter={onOpen}
-      onMouseLeave={onClose}
-    >
-      <button
-        type="button"
-        className="flex items-center gap-1 cursor-pointer text-[#b8962e] hover:text-[#d4af37]"
-      >
-        {label}
-        <ChevronDown size={16} />
-      </button>
-
-      {open && (
-        <div className="absolute left-1/2 top-8 -translate-x-1/2 bg-white shadow-xl rounded-xl py-3 w-64 z-50">
-          {children}
-        </div>
-      )}
-    </div>
-  );
-}
-
-
-function MobileLink({ href, children, onClick }: any) {
-  return (
-    <Link href={href} onClick={onClick} className="block py-3 border-b border-white/10">
-      {children}
-    </Link>
-  );
-}
 function MobileAccordion({ label, children }: any) {
   const [open, setOpen] = useState(false);
-
   return (
-    <div className="border-b border-white/10">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center py-3 text-lg"
-      >
+    <div className="mb-4">
+      <button onClick={() => setOpen(!open)} className="w-full text-left uppercase font-semibold py-3 flex justify-between">
         {label}
-        <ChevronDown
-          size={18}
-          className={`transition-transform ${open ? "rotate-180" : ""}`}
-        />
+        <ChevronDown size={18} className={`${open ? "rotate-180" : ""}`} />
       </button>
-
-      {open && <div className="pl-4 pb-2">{children}</div>}
+      {open && <div className="pl-4">{children}</div>}
     </div>
   );
 }
 
-function SubMenu({ label, open, onOpen, onClose, children }: any) {
-  return (
-    <div
-      className="relative"
-      onMouseEnter={onOpen}
-      onMouseLeave={onClose}
-    >
-      <div className="px-4 py-2 flex justify-between items-center cursor-pointer hover:bg-[#d4af37] hover:text-white">
-        {label}
-        <ChevronDown size={14} className="-rotate-90" />
-      </div>
+function MobileLink({ href, children }: any) {
+  return <Link href={href} className="block py-2 text-gray-300">{children}</Link>;
+}
 
-      {open && (
-        <div className="absolute top-0 left-full bg-white shadow-xl rounded-xl py-2 w-64 z-50">
-          {children}
-        </div>
+function MainLink({ href, label, pathname }: any) {
+  const active = pathname === href;
+
+  return (
+    <Link
+      href={href}
+      className="relative uppercase text-red-600 font-semibold flex items-center h-[70px]"
+    >
+      {label}
+      {active && (
+        <span className="absolute left-0 bottom-3 w-full h-[2px] bg-red-600"></span>
       )}
-    </div>
+    </Link>
+  );
+}
+
+
+function Social({ href, children }: any) {
+  return (
+    <Link href={href} className="w-9 h-9 flex items-center justify-center rounded-full bg-[#d4af37] text-gray-800">
+      {children}
+    </Link>
   );
 }

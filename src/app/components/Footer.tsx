@@ -27,6 +27,31 @@ function Social({ href, children }: any) {
 export default function FooterSection() {
   return (
     <footer className="w-full bg-[#0b0b0b] text-gray-300 pt-16 pb-10 px-6 md:px-16">
+      {/* ================= SUPPORT OUR MISSION ================= */}
+      <div className="max-w-7xl mx-auto mb-16">
+        <div className="bg-gradient-to-r from-[#111] to-[#0f0f0f] border border-[#d4af37]/30 rounded-2xl px-8 py-8 md:px-12 md:py-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
+
+          {/* LEFT CONTENT */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              Support Our Mission
+            </h2>
+            <p className="text-gray-400 max-w-xl text-sm md:text-base">
+              Your support helps us expand heart health awareness, testing,  education, and life-saving
+              outreach programs around the world.
+            </p>
+          </div>
+
+          {/* RIGHT BUTTON */}
+          <Link
+            href="/make-a-donation"
+            className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full transition duration-300 whitespace-nowrap"
+          >
+            Donate Now
+          </Link>
+
+        </div>
+      </div>
 
       {/* ================= MAIN GRID ================= */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">

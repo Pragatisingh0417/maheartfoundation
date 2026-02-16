@@ -43,7 +43,7 @@ export default function WhatWeDo() {
     <section className="relative w-full bg-[#b8962e] p-10  overflow-hidden ">
 
       <div className="relative max-w-6xl mx-auto text-center ">
-        <h2 className="text-red-600 text-3xl font-bold tracking-wider mb-3 mt-10">WHAT WE DO</h2>
+        <h2 className="text-red-600 text-3xl font-bold tracking-wider mb-3 mt-10">What We Do</h2>
 
         <div className="w-32 h-[2px] bg-red-500 mx-auto mb-10"></div>
 
