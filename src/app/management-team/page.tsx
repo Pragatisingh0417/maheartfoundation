@@ -49,7 +49,7 @@ export default function ManagementTeam() {
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
           Our Management Team
         </h1>
-        <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+        <p className="mt-6 text-lg text-red-600 leading-relaxed">
           Meet the professionals who steer the Foundation's administartion and opeartions</p>
       </motion.div>
 

@@ -61,8 +61,8 @@ export default function Header() {
           </Link>
 
           <div className="flex gap-4">
-            <Social href="https://facebook.com"><FaFacebookF /></Social>
-            <Social href="https://linkedin.com"><FaLinkedinIn /></Social>
+            <Social href="https://www.facebook.com/people/MA-Heart-Foundation/61574807995896/?sk=about" target="blank" ><FaFacebookF /></Social>
+            <Social href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F106902013%2Fadmin%2Fdashboard%2F" target="blank" ><FaLinkedinIn /></Social>
             <Social href="https://instagram.com"><FaInstagram /></Social>
           </div>
         </div>

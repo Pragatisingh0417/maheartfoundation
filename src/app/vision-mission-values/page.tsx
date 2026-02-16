@@ -18,11 +18,7 @@ export default function VissionPage() {
         <h1 className="text-4xl md:text-5xl font-extrabold">
           OUR MISSION VISSION AND VALUES
         </h1>
-        <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
-Dedicated to creating a world where heart health is accessible for all.
-
-
-        </p>
+        
       </section>
 
       {/* ======================================
@@ -36,7 +32,7 @@ Dedicated to creating a world where heart health is accessible for all.
           transition={{ duration: 0.7 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl font-bold">Our Vision</h2>
+          <h2 className="text-4xl font-bold text-red-600">Our Vision</h2>
           {/* <p className="text-red-600 mt-2 text-lg font-semibold">
             Cardiovascular health for everyone
           </p> */}
@@ -46,14 +42,14 @@ Dedicated to creating a world where heart health is accessible for all.
             accessibility, awareness, and medical support.
           </p>
         </motion.div>
-{/* <Link href="/heart-health">
+<Link href="/heart-health">
   <motion.button
     whileHover={{ scale: 1.05 }}
     className="mt-10 px-8 py-3 bg-red-600 hover:bg-red-700 transition text-white rounded-full font-semibold flex items-center gap-2 mx-auto shadow-lg"
   >
     More On Heart Disease <ChevronRight size={18} />
   </motion.button>
-</Link> */}
+</Link>
       </section>
 
       {/* ======================================
@@ -65,7 +61,7 @@ Dedicated to creating a world where heart health is accessible for all.
         <div className="absolute inset-0 bg-[url('/pattern-light.png')] opacity-5"></div>
 
         <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center">Our Mission</h2>
+          <h2 className="text-4xl font-bold text-center text-red-600">Our Mission</h2>
 
           <div className="grid md:grid-cols-2 gap-10 mt-16">
             {missionList.map((text, index) => (

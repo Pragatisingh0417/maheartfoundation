@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import VolunteerForm from "../components/VolunteerForm";
 
 export default function VolunteerPage() {
   return (
@@ -139,57 +140,7 @@ export default function VolunteerPage() {
       {/* ============================
           VOLUNTEER FORM
       ============================= */}
-      <section className="px-6 md:px-20 py-14 bg-gray-100">
-        <h2 className="text-3xl font-bold text-black-700 mb-10">Become a Volunteer</h2>
-
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-
-          {/* First Name */}
-          <div className="flex flex-col">
-            <label className="font-semibold mb-2">First Name *</label>
-            <input
-              type="text"
-              className="border border-gray-300 rounded-lg p-3"
-              required
-            />
-          </div>
-
-          {/* Last Name */}
-          <div className="flex flex-col">
-            <label className="font-semibold mb-2">Last Name *</label>
-            <input
-              type="text"
-              className="border border-gray-300 rounded-lg p-3"
-              required
-            />
-          </div>
-
-          {/* Email */}
-          <div className="flex flex-col md:col-span-2">
-            <label className="font-semibold mb-2">Email *</label>
-            <input
-              type="email"
-              className="border border-gray-300 rounded-lg p-3"
-              required
-            />
-          </div>
-
-          {/* Message */}
-          <div className="flex flex-col md:col-span-2">
-            <label className="font-semibold mb-2">Comment or Message</label>
-            <textarea
-              rows={5}
-              className="border border-gray-300 rounded-lg p-3"
-            ></textarea>
-          </div>
-
-          {/* Submit */}
-          <button className="md:col-span-2 bg-black-700 hover:bg-black-800 text-white py-3 rounded-lg font-semibold transition">
-            Submit
-          </button>
-
-        </form>
-      </section>
+     <VolunteerForm />
 
     </main>
   );

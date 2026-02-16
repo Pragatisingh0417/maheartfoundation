@@ -71,7 +71,7 @@ export default function MedicalAdvisoryTeam() {
         <h1 className="text-4xl font-extrabold text-gray-900">
           Our Medical Advisory Board
         </h1>
-        <p className="mt-4 text-lg text-gray-700">
+        <p className="mt-4 text-lg text-red-600">
 Meet the experts who serve as the Foundation's clinicat compass, to ensure that every program, message, and strategic decision is grounded in credible, up-to-date cardiovascular science.        </p>
       </motion.div>
 
