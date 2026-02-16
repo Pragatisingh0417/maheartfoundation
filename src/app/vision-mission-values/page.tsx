@@ -16,7 +16,7 @@ export default function VissionPage() {
      {/* HERO */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-          OUR MISSION VISSION AND VALUES
+          VISSION, MISSION AND VALUES
         </h1>
         
       </section>
