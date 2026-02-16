@@ -1,17 +1,61 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+
+
+function Social({ href, children }: any) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      className="w-9 h-9 flex items-center justify-center rounded-full bg-[#d4af37] text-gray-800 hover:text-white"
+    >
+      {children}
+    </Link>
+  );
+}
+
 
 export default function FooterSection() {
   return (
     <footer className="w-full bg-[#0b0b0b] text-gray-300 pt-16 pb-10 px-20 md:px-16">
 
       {/* ================= MAIN GRID ================= */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-x-20">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-y-10 md:gap-x-20">
+
+         {/* COLUMN 1 */}
+        <div>
+        <Link href="/">
+            <Image
+              src="/MaHeartFoundationLogo-final.jpg"
+              alt="Mercy Azoh-Mbi Heart Foundation Logo"
+              width={180}
+              height={180}
+              className="object-contain mb-2 h-[80px]"
+              priority
+            />
+          </Link>
+ <p>
+              In 2009, heart disease radically maimed, mutilated and morphed me
+              into a helpless, almost hopeless woman. I was barely 37 years old.
+              I deeply mourned the loss of my four limbs for years, but gradually
+              began to appreciate the ultimate gift of life itself.
+            </p>        
+             <div className="flex gap-4 mt-2">
+                        <Social href="https://facebook.com"><FaFacebookF /></Social>
+                        <Social href="https://linkedin.com"><FaLinkedinIn /></Social>
+                        <Social href="https://instagram.com"><FaInstagram /></Social>
+                      </div>
+            
+            </div>
+
 
         {/* COLUMN 1 */}
         <div>
-          <ul className="space-y-3 text-sm leading-relaxed">
+          <h2 className="text-[#d4af37]"> About</h2>
+          <ul className="space-y-3 text-sm leading-relaxed mt-2">
             <li><Link href="/mission-vision-values" className="hover:text-[#d4af37]">Mission, Vision & Values</Link></li>
             <li><Link href="/word-from-mercy" className="hover:text-[#d4af37]">Word From Mercy</Link></li>
             <li><Link href="/our-inspiration" className="hover:text-[#d4af37]">Our Inspiration</Link></li>
@@ -24,7 +68,9 @@ export default function FooterSection() {
 
         {/* COLUMN 2 */}
         <div>
-          <ul className="space-y-3 text-sm leading-relaxed">
+                    <h2 className="text-[#d4af37] "> Resource & Action</h2>
+
+          <ul className="space-y-3 text-sm leading-relaxed mt-2">
             <li><Link href="/school-Outreach" className="hover:text-[#d4af37]">School Outreach</Link></li>
             <li><Link href="/community-Outreach" className="hover:text-[#d4af37]">Community Outreach</Link></li>
             <li><Link href="/corporate-Outreach" className="hover:text-[#d4af37]">Corporate Outreach</Link></li>
@@ -40,7 +86,7 @@ export default function FooterSection() {
 
         {/* COLUMN 3 */}
         <div>
-          <ul className="space-y-3 text-sm leading-relaxed">
+          <ul className="space-y-3 text-sm leading-relaxed mt-5">
             <li><Link href="/latest-news" className="hover:text-[#d4af37]">Latest News</Link></li>
             <li><Link href="/newsletter" className="hover:text-[#d4af37]">Newsletter</Link></li>
             <li><Link href="/jobs" className="hover:text-[#d4af37]">Jobs</Link></li>
