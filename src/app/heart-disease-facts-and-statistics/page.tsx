@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function FactsAndStatsPage() {
   return (
@@ -26,8 +27,7 @@ export default function FactsAndStatsPage() {
           </p>
         </div>
       </section>
-
-      {/* CONTENT + SIDEBAR */}
+<PageWithSidebar>      {/* CONTENT + SIDEBAR */}
       <section className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-4 gap-10">
         {/* MAIN */}
         <article className="lg:col-span-3 space-y-8 text-gray-800 text-base leading-relaxed">
@@ -142,6 +142,7 @@ export default function FactsAndStatsPage() {
           </div>
         </aside>
       </section>
+</PageWithSidebar>
 
       {/* FOOTER CTA */}
       <section className="w-full bg-[#b8962e] text-white py-12">

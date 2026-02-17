@@ -1,5 +1,7 @@
 "use client";
 
+import PageWithSidebar from "../components/PageWithSidebar";
+
 export default function TipsForAHealthyHeart() {
   const tips = [
     {
@@ -117,12 +119,14 @@ export default function TipsForAHealthyHeart() {
   ];
 
   return (
-    <section className="max-w-5xl mx-auto px-6 py-16">
+    
+    <section className="max-w-8xl mx-auto px-6 py-10">
+      <PageWithSidebar>
+
       <h1 className="text-4xl font-bold text-red-600 mb-2">28 Healthy Heart Tips</h1>
       <p className="text-gray-700 mb-10 text-lg">
         HEALTH AND HOPE FROM HEART TO HEART
       </p>
-
       <div className="space-y-10">
         {tips.map((item, i) => (
           <div key={i} className="p-6 bg-white rounded-xl shadow border">
@@ -131,6 +135,8 @@ export default function TipsForAHealthyHeart() {
           </div>
         ))}
       </div>
+      </PageWithSidebar>
     </section>
+    
   );
 }

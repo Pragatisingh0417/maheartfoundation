@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function OurInspirationPage() {
   return (
@@ -18,6 +19,7 @@ Dedicated to creating a world where heart health is accessible for all.
         </p>
       </section>
 
+<PageWithSidebar >
       {/* STORY SECTION — IMAGE + SINGLE PARAGRAPH */}
       <section className="bg-white py-24">
         <motion.div
@@ -81,6 +83,7 @@ heart conditions.
           </div>
         </motion.div>
       </section>
+      </PageWithSidebar>
 
     </main>
   );

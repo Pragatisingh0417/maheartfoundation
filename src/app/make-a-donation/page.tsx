@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { CreditCard, Smartphone, Heart } from "lucide-react";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function MakeADonationPage() {
   return (
@@ -36,7 +37,7 @@ export default function MakeADonationPage() {
           </p>
         </motion.div>
       </section>
-
+<PageWithSidebar>
       {/* ===========================
           CONTENT SECTION
       ============================ */}
@@ -106,7 +107,7 @@ export default function MakeADonationPage() {
 
        
       </section>
-
+</PageWithSidebar>
       {/* ===========================
           THANK YOU
       ============================ */}

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, FileText, Briefcase } from "lucide-react";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function AdminAssistantJobPage() {
   return (
@@ -25,7 +26,7 @@ export default function AdminAssistantJobPage() {
           </p>
         </motion.div>
       </section>
-
+<PageWithSidebar>
       {/* ===========================
           JOB DETAILS CONTENT
       ============================ */}
@@ -108,7 +109,7 @@ export default function AdminAssistantJobPage() {
           </div>
         </motion.div>
       </section>
-
+</PageWithSidebar>
     </main>
   );
 }

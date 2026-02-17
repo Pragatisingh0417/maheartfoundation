@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function LatestNewsPage() {
     return (
@@ -17,11 +18,11 @@ export default function LatestNewsPage() {
                     Updates from our outreach and humanitarian efforts
                 </p>
             </section>
-
+<PageWithSidebar>
             {/* ============================
           CONTENT SECTION
       ============================= */}
-            <section className="max-w-5xl mx-auto px-6 py-20">
+            <section className="max-w-5xl mx-auto px-6">
 
                 <div className="bg-white p-10 shadow-md border rounded-2xl">
 
@@ -87,7 +88,7 @@ export default function LatestNewsPage() {
 
                 </div>
             </section>
-
+</PageWithSidebar>
         </main>
     );
 }

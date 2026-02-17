@@ -13,14 +13,14 @@ const campaigns = [
   {
     title: "Dylet Bible School Campaign",
     location: "Yaounde, Cameroon",
-    image: "/community.jpg",
+    image: "/Dylet 1.jpg",
     href: "/dylet-bible-school-campaign",
   },
    {
     title: "Babadjou Rural Campaign",
     location: "Yaounde, Cameroon",
-    image: "/",
-    href: "/",
+    image: "/Babadjou 1.jpg",
+    href: "/babadjou-rural-campaign",
   },
    
 ];

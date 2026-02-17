@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function FrankyCampaignPage() {
+export default function LycéeCampaignPage() {
   return (
     <main className="w-full">
 
@@ -11,11 +11,10 @@ export default function FrankyCampaignPage() {
       ============================= */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-          Franky Secondary School Campaign
-        </h1>
-        <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
+Heart Health Campaign at Lycée de Mbalmayo     </h1>
+        {/* <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
           Yaounde, Cameroon • April 25, 2025
-        </p>
+        </p> */}
       </section>
 
       {/* ============================
@@ -31,16 +30,17 @@ export default function FrankyCampaignPage() {
             {/* Replace with real image */}
            <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10">
                      <Image
-                       src="/Franky5.jpg"
-                       alt="MEVICK SECONDARY SCHOOL CAMPAIGN"
+                       src=""
+                       alt="lycée Bilingue Mbalmayo   
+"
                        fill
                        className="object-cover"
                      />
                    </div>
 
-            <p className="text-sm text-gray-600 mt-2 italic">
+            {/* <p className="text-sm text-gray-600 mt-2 italic">
               Fig 1: A group picture with Franky Secondary students and MA Heart Team, Yaounde - Cameroon
-            </p>
+            </p> */}
           </div>
 
           {/* ========== Heading ========== */}
@@ -50,11 +50,10 @@ export default function FrankyCampaignPage() {
 
           {/* ========== Paragraphs ========== */}
           <p className="text-gray-800 leading-relaxed mb-6">
-            The “Franky Campaign” was a heart health sensitization event organized
-            by The Mercy Azoh-Mbi Heart Foundation’s Cameroon office at Franky
-            Bilingual Secondary and High School in Yaounde on April 25, 2025. The
-            campaign aimed to raise awareness about heart health and early
-            prevention among young people.
+           On November 28, 2025, the Mercy Azoh-Mbi Heart Foundation carried out a screening and
+sensitisation campaign at Government Bilingual Secondary School, Mbalmayo. The initiative
+aimed to raise awareness of cardiovascular health, promote early detection, and empower
+students and staff with lifesaving knowledge.
           </p>
 
           <p className="text-gray-800 leading-relaxed mb-6">
@@ -74,8 +73,58 @@ export default function FrankyCampaignPage() {
             was considered a success in achieving its objectives and initiating
             the country office’s activities for 2025.
           </p>
+ <h3 className="text-gray-800 leading-relaxed mb-2 mt-2 font-bold">
+Key Highlights                         </h3>
+<ul>
 
-        </div>
+  <li>
+
+    Over 70 students participated in interactive sensitisation sessions covering heart
+function, risk factors, warning signs, and prevention strategies.
+  </li>
+  <li>
+     Students received Basic Cardiac Life Support (BCLS) training, learning how to
+recognise emergencies and perform chest compressions.
+  </li>
+  <li>
+    25 teachers and administrators underwent free medical screening for hypertension,
+diabetes, obesity, and kidney disease.
+  </li>
+  <li>
+    Results revealed that 53% of participants had elevated blood pressure, including
+several severe cases requiring urgent follow-up.
+  </li>
+  <li>
+
+    The campaign fostered enthusiasm among students and gratitude from staff, many
+of whom had not accessed routine health checks in years.
+  </li>
+</ul>
+
+ <h3 className="text-gray-800 leading-relaxed mb-2 mt-2 font-bold">
+  Impact
+</h3>
+<p>
+  This activity strengthened the school’s capacity to respond to heart-related health
+challenges, especially in a community where cases of cardiac complications—including a
+student living with a transplanted heart—have been recorded.
+</p>
+ <h3 className="text-gray-800 leading-relaxed mb-2 mt-2 font-bold">
+  Media Coverage
+  </h3>
+  <p>
+    The event was featured on Canal 2 TV, Vision 4 TV, and The Guardian Post, amplifying the
+message of prevention and awareness.
+  </p>
+ <h3 className="text-gray-800 leading-relaxed mb-2 mt-2 font-bold">
+    Conclusion
+  </h3>
+  <p>
+    By combining education, screening, and practical training, the Foundation continues to
+champion health and hope from heart to heart, ensuring that schools and communities are
+better equipped to fight cardiovascular disease.
+  </p>
+  </div>
       </section>
 
     </main>

@@ -1,5 +1,7 @@
 "use client";
 
+import PageWithSidebar from "../components/PageWithSidebar";
+
 export default function WhatIsHeartDiseasePage() {
   return (
     <main className="w-full">
@@ -15,7 +17,7 @@ export default function WhatIsHeartDiseasePage() {
           Understanding the causes, types, symptoms, and treatments of heart disease.
         </p>
       </section>
-
+<PageWithSidebar>
       {/* ============================
           CONTENT SECTION
       ============================= */}
@@ -194,7 +196,7 @@ export default function WhatIsHeartDiseasePage() {
 
         </article>
       </section>
-
+</PageWithSidebar>
     </main>
   );
 }

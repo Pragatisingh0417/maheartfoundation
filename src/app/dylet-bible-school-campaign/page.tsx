@@ -9,7 +9,7 @@ export default function DyletBiblecampaignPage() {
             {/* ============================
           HERO SECTION
       ============================= */}
-            <section className="bg-blue-900 text-white py-20 px-6 text-center">
+            <section className="bg-[#d4af37] text-white py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold">
 BIBLE SCHOOL AND CHURCH CAMPAIGN                </h1>
                 <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
@@ -30,7 +30,7 @@ BIBLE SCHOOL AND CHURCH CAMPAIGN                </h1>
                         <div className="w-full h-72 bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
 <div className="relative w-full h-72 rounded-xl overflow-hidden">
     <Image
-      src="/community.jpg"
+      src="/Dylet4.jpg"
       alt="Miracle of Mercy Book"
       fill
       className="object-cover"

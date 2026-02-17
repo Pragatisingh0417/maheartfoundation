@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import VolunteerForm from "../components/VolunteerForm";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function VolunteerPage() {
   return (
@@ -25,11 +26,11 @@ export default function VolunteerPage() {
           </h1>
         </div>
       </section>
-
+<PageWithSidebar>
       {/* ============================
           INTRO SECTION (2 COLUMN)
       ============================= */}
-      <section className="px-6 md:px-20 py-20 bg-white">
+      <section className="px-6 md:px-20 py-10 bg-white">
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           <div>
@@ -55,11 +56,12 @@ export default function VolunteerPage() {
 
         </div>
       </section>
+</PageWithSidebar>
 
       {/* ============================
           3 WAYS TO VOLUNTEER
       ============================= */}
-      <section className="px-6 md:px-20 py-20 bg-gray-50">
+      <section className="px-6 md:px-20 py-10 bg-gray-50">
         <h2 className="text-3xl font-bold text-black mb-6">
           3 WAYS TO VOLUNTEER
         </h2>
@@ -172,7 +174,7 @@ export default function VolunteerPage() {
 
           <div className="relative h-[450px] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/volunteer-abroad.jpg"
+              src="/volunteer-image.jpg"
               alt="Volunteer Abroad"
               fill
               className="object-cover"
@@ -188,7 +190,6 @@ export default function VolunteerPage() {
       <section className="bg-white py-20">
         <VolunteerForm />
       </section>
-
     </main>
   );
 }

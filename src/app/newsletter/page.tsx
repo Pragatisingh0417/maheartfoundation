@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 const newsletters = {
   2025: [
@@ -15,8 +16,10 @@ const newsletters = {
 
 export default function NewsletterPage() {
   return (
-    <section className="bg-white text-gray-900 py-20">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="bg-white text-gray-900 ">
+      <div className="max-w-8xl mx-auto px-6">
+        <PageWithSidebar>
+
         {/* PAGE TITLE */}
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-red-600">
           Newsletter
@@ -26,7 +29,6 @@ export default function NewsletterPage() {
           Stay informed with our latest updates, initiatives, and stories.
           Browse past editions or subscribe to receive our newsletters directly.
         </p>
-
         {/* PAST EDITIONS */}
         <div className="space-y-16">
           {Object.entries(newsletters).map(([year, editions]) => (
@@ -54,7 +56,6 @@ export default function NewsletterPage() {
             </div>
           ))}
         </div>
-
         {/* NEWSLETTER SIGNUP */}
         <div className="mt-24 bg-gray-50 border rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
@@ -81,7 +82,10 @@ export default function NewsletterPage() {
             </button>
           </form>
         </div>
+        </PageWithSidebar>
+
       </div>
     </section>
+    
   );
 }

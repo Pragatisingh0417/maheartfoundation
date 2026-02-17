@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function FundraisePage() {
   return (
@@ -35,8 +36,7 @@ export default function FundraisePage() {
           </p>
         </motion.div>
       </section>
-
-      {/* ===========================
+<PageWithSidebar>      {/* ===========================
           WHY FUNDRAISE
       ============================ */}
       <section className="max-w-5xl mx-auto px-6 py-16">
@@ -187,6 +187,8 @@ export default function FundraisePage() {
           </button>
         </Link>
       </section>
+      </PageWithSidebar>
+
     </main>
   );
 }

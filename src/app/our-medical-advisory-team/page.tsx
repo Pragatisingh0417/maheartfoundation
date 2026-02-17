@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image"
 import Link from "next/link";
+import PageWithSidebar from "../components/PageWithSidebar";
 ;
 
 type Advisor = {
@@ -74,7 +75,7 @@ export default function MedicalAdvisoryTeam() {
         <p className="mt-4 text-lg text-red-600">
 Meet the experts who serve as the Foundation's clinicat compass, to ensure that every program, message, and strategic decision is grounded in credible, up-to-date cardiovascular science.        </p>
       </motion.div>
-
+<PageWithSidebar>
       {/* Advisors Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {advisors.map((advisor, idx) => (
@@ -137,6 +138,8 @@ Meet the experts who serve as the Foundation's clinicat compass, to ensure that 
   </motion.button>
 </Link>
       </motion.div>
+
+      </PageWithSidebar>
     </div>
   );
 }

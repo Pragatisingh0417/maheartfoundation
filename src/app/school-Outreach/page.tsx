@@ -7,26 +7,26 @@ const campaigns = [
   {
     title: "Franky Secondary School Campaign",
     location: "Yaounde, Cameroon",
-    image: "/franky-secondary-school.jpg",
+    image: "/Franky5.jpg",
     href: "/franky-campaign",
   },
   {
     title: "Mevick Secondary School Campaign",
     location: "Yaounde, Cameroon",
-    image: "/Ma-banner.jpeg",
+    image: "/WHD2.jpg",
     href: "/mevick-school-campaign",
   },
    {
     title: "World Heart Day @ Nil High School",
     location: "Yaounde, Cameroon",
     image: "/",
-    href: "/",
+    href: "/World-Heart-Day-2025",
   },
    {
     title: ".Lycée Bilingue Mbalmayo",
     location: "Yaounde, Cameroon",
     image: "/",
-    href: "/",
+    href: "/lycee-Bilingue-Mbalmayo",
   },
 ];
 

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 type Advisor = {
   name: string;
@@ -52,7 +53,7 @@ export default function ManagementTeam() {
         <p className="mt-6 text-lg text-red-600 leading-relaxed">
           Meet the professionals who steer the Foundation's administartion and opeartions</p>
       </motion.div>
-
+<PageWithSidebar>
       {/* TEAM GRID */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {advisors.map((advisor, idx) => (
@@ -120,6 +121,8 @@ export default function ManagementTeam() {
           </motion.button>
         </Link>
       </motion.div>
+      </PageWithSidebar>
     </section>
+    
   );
 }

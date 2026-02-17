@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function BoardOfDirectors() {
   const directors = [
@@ -61,7 +62,7 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
           Meet the dedicated leaders guiding the Mercy Azoh-Mbi Heart Foundation
         </p>
       </section>
-
+<PageWithSidebar>
       {/* DIRECTORS */}
       <section className="max-w-6xl mx-auto px-6 py-24 space-y-28">
         {directors.map((d, i) => (
@@ -104,6 +105,7 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
           </div>
         ))}
       </section>
+      </PageWithSidebar>
     </main>
   );
 }

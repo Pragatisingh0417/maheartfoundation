@@ -101,6 +101,10 @@ export default function Header() {
               >
                 <MenuLink href="/franky-campaign">Franky School Campaign</MenuLink>
                 <MenuLink href="/mevick-school-campaign">Mevick School Campaign</MenuLink>
+                                <MenuLink href="/World-Heart-Day-2025">World Heart Day @ Nil High School</MenuLink>
+
+                <MenuLink href="/lycee-Bilingue-Mbalmayo">.Lycée Bilingue Mbalmayo</MenuLink>
+
               </SubMenu>
 
               <SubMenu
@@ -108,7 +112,12 @@ export default function Header() {
                 active={activeSubMenu === "community"}
                 setActive={() => setActiveSubMenu("community")}
               >
+
                 <MenuLink href="/salvation-campaign">Salvation Baptist Church</MenuLink>
+                                <MenuLink href="/dylet-bible-school-campaign">Dylet Bible School Campaign</MenuLink>
+                                                <MenuLink href="/babadjou-rural-campaign">Babadjou Rural Campaign</MenuLink>
+
+
               </SubMenu>
 
               <SubMenu
@@ -116,7 +125,9 @@ export default function Header() {
                 active={activeSubMenu === "corporate"}
                 setActive={() => setActiveSubMenu("corporate")}
               >
-                <MenuLink href="/outreach/corporate">CSPH</MenuLink>
+                <MenuLink href="/">CSPH</MenuLink>
+                                <MenuLink href="/">CAMTEL</MenuLink>
+
               </SubMenu>
             </Dropdown>
 
@@ -163,8 +174,8 @@ export default function Header() {
       </div>
 
       {/* MOBILE */}
-      <div className="lg:hidden flex items-center justify-between bg-black px-4 h-[70px]">
-        <Image src="/MaHeartFoundationLogo-final.jpg" alt="Logo" width={120} height={120} />
+      <div className="lg:hidden flex items-center justify-between bg-black px-4 h-[90px]">
+        <Image src="/MaHeartFoundationLogo-final.jpg" alt="Logo" width={90} height={60} className="h-[80px]" />
         <button onClick={() => setMobileOpen(true)} className="text-white text-3xl">☰</button>
       </div>
 
@@ -175,25 +186,45 @@ export default function Header() {
           <MobileAccordion label="ABOUT US">
             <MobileLink href="/vision-mission-values">Mission, Vision, Values</MobileLink>
             <MobileLink href="/word-from-mercy">Word From Mercy</MobileLink>
+            <MobileLink href="/our-inspiration">Our Inspiration</MobileLink> 
+            <MobileLink href="/what-we-do">What We Do</MobileLink>
+             <MobileLink href="/board-of-directors">Board of Directors</MobileLink> 
+             <MobileLink href="/our-medical-advisory-team">Medical Advisory Board</MobileLink>
+              <MobileLink href="/management-team">Management Team</MobileLink> 
+            <MobileLink href="/our-partners">Our Partners</MobileLink>
           </MobileAccordion>
 
           <MobileAccordion label="GET INVOLVED">
             <MobileLink href="/fundraise">Fundraise</MobileLink>
             <MobileLink href="/volunteer">Volunteer</MobileLink>
+                        <MobileLink href="/make-a-donation">Donate</MobileLink>
+
           </MobileAccordion>
 
           <MobileAccordion label="OUTREACH">
             <MobileLink href="/franky-campaign">Franky School Campaign</MobileLink>
             <MobileLink href="/mevick-school-campaign">Mevick School Campaign</MobileLink>
+            <MobileLink href="/World-Heart-Day-2025">World Heart Day @ Nil High School</MobileLink>
+             <MobileLink href="/lycee-Bilingue-Mbalmayo">Lycée Bilingue Mbalmayo</MobileLink>
+<MobileLink href="/salvation-campaign">Salvation Baptist Church</MobileLink>
+ <MobileLink href="/babadjou-rural-campaign"> Babadjou Rural Campaign </MobileLink> 
+<MobileLink href="/dylet-bible-school-campaign">Dylet Bible School Campaign</MobileLink> 
+<MobileLink href="/">CSPH</MobileLink>
+ <MobileLink href="/">CAMTEL</MobileLink>
           </MobileAccordion>
 
           <MobileAccordion label="HEART HEALTH">
             <MobileLink href="/what-is-heart-disease">What Is Heart Disease?</MobileLink>
+            <MobileLink href="/heart-disease-facts-and-statistics">Facts & Statistics</MobileLink>
+             <MobileLink href="/tips-for-a-healthy-heart">Healthy Heart Tips</MobileLink>
           </MobileAccordion>
 
           <MobileAccordion label="NEWS">
-            <MobileLink href="/latest-news">Latest News</MobileLink>
-          </MobileAccordion>
+<MobileLink href="/latest-news">Latest News</MobileLink>
+ <MobileLink href="/newsletter">Newsletter</MobileLink>
+  <MobileLink href="/jobs">Jobs</MobileLink>         
+   </MobileAccordion>
+   
         </div>
       )}
     </header>
