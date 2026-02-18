@@ -24,11 +24,11 @@ export default function Header() {
         <div className="row-span-2 flex flex-col justify-center px-8 bg-black">
           <Link href="/">
             <Image
-              src="/MaHeartFoundationLogo-final.jpg"
+              src="/new-logo.jpg"
               alt="Logo"
               width={170}
               height={170}
-              className="object-contain h-[80px]"
+              className="object-contain h-[60px]"
               priority
             />
           </Link>
@@ -44,8 +44,8 @@ export default function Header() {
           </Link>
 
           <div className="flex gap-4">
-            <Social href="#"><FaFacebookF /></Social>
-            <Social href="#"><FaLinkedinIn /></Social>
+            <Social href="https://www.facebook.com/people/MA-Heart-Foundation/61574807995896/?sk=about" target="blank"><FaFacebookF /></Social>
+            <Social href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F106902013%2Fadmin%2Fdashboard%2F" target="blank"><FaLinkedinIn /></Social>
             <Social href="#"><FaInstagram /></Social>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function Header() {
 
       {/* MOBILE */}
       <div className="lg:hidden flex items-center justify-between bg-black px-4 h-[90px]">
-        <Image src="/MaHeartFoundationLogo-final.jpg" alt="Logo" width={90} height={60} className="h-[80px]" />
+        <Image src="/new-logo.jpg" alt="Logo" width={280} height={20} className="h-[80px]" />
         <button onClick={() => setMobileOpen(true)} className="text-white text-3xl">☰</button>
       </div>
 
