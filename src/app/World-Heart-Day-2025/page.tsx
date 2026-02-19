@@ -31,22 +31,6 @@ export default function WorldHeartDayCampaignPage() {
                 {/* White Card */}
                 <div className="bg-white p-10 shadow-lg border rounded-2xl">
 
-                    {/* ========== Image ========== */}
-                    <div className="w-full mb-8">
-                        {/* Replace with real image */}
-                        <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10">
-                            <Image
-                                src="/"
-                                alt="World-Heart-Day-2025"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-
-                        <p className="text-sm text-gray-600 mt-2 italic">
-                            Fig 1: A group picture with World-Heart-Day-2025 MA Heart Team, Yaounde - Cameroon
-                        </p>
-                    </div>
 
                     {/* ========== Heading ========== */}
                     <h2 className="text-2xl font-bold text-red-600 mb-6">
@@ -119,6 +103,24 @@ export default function WorldHeartDayCampaignPage() {
                         steadfast in its mission to spread awareness, save lives, and ensure that no heartbeat is
                         missed.</p>
                 </div>
+
+                
+                    {/* ========== Image ========== */}
+                    <div className="w-full mt-10">
+                        {/* Replace with real image */}
+                        <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10">
+                            <Image
+                                src="/"
+                                alt="World-Heart-Day-2025"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+
+                        <p className="text-sm text-gray-600 mt-2 italic">
+                            Fig 1: A group picture with World-Heart-Day-2025 MA Heart Team, Yaounde - Cameroon
+                        </p>
+                    </div>
             </section>
 
         </main>

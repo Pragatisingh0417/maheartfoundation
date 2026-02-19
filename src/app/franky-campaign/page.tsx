@@ -26,22 +26,7 @@ export default function FrankyCampaignPage() {
         {/* White Card */}
         <div className="bg-white p-10 shadow-lg border rounded-2xl">
 
-          {/* ========== Image ========== */}
-          <div className="w-full mb-8">
-            {/* Replace with real image */}
-           <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10">
-                     <Image
-                       src="/Franky5.jpg"
-                       alt="MEVICK SECONDARY SCHOOL CAMPAIGN"
-                       fill
-                       className="object-cover"
-                     />
-                   </div>
-
-            <p className="text-sm text-gray-600 mt-2 italic">
-              Fig 1: A group picture with Franky Secondary students and MA Heart Team, Yaounde - Cameroon
-            </p>
-          </div>
+       
 
           {/* ========== Heading ========== */}
           <h2 className="text-2xl font-bold text-red-600 mb-6">
@@ -76,6 +61,22 @@ export default function FrankyCampaignPage() {
           </p>
 
         </div>
+           {/* ========== Image ========== */}
+          <div className="w-full mb-8 mt-10">
+            {/* Replace with real image */}
+           <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10">
+                     <Image
+                       src="/Franky5.jpg"
+                       alt="MEVICK SECONDARY SCHOOL CAMPAIGN"
+                       fill
+                       className="object-cover"
+                     />
+                   </div>
+
+            <p className="text-sm text-gray-600 mt-2 italic">
+              Fig 1: A group picture with Franky Secondary students and MA Heart Team, Yaounde - Cameroon
+            </p>
+          </div>
       </section>
 
     </main>
