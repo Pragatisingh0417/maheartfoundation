@@ -12,30 +12,16 @@ export default function FundraisePage() {
       {/* ===========================
           HERO BANNER
       ============================ */}
-      <section className="relative w-full h-[500px] flex items-center justify-center text-center overflow-hidden">
-        <Image
-          src="/fundraise.jpg" // ← Add your banner image in /public
-          alt="Fundraise Banner"
-          fill
-          className="object-cover"
-        />
+      <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
+                    <h1 className="text-4xl md:text-5xl font-extrabold">
+                       Fundraise
 
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
+                    </h1>
+                    <p className="mt-6 text-lg  text-white leading-relaxed">
+                       Help us expand our mission and save more lives through your support.
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative z-10 px-6"
-        >
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
-            Fundraise
-          </h1>
-          <p className="mt-4 text-lg md:text-xl text-gray-100 max-w-2xl mx-auto drop-shadow">
-            Help us expand our mission and save more lives through your support.
-          </p>
-        </motion.div>
-      </section>
+    </p>
+                </section>
 <PageWithSidebar>      {/* ===========================
           WHY FUNDRAISE
       ============================ */}

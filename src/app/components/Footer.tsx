@@ -28,30 +28,7 @@ export default function FooterSection() {
   return (
     <footer className="w-full bg-[#0b0b0b] text-gray-300 pt-16 pb-10 px-6 md:px-16">
       {/* ================= SUPPORT OUR MISSION ================= */}
-      <div className="max-w-7xl mx-auto mb-16">
-        <div className="bg-gradient-to-r from-[#111] to-[#0f0f0f] border border-[#d4af37]/30 rounded-2xl px-8 py-8 md:px-12 md:py-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
-
-          {/* LEFT CONTENT */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              Support Our Mission
-            </h2>
-            <p className="text-gray-400 max-w-xl text-sm md:text-base">
-              Your support helps us expand heart health awareness, testing,  education, and life-saving
-              outreach programs around the world.
-            </p>
-          </div>
-
-          {/* RIGHT BUTTON */}
-          <Link
-            href="/make-a-donation"
-            className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full transition duration-300 whitespace-nowrap"
-          >
-            Donate Now
-          </Link>
-
-        </div>
-      </div>
+     
 
       {/* ================= MAIN GRID ================= */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
@@ -60,7 +37,7 @@ export default function FooterSection() {
         <div>
           <Link href="/">
             <Image
-              src="/MaHeartFoundationLogo-final.jpg"
+              src="/new-logo.jpg"
               alt="Mercy Azoh-Mbi Heart Foundation Logo"
               width={180}
               height={80}
@@ -70,10 +47,7 @@ export default function FooterSection() {
           </Link>
 
           <p className="text-sm leading-relaxed">
-            In 2009, heart disease radically maimed, mutilated and morphed me
-            into a helpless, almost hopeless woman. I was barely 37 years old.
-            I deeply mourned the loss of my four limbs for years, but gradually
-            began to appreciate the ultimate gift of life itself.
+           Devoted to promoting healthy hearts
           </p>
 
           <div className="flex gap-4 mt-4">
@@ -96,22 +70,25 @@ export default function FooterSection() {
             <li><Link href="/board-of-directors" className="hover:text-[#d4af37]">Board of Directors</Link></li>
             <li><Link href="/our-medical-advisory-team" className="hover:text-[#d4af37]">Medical Advisory Board</Link></li>
             <li><Link href="/management-team" className="hover:text-[#d4af37]">Management Team</Link></li>
+                        <li><Link href="/our-partners" className="hover:text-[#d4af37]">Our Partners</Link></li>
+
           </ul>
         </div>
 
         {/* COLUMN 3 - RESOURCE & ACTION */}
         <div>
-          <h2 className="text-[#d4af37] font-semibold mb-4">Resource & Action</h2>
+          <h2 className="text-[#d4af37] font-semibold mb-4">Resources & Action</h2>
           <ul className="space-y-2 text-sm">
             <li><Link href="/school-Outreach" className="hover:text-[#d4af37]">School Outreach</Link></li>
             <li><Link href="/community-Outreach" className="hover:text-[#d4af37]">Community Outreach</Link></li>
             <li><Link href="/corporate-Outreach" className="hover:text-[#d4af37]">Corporate Outreach</Link></li>
             <li><Link href="/heart-health" className="hover:text-[#d4af37]">Heart Health</Link></li>
             <li><Link href="/fundraise" className="hover:text-[#d4af37]">Fundraise</Link></li>
+            
+            <li><Link href="/volunteer" className="hover:text-[#d4af37]">Volunteer</Link></li>
+            <li><Link href="/make-a-donation" className="hover:text-[#d4af37]">Donate</Link></li>
             <li><Link href="/latest-news" className="hover:text-[#d4af37]">Latest News</Link></li>
             <li><Link href="/newsletter" className="hover:text-[#d4af37]">Newsletter</Link></li>
-            <li><Link href="/volunteer" className="hover:text-[#d4af37]">Volunteer</Link></li>
-            <li><Link href="/make-a-donation" className="hover:text-[#d4af37] font-semibold">Donate</Link></li>
           </ul>
         </div>
 
@@ -121,15 +98,6 @@ export default function FooterSection() {
 
           <div className="space-y-4 text-sm">
 
-            <div className="flex items-start gap-3">
-              <FaMapMarkerAlt className="text-[#d4af37] mt-1" />
-              <p>
-                Monte Centre Entre CNPS, Yaounde
-
-
-              </p>
-            </div>
-
             
 
             <div className="flex items-center gap-3">
@@ -138,7 +106,20 @@ export default function FooterSection() {
                 info@maheartfoundation.org
               </a>
             </div>
+<div className="flex items-start gap-3">
+              <FaMapMarkerAlt className="text-[#d4af37] mt-1" />
+              <p>
+                Entrée CNPS Etug'Ebe, Yaounde Cameroon
+              </p>
+             
+            </div>
 
+             <div className="flex items-start gap-3">
+              <FaMapMarkerAlt className="text-[#d4af37] mt-1" />
+              <p>
+               255 D'Anjou Blvd, Suite 257F, Châteauguay, Quebec, Canada J6J 2R4
+              </p>
+            </div>
           </div>
         </div>
 

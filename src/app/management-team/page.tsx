@@ -39,20 +39,17 @@ const advisors: Advisor[] = [
 
 export default function ManagementTeam() {
   return (
-    <section className="w-full bg-gray-50 py-24 px-6">
+    <section className="w-full">
       {/* HERO */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="max-w-4xl mx-auto text-center mb-20"
-      >
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-          Our Management Team
-        </h1>
-        <p className="mt-6 text-lg text-red-600 leading-relaxed">
-          Meet the professionals who steer the Foundation's administartion and opeartions</p>
-      </motion.div>
+      <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
+      <h1 className="text-4xl md:text-5xl font-extrabold">
+        Our Management Team
+
+      </h1>
+        <p className="mt-6 text-lg text-white leading-relaxed">
+         Meet the professionals who steer the Foundation's administartion and operations
+      </p>
+    </section>
 <PageWithSidebar>
       {/* TEAM GRID */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -63,10 +60,10 @@ export default function ManagementTeam() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1, duration: 0.6 }}
-            className="group bg-white rounded-3xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+            className="group  rounded-3xl  transition-all duration-300"
           >
             {/* IMAGE */}
-            <div className="relative w-full h-[300px] bg-gray-100 flex items-center justify-center overflow-hidden rounded-t-3xl">
+            <div className="relative w-full h-[300px]  flex items-center justify-center overflow-hidden rounded-t-3xl">
               <Image
                 src={advisor.photo}
                 alt={advisor.name}

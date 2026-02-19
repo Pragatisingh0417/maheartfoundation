@@ -13,30 +13,18 @@ export default function MakeADonationPage() {
       {/* ===========================
           HERO BANNER
       ============================ */}
-      <section className="relative w-full h-[420px] flex items-center justify-center text-center overflow-hidden">
-        <Image
-          src="/Ma-banner.jpeg" 
-          alt="Donation Banner"
-          fill
-          className="object-cover"
-        />
+     <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
+                    <h1 className="text-4xl md:text-5xl font-extrabold">
+                       Make A Donation
 
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative z-10 px-6"
-        >
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
-            Make A Donation
-          </h1>
-          <p className="mt-4 text-lg md:text-xl text-gray-100 max-w-2xl mx-auto drop-shadow">
-            Your donation goes a long way in helping us save lives and reach more communities.
-          </p>
-        </motion.div>
-      </section>
+                    </h1>
+                    <p className="mt-6 text-lg  text-white leading-relaxed">
+Your donation goes a long way in helping us save lives and reach more communities.
+
+
+    </p>
+                </section>
 <PageWithSidebar>
       {/* ===========================
           CONTENT SECTION

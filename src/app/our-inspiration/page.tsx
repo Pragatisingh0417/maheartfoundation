@@ -21,7 +21,7 @@ Dedicated to creating a world where heart health is accessible for all.
 
 <PageWithSidebar >
       {/* STORY SECTION — IMAGE + SINGLE PARAGRAPH */}
-      <section className="bg-white py-24">
+      <section className="bg-white">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,9 +29,6 @@ Dedicated to creating a world where heart health is accessible for all.
           transition={{ duration: 0.8 }}
           className="max-w-6xl mx-auto px-6"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-red-600 mb-10">
-            OUR INSPIRATION
-          </h2>
 
           <div className="grid gap-12 items-start md:grid-cols-[420px_1fr]">
             {/* IMAGE */}

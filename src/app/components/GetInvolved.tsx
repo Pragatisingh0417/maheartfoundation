@@ -10,17 +10,30 @@ export default function GetInvolved() {
         {/* SECTION TITLE */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-red-600">
-            GET INVOLVED
+            Get Involved
           </h2>
-          <div className="w-24 h-1 bg-[#d4af37] mx-auto mt-4 rounded-full" />
-        </div>
+ {/* Red underline */}
+          <svg
+            viewBox="0 0 200 20"
+            className="mx-auto mt-2 w-36 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 12 C40 -6 160 24 200 4"
+              stroke="#d4af37"
+              strokeWidth="6"
+              strokeLinecap="round"
+              fill="none"
+              opacity="0.95"
+            />
+          </svg>        </div>
 
         {/* CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* VOLUNTEER */}
           <div className="flex flex-col border border-[#d4af37]/30 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+            <h3 className="text-2xl font-semibold text-red-600 mb-4">
               Volunteer
             </h3>
 
@@ -32,7 +45,7 @@ export default function GetInvolved() {
 
             {/* Button pinned to bottom */}
             <Link href="/volunteer" className="mt-auto">
-              <button className="w-full h-12 bg-[#d4af37] hover:bg-[#b8962e] text-black font-semibold rounded-full transition">
+              <button className="w-full h-12 bg-red-600  text-white font-semibold rounded-full transition">
                 Become a Volunteer
               </button>
             </Link>
@@ -40,7 +53,7 @@ export default function GetInvolved() {
 
           {/* FUNDRAISE */}
           <div className="flex flex-col border border-[#d4af37]/30 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+            <h3 className="text-2xl font-semibold text-red-600 mb-4">
               Fundraise
             </h3>
 
@@ -51,7 +64,7 @@ export default function GetInvolved() {
             </p>
 
             <Link href="/fundraise" className="mt-auto">
-              <button className="w-full h-12 bg-[#d4af37] hover:bg-[#b8962e] text-black font-semibold rounded-full transition">
+              <button className="w-full h-12 bg-red-600  text-white font-semibold rounded-full transition">
                 Start Fundraising
               </button>
             </Link>
@@ -59,7 +72,7 @@ export default function GetInvolved() {
 
           {/* DONATE */}
           <div className="flex flex-col border border-[#d4af37]/30 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+            <h3 className="text-2xl font-semibold text-red-600 mb-4">
               Donate
             </h3>
 
@@ -72,7 +85,7 @@ export default function GetInvolved() {
             </p>
 
             <Link href="/make-a-donation" className="mt-auto">
-              <button className="w-full h-12 bg-[#d4af37] hover:bg-[#b8962e] text-black font-semibold rounded-full transition">
+              <button className="w-full h-12 bg-red-600  text-white font-semibold rounded-full transition">
                 Donate Now
               </button>
             </Link>

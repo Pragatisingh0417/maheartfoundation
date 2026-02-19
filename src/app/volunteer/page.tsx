@@ -12,20 +12,13 @@ export default function VolunteerPage() {
       {/* ============================
           BANNER SECTION
       ============================= */}
-      <section className="relative w-full h-[350px] md:h-[480px]">
-        <Image
-          src="/volunteer-image.jpg"
-          alt="Volunteer Banner"
-          fill
-          className="object-cover"
-        />
+       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
+                    <h1 className="text-4xl md:text-5xl font-extrabold">
+                     Volunteer
 
-        <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wide">
-            VOLUNTEER
-          </h1>
-        </div>
-      </section>
+                    </h1>
+                  
+                </section>
 <PageWithSidebar>
       {/* ============================
           INTRO SECTION (2 COLUMN)

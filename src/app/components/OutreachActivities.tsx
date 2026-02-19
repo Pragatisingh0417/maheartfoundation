@@ -7,28 +7,31 @@ export default function OutreachActivities() {
     <section className="bg-[#fff6d8] py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20">
 
-        {/* SECTION HEADER */}
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Outreach Activities
-          </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl">
-            Through our outreach programs, we extend heart health education,
-            awareness, and life-saving skills to schools, communities, and
-            corporate organizations.
-          </p>
+        {/* GOLD TITLE BAND */}
+        <div className="flex justify-center mb-14">
+          <div className="bg-[#d4af37] px-10 py-4 rounded-full shadow-md">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+              Outreach 
+            </h2>
+          </div>
         </div>
+
+        {/* CENTERED DESCRIPTION */}
+        <p className="text-gray-700 text-center max-w-3xl mx-auto mb-16">
+          Through our outreach programs, we extend heart health education,
+          awareness, and life-saving skills to schools, communities, and
+          corporate organizations.
+        </p>
 
         {/* CARD GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* SCHOOL OUTREACH */}
           <div className="flex flex-col bg-white rounded-3xl shadow-sm hover:shadow-lg transition border border-[#d4af37]/30">
-            {/* Accent */}
             <div className="h-2 bg-[#d4af37] rounded-t-3xl" />
 
             <div className="p-8 flex flex-col flex-1">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-2xl font-semibold text-red-600 mb-4">
                 School Outreach
               </h3>
 
@@ -52,7 +55,7 @@ export default function OutreachActivities() {
             <div className="h-2 bg-[#d4af37] rounded-t-3xl" />
 
             <div className="p-8 flex flex-col flex-1">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-2xl font-semibold text-red-600 mb-4">
                 Community Outreach
               </h3>
 
@@ -76,7 +79,7 @@ export default function OutreachActivities() {
             <div className="h-2 bg-[#d4af37] rounded-t-3xl" />
 
             <div className="p-8 flex flex-col flex-1">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-2xl font-semibold text-red-600 mb-4">
                 Corporate Outreach
               </h3>
 

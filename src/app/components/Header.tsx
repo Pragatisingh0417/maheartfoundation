@@ -21,34 +21,56 @@ export default function Header() {
       <div className="hidden lg:grid grid-cols-[220px_1fr]">
 
         {/* LOGO COLUMN */}
-        <div className="row-span-2 flex flex-col justify-center px-8 bg-black">
-          <Link href="/">
-            <Image
-              src="/new-logo.jpg"
-              alt="Logo"
-              width={170}
-              height={170}
-              className="object-contain h-[60px]"
-              priority
-            />
-          </Link>
-          <p className="text-[#d4af37] text-[10px]">
-            Health and hope from Heart to Heart
-          </p>
-        </div>
+       <div className="row-span-2 flex flex-col justify-center px-2 bg-black">
+  <Link href="/">
+    <Image
+      src="/new-logo.jpg"
+      alt="Logo"
+      width={0}
+      height={0}
+      sizes="100vw"
+      className="h-[140px] w-auto object-contain"
+      priority
+    />
+  </Link>
+</div>
+
 
         {/* TOP RIGHT BAR */}
-        <div className="flex items-center justify-end px-10 h-[80px] bg-black gap-8">
-          <Link href="/contact" className="text-[#d4af37] hover:text-white">
-            Contact Us
-          </Link>
+        
+<div className="flex items-center justify-between px-10 h-[80px] bg-black">
 
-          <div className="flex gap-4">
-            <Social href="https://www.facebook.com/people/MA-Heart-Foundation/61574807995896/?sk=about" target="blank"><FaFacebookF /></Social>
-            <Social href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F106902013%2Fadmin%2Fdashboard%2F" target="blank"><FaLinkedinIn /></Social>
-            <Social href="#"><FaInstagram /></Social>
-          </div>
-        </div>
+  {/* Left Empty Space (optional if needed for balance) */}
+  <div className="w-1/6" />
+
+  {/* Center Text */}
+  <div className="w-1/3 text-center">
+    <p className="text-red-600 text-[20px]">
+      Health and hope from Heart to Heart
+    </p>
+  </div>
+
+  {/* Right Side Content */}
+  <div className="w-1/3 flex items-center justify-end gap-8">
+    <Link href="/contact" className="text-[#d4af37] text-[20px] hover:text-white">
+      Contact Us
+    </Link>
+
+    <div className="flex gap-4">
+      <Social href="https://www.facebook.com/people/MA-Heart-Foundation/61574807995896/?sk=about" target="blank">
+        <FaFacebookF />
+      </Social>
+      <Social href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F106902013%2Fadmin%2Fdashboard%2F" target="blank">
+        <FaLinkedinIn />
+      </Social>
+      <Social href="#">
+        <FaInstagram />
+      </Social>
+    </div>
+  </div>
+
+</div>
+
 
         {/* NAVIGATION BAR */}
         <div className="flex items-center h-[70px] bg-amber-50 px-10 relative">

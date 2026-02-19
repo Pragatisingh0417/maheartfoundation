@@ -9,7 +9,7 @@ import PageWithSidebar from "../components/PageWithSidebar";
 type Program = {
   name: string;
   description: string;
-  imgSrc: string; 
+  imgSrc: string;
 };
 
 const programs: Program[] = [
@@ -55,50 +55,50 @@ export default function WhatWeDoPage() {
   return (
     <div className="w-full bg-white">
       {/* Hero */}
-    {/* HERO */}
+      {/* HERO */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-What We Do
+          What We Do
         </h1>
         <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
-Our mission is to prevent heart disease through education, early intervention, and community support.
+          Our mission is to prevent heart disease through education, early intervention, and community support.
 
 
 
         </p>
       </section>
 
-<PageWithSidebar>
-      {/* Programs / Initiatives */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {programs.map((program, idx) => (
-            <motion.div
-              key={program.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.2, duration: 0.6 }}
-              className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center"
-            >
-              <div className="w-16 h-16 mb-4 relative">
-                <Image
-                  src={program.imgSrc}
-                  alt={program.name}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h3 className="text-xl font-bold text-gray-800">{program.name}</h3>
-              <p className="mt-3 text-gray-600 text-sm">{program.description}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      <PageWithSidebar>
+        {/* Programs / Initiatives */}
+        <section className=" px-4">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {programs.map((program, idx) => (
+              <motion.div
+                key={program.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.2, duration: 0.6 }}
+                className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center"
+              >
+                <div className="w-16 h-16 mb-4 relative">
+                  <Image
+                    src={program.imgSrc}
+                    alt={program.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">{program.name}</h3>
+                <p className="mt-3 text-gray-600 text-sm">{program.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </section>
 
-    
-</PageWithSidebar>
-      
+
+      </PageWithSidebar>
+
     </div>
   );
 }

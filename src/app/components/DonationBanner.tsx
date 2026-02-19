@@ -93,11 +93,11 @@ export default function DonationBanner() {
         {current === 0 && (
           <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl">
             <h2 className="text-2xl font-bold text-gray-900 text-center">
-              MAKE A DONATION
+             DONATE
             </h2>
 
             <p className="mt-4 text-gray-600 text-center">
-              Your donation will go a long way in helping us achieve our mission.
+              Give from the heart...Give for a heart
             </p>
 
             <Link href="/donate" className="block mt-6">

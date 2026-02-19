@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 
 const sections = {
   about: [
-    { label: "Mission, Vision, Values", href: "/vision-mission-values" },
-    { label: "Word From Mercy", href: "/word-from-mercy" },
+    { label: "Vision, Mission, Values", href: "/vision-mission-values" },
+    { label: "A Word From Mercy", href: "/word-from-mercy" },
     { label: "Our Inspiration", href: "/our-inspiration" },
     { label: "What We Do", href: "/what-we-do" },
     { label: "Board Of Directors", href: "/board-of-directors" },
@@ -46,9 +46,13 @@ export default function SectionSidebar() {
     <aside className="hidden lg:block w-64">
       <div className="bg-gray-100 rounded-2xl p-6 shadow-sm">
         <ul className="space-y-3">
+                  <p className="px-4 text-red-600">About us </p>
+
           {sections[currentSection as keyof typeof sections].map(
             (item, index) => (
+              
               <li key={index}>
+                
                 <Link
                   href={item.href}
                   className={`block px-3 py-2 rounded-lg font-medium transition ${

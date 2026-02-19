@@ -13,11 +13,12 @@ export default function Home() {
     <div className="">
      <DonationBanner />
     <MercySection />
-     <LatestNews />
      <Whatwedo />
      <GetInvolved />
      <OutreachActivities />
      <Partners />
+          <LatestNews />
+
     </div>
   );
 }

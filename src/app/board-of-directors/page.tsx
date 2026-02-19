@@ -54,7 +54,7 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
   return (
     <main className="w-full bg-gray-50">
       {/* HERO */}
-      <section className="bg-[#b8962e] py-28 text-center text-white">
+      <section className="bg-[#b8962e] py-20 text-center text-white">
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide">
           Board of Directors
         </h1>
@@ -85,7 +85,7 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
                 alt={d.name}
                 width={500}
                 height={600}
-                className="w-full h-[420px] object-cover"
+                className="w-full h-[320px] object-cover"
               />
             </div>
 

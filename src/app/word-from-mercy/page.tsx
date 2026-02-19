@@ -3,7 +3,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import PageWithSidebar from "../components/PageWithSidebar";
+import { Cinzel } from "next/font/google";
 
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
 export default function WordFromMercy() {
   return (
     <main className="w-full">
@@ -11,26 +16,20 @@ export default function WordFromMercy() {
       {/* HERO STRIP */}
       <section className="bg-[#b8962e] text-red-600 py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-          WORD FROM MERCY
+        A Word from Mercy
         </h1>
       </section>
 
       <PageWithSidebar>
 
 
-  <section className="w-full bg-gradient-to-b from-red-50 to-white p-16">
+  <section className="w-full bg-gradient-to-b from-red-50 to-white p-10">
 
     {/* ================= HEADING + INTRO ================= */}
-    <div className="mb-16 max-w-4xl">
-      <p className="text-sm font-semibold text-red-600 tracking-wide">
-        ABOUT US
-      </p>
+    <div className="mb-10 max-w-5xl">
+     
 
-      <h2 className="mt-2 text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-        A Word from <span className="text-red-600">Mercy</span>
-      </h2>
-
-      <p className="mt-6 text-lg text-gray-700 leading-relaxed">
+      <p className=" text-gray-700 leading-relaxed">
         I wish you a warm welcome to the website of the Mercy Azoh-Mbi Heart Foundation.
       </p>
       <p className="mt-6  text-gray-700 leading-relaxed">
@@ -83,7 +82,7 @@ export default function WordFromMercy() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="relative h-[520px] rounded-3xl overflow-hidden shadow-2xl"
+        className="relative h-[450px] rounded-3xl overflow-hidden shadow-2xl"
       >
         <Image
           src="/Mercy Azoh-Mbi2.jpg"
@@ -92,12 +91,14 @@ export default function WordFromMercy() {
           className="object-cover"
         />
 
-        <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-6 py-4 rounded-2xl shadow-lg">
-          <h3 className="text-xl font-bold text-gray-900">
-            Mercy Azoh-Mbi
-          </h3>
-          <p className="text-sm text-gray-600">Founder</p>
-        </div>
+       <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-6 py-4 rounded-2xl shadow-lg">
+  <h3 className={`${cinzel.className} text-2xl font-semibold text-gray-900 tracking-wide`}>
+    Mercy Azoh-Mbi
+  </h3>
+  <p className="text-xs text-gray-500 tracking-[3px] uppercase mt-1">
+    Founder
+  </p>
+</div>
       </motion.div>
 
     </div>

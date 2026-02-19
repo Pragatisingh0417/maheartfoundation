@@ -61,20 +61,17 @@ const advisors: Advisor[] = [
 
 export default function MedicalAdvisoryTeam() {
   return (
-    <div className="w-full bg-gray-50 py-16 px-4">
+    <div className="w-full">
       {/* Hero Section */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="max-w-3xl mx-auto text-center mb-12"
-      >
-        <h1 className="text-4xl font-extrabold text-gray-900">
-          Our Medical Advisory Board
-        </h1>
-        <p className="mt-4 text-lg text-red-600">
-Meet the experts who serve as the Foundation's clinicat compass, to ensure that every program, message, and strategic decision is grounded in credible, up-to-date cardiovascular science.        </p>
-      </motion.div>
+       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
+      <h1 className="text-4xl md:text-5xl font-extrabold">
+        Medical Advisory Board
+
+
+      </h1>
+        <p className="mt-6 text-lg text-white leading-relaxed">
+Meet the experts who serve as the Foundation's clinical compass, to ensure that every program, message, and strategic decision is grounded in credible, up-to-date cardiovascular science.        </p>
+    </section>
 <PageWithSidebar>
       {/* Advisors Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,9 +82,9 @@ Meet the experts who serve as the Foundation's clinicat compass, to ensure that 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1, duration: 0.6 }}
-            className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden"
+            className=" rounded-2xl  overflow-hidden"
           >
-            <div className="relative h-60 w-full bg-white flex items-center justify-center">
+            <div className="relative h-60 w-full flex items-center justify-center">
   <Image
     src={advisor.photo}
     alt={advisor.name}

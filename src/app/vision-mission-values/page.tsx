@@ -14,10 +14,9 @@ export default function VissionPage() {
     {/* ======================================
         HERO SECTION (UNCHANGED)
     ====================================== */}
-    <section className="bg-[#b8962e] text-red-600 py-20 px-6 text-center">
+    <section className="bg-[#b8962e] text-white py-30 px-6 text-center">
       <h1 className="text-4xl md:text-5xl font-extrabold">
-        VISSION, MISSION AND VALUES
-      </h1>
+Vision, Mission, Values      </h1>
     </section>
 
     {/* ======================================
@@ -35,7 +34,7 @@ export default function VissionPage() {
           {/* ======================================
               OUR VISION
           ====================================== */}
-          <section className="py-8">
+          <section className="">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -51,20 +50,13 @@ export default function VissionPage() {
               </p>
             </motion.div>
 
-            <Link href="/heart-health">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                className="mt-10 px-8 py-3 bg-red-600 hover:bg-red-700 transition text-white rounded-full font-semibold flex items-center gap-2 mx-auto shadow-lg"
-              >
-                More On Heart Disease <ChevronRight size={18} />
-              </motion.button>
-            </Link>
+            
           </section>
 
           {/* ======================================
               MISSION SECTION
           ====================================== */}
-          <section className="bg-gradient-to-b from-gray-50 to-white py-24 relative rounded-2xl mt-20">
+          <section className="bg-gradient-to-b from-gray-50 to-white relative rounded-2xl mt-20">
 
             <div className="absolute inset-0 bg-[url('/pattern-light.png')] opacity-5"></div>
 
@@ -91,8 +83,8 @@ export default function VissionPage() {
           {/* ======================================
               VALUES SECTION
           ====================================== */}
-          <section className="py-24">
-            <h2 className="text-4xl font-bold text-center">Our Core Values</h2>
+          <section className="py-20">
+            <h2 className="text-4xl font-bold text-center text-red-600">Our Core Values</h2>
 
             <div className="grid sm:grid-cols-3 gap-10 mt-16">
               {values.map((v, i) => (

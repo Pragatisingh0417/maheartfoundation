@@ -19,12 +19,15 @@ export default function Partners() {
       <div className="max-w-6xl mx-auto px-4 md:px-10">
 
         {/* SECTION HEADER */}
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Our Partners
-          </h2>
+        <div className="text-center mb-10">
+         <div className="flex justify-center mb-14">
+          <div className="bg-[#d4af37] px-10 py-4 rounded-full shadow-md">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+              Our Partners
+            </h2>
+          </div>
+        </div>
 
-          <div className="w-24 h-1 bg-[#d4af37] mx-auto mt-4 rounded-full" />
 
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
             We are grateful to our partners whose support and collaboration
