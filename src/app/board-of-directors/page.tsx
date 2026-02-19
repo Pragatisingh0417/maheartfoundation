@@ -62,49 +62,48 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
           Meet the dedicated leaders guiding the Mercy Azoh-Mbi Heart Foundation
         </p>
       </section>
-<PageWithSidebar>
-      {/* DIRECTORS */}
-      <section className="max-w-6xl mx-auto px-6 py-24 space-y-28">
-        {directors.map((d, i) => (
-          <div
-            key={i}
-            className={`grid gap-12 items-start ${
-              i % 2 === 0
-                ? "md:grid-cols-[380px_1fr]"
-                : "md:grid-cols-[1fr_380px]"
-            }`}
-          >
-            {/* IMAGE */}
+      <PageWithSidebar>
+        {/* DIRECTORS */}
+        <section className="max-w-6xl mx-auto px-6 py-24 space-y-28">
+          {directors.map((d, i) => (
             <div
-              className={`${
-                i % 2 !== 0 ? "md:order-2" : ""
-              } rounded-2xl overflow-hidden shadow-lg`}
+              key={i}
+              className={`grid gap-12 items-start ${i % 2 === 0
+                  ? "md:grid-cols-[380px_1fr]"
+                  : "md:grid-cols-[1fr_380px]"
+                }`}
             >
-              <Image
-                src={d.image}
-                alt={d.name}
-                width={500}
-                height={600}
-                className="w-full h-[320px] object-cover"
-              />
+              {/* IMAGE */}
+              <div
+                className={`${i % 2 !== 0 ? "md:order-2" : ""
+                  } rounded-2xl overflow-hidden `}
+              >
+                <Image
+                  src={d.image}
+                  alt={d.name}
+                  width={400}
+                  height={500}
+                  className="w-70 h-[300px] object-cover mx-auto rounded-xl"
+                />
+
+              </div>
+
+              {/* CONTENT */}
+              <div className="flex flex-col justify-center">
+                <h2 className="text-3xl font-bold text-gray-900">{d.name}</h2>
+                <p className="mt-1 text-lg font-semibold text-red-600">
+                  {d.role}
+                </p>
+
+                <div className="w-16 h-[3px] bg-yellow-500 my-6" />
+
+                <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-line">
+                  {d.bio}
+                </p>
+              </div>
             </div>
-
-            {/* CONTENT */}
-            <div className="flex flex-col justify-center">
-              <h2 className="text-3xl font-bold text-gray-900">{d.name}</h2>
-              <p className="mt-1 text-lg font-semibold text-red-600">
-                {d.role}
-              </p>
-
-              <div className="w-16 h-[3px] bg-yellow-500 my-6" />
-
-              <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-line">
-                {d.bio}
-              </p>
-            </div>
-          </div>
-        ))}
-      </section>
+          ))}
+        </section>
       </PageWithSidebar>
     </main>
   );
