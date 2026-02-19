@@ -85,7 +85,7 @@ export default function Header() {
               setActive={() => setActiveMenu("about")}
               clear={() => setActiveMenu(null)}
             >
-              <MenuLink href="/vision-mission-values">Mission, Vision, Values</MenuLink>
+              <MenuLink href="/vision-mission-values">Vision, Mission, Values</MenuLink>
               <MenuLink href="/word-from-mercy">Word From Mercy</MenuLink>
               <MenuLink href="/our-inspiration">Our Inspiration</MenuLink>
               <MenuLink href="/what-we-do">What We Do</MenuLink>
