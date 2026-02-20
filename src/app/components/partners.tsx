@@ -20,13 +20,25 @@ export default function Partners() {
 
         {/* SECTION HEADER */}
         <div className="text-center mb-10">
-         <div className="flex justify-center mb-14">
-          <div className="bg-[#d4af37] px-10 py-4 rounded-full shadow-md">
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-              Our Partners
-            </h2>
-          </div>
-        </div>
+         <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-red-600">
+           Our Partners
+          </h2>
+ {/* Red underline */}
+          <svg
+            viewBox="0 0 200 20"
+            className="mx-auto mt-2 w-36 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 12 C40 -6 160 24 200 4"
+              stroke="#d4af37"
+              strokeWidth="6"
+              strokeLinecap="round"
+              fill="none"
+              opacity="0.95"
+            />
+          </svg>        </div>
 
 
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">

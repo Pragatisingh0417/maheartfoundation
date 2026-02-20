@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function SalvationcampaignPage() {
   return (
@@ -20,14 +21,15 @@ export default function SalvationcampaignPage() {
       {/* ============================
           CONTENT SECTION
       ============================= */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
+      <PageWithSidebar>
+      <section className="max-w-5xl mx-auto px-6">
 
         {/* White Card */}
         <div className="bg-white p-10 shadow-lg border rounded-2xl">
 
          
           {/* ========== Heading ========== */}
-          <h2 className="text-2xl font-bold text-blue-900 mb-6">
+          <h2 className="text-2xl font-bold text-red-600 mb-6">
             About the Campaign
           </h2>
 
@@ -68,7 +70,7 @@ export default function SalvationcampaignPage() {
           </div>
 
       </section>
-
+</PageWithSidebar>
     </main>
   );
 }

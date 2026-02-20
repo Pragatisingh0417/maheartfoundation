@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function MevickSchoolCampaign() {
   return (
@@ -13,19 +14,18 @@ export default function MevickSchoolCampaign() {
         Yaounde, Cameroon
         </p>
       </section>
-      <div className="max-w-6xl mx-auto px-4 md:px-10">
 
-       
+      <PageWithSidebar>      <section>
 
-      
- {/* 2 CAMPAIGN TITLE */}
-        
-
-       
+<div className="max-w-6xl mx-auto px-4 md:px-10">
 
         {/* CONTENT */}
-        <div className="space-y-6 text-gray-700 leading-relaxed text-[17px] py-20">
-
+        <div className="space-y-6 text-gray-700 leading-relaxed text-[17px] ">
+        <div className="bg-white p-10 shadow-lg border rounded-2xl">
+{/* ========== Heading ========== */}
+          <h2 className="text-2xl font-bold text-red-600 mb-6">
+            About the Campaign
+          </h2>
           <p>
             The <strong>“ Mevick Secondary”</strong> School Sensitization Campaign, organized by the MA Heart Foundation’s Cameroon country office on March 20, 2025, aimed to raise heart health awareness among young people for early prevention. The campaign targeted students from Mevick Bilingual Grammar School in Yaoundé, with key objectives including sensitizing students, establishing future collaborations with the school, increasing public visibility through media, recruiting volunteers, and launching the Cameroon office’s activities for the year.
           </p>
@@ -43,8 +43,9 @@ export default function MevickSchoolCampaign() {
           </p>
 
         </div>
+        </div>
          {/* IMAGE */}
-        <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10">
+        <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mt-10">
           <Image
             src="/Ma-banner.jpeg"
             alt="MEVICK SECONDARY SCHOOL CAMPAIGN"
@@ -53,7 +54,11 @@ export default function MevickSchoolCampaign() {
           />
         </div>
       </div>
+
+      </section>
       
+      </PageWithSidebar>
+
     </section>
   );
 }

@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -45,9 +46,17 @@ export default function Header() {
 
   {/* Center Text */}
   <div className="w-1/3 text-center">
-    <p className="text-red-600 text-[20px]">
-      Health and hope from Heart to Heart
-    </p>
+    <motion.h3
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, delay: 0.3 }}
+                  className=" text-[20px] text-red-600 flex items-center"
+                  style={{
+                    fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
+                  }}
+                >
+                  Devoted to promoting healthy hearts.
+                </motion.h3>
   </div>
 
   {/* Right Side Content */}
@@ -86,10 +95,10 @@ export default function Header() {
               clear={() => setActiveMenu(null)}
             >
               <MenuLink href="/vision-mission-values">Vision, Mission, Values</MenuLink>
-              <MenuLink href="/word-from-mercy">Word From Mercy</MenuLink>
+              <MenuLink href="/word-from-mercy">A Word From Mercy</MenuLink>
               <MenuLink href="/our-inspiration">Our Inspiration</MenuLink>
               <MenuLink href="/what-we-do">What We Do</MenuLink>
-              <MenuLink href="/board-of-directors">Board Of Directors</MenuLink>
+              <MenuLink href="/board-of-directors">Board Directors</MenuLink>
               <MenuLink href="/our-medical-advisory-team">Medical Advisory Board</MenuLink>
               <MenuLink href="/management-team">Management Team</MenuLink>
               <MenuLink href="/our-partners">Our Partners</MenuLink>

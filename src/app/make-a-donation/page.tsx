@@ -13,89 +13,93 @@ export default function MakeADonationPage() {
       {/* ===========================
           HERO BANNER
       ============================ */}
-     <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
-                    <h1 className="text-4xl md:text-5xl font-extrabold">
-                       Make A Donation
+      <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold">
+          Make A Donation
 
 
-                    </h1>
-                    <p className="mt-6 text-lg  text-white leading-relaxed">
-Your donation goes a long way in helping us save lives and reach more communities.
+        </h1>
+        <p className="mt-6 text-lg  text-white leading-relaxed">
+          Your donation goes a long way in helping us save lives and reach more communities.
 
 
-    </p>
-                </section>
-<PageWithSidebar>
-      {/* ===========================
+        </p>
+      </section>
+      <PageWithSidebar>
+        {/* ===========================
           CONTENT SECTION
       ============================ */}
-      <section className="max-w-5xl mx-auto px-6 py-16">
+        <section className="max-w-5xl mx-auto px-6 py-16">
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-gray-700 leading-relaxed text-lg"
-        >
-         Your Support helps us expand heart awareness, testing, education life-saving outreach programs around the world
-        </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="text-gray-700 leading-relaxed text-lg"
+          >
+            Your Support helps us expand heart awareness, testing, education life-saving outreach programs around the world
+          </motion.p>
 
-        
 
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-10 text-3xl font-bold text-red-600 flex items-center gap-2"
-        >
-          <Heart className="text-red-600" /> Give from the heart ...give for a heart!
-        </motion.h3>
-      </section>
 
-      {/* ===========================
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="mt-10 text-3xl text-red-600 flex items-center gap-2"
+            style={{
+              fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
+            }}
+          >
+            <Heart className="text-red-600" />
+            Give from the heart ...Give for a heart!
+          </motion.h3>
+        </section>
+
+        {/* ===========================
           DONATION OPTIONS
       ============================ */}
-      <section className="max-w-6xl mx-auto px-6 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <section className="max-w-6xl mx-auto px-6 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-        {/* CREDIT CARD */}
-        <motion.div
-          whileHover={{ scale: 1.04 }}
-          className="bg-white shadow-xl rounded-2xl p-8 text-center border border-red-100"
-        >
-          <CreditCard className="mx-auto w-12 h-12 text-red-600 mb-4" />
-          <h4 className="text-xl font-semibold text-gray-900">Donate With Credit Card</h4>
-          <p className="mt-3 text-gray-700 leading-relaxed">
-            Secure online donation using any major credit card.
-          </p>
+          {/* CREDIT CARD */}
+          <motion.div
+            whileHover={{ scale: 1.04 }}
+            className="bg-white shadow-xl rounded-2xl p-8 text-center border border-red-100"
+          >
+            <CreditCard className="mx-auto w-12 h-12 text-red-600 mb-4" />
+            <h4 className="text-xl font-semibold text-gray-900">Donate With Credit Card</h4>
+            <p className="mt-3 text-gray-700 leading-relaxed">
+              Secure online donation using any major credit card.
+            </p>
 
-          <Link href="/donate-with-mobile-money">
-            <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition">
-              Donate Now
-            </button>
-          </Link>
-        </motion.div>
+            <Link href="/donate-with-mobile-money">
+              <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition">
+                Donate Now
+              </button>
+            </Link>
+          </motion.div>
 
-        {/* MOBILE MONEY */}
-        <motion.div
-          whileHover={{ scale: 1.04 }}
-          className="bg-white shadow-xl rounded-2xl p-8 text-center border border-red-100"
-        >
-          <Smartphone className="mx-auto w-12 h-12 text-red-600 mb-4" />
-          <h4 className="text-xl font-semibold text-gray-900">Donate With Mobile Money</h4>
-          <p className="mt-3 text-gray-700 leading-relaxed">
-            Fast and simple donation using your mobile money account.
-          </p>
+          {/* MOBILE MONEY */}
+          <motion.div
+            whileHover={{ scale: 1.04 }}
+            className="bg-white shadow-xl rounded-2xl p-8 text-center border border-red-100"
+          >
+            <Smartphone className="mx-auto w-12 h-12 text-red-600 mb-4" />
+            <h4 className="text-xl font-semibold text-gray-900">Donate With Mobile Money</h4>
+            <p className="mt-3 text-gray-700 leading-relaxed">
+              Fast and simple donation using your mobile money account.
+            </p>
 
-          <Link href="/donate-with-mobile-money">
-            <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition">
-              Donate Now
-            </button>
-          </Link>
-        </motion.div>
+            <Link href="/donate-with-mobile-money">
+              <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition">
+                Donate Now
+              </button>
+            </Link>
+          </motion.div>
 
-       
-      </section>
-</PageWithSidebar>
+
+        </section>
+      </PageWithSidebar>
       {/* ===========================
           THANK YOU
       ============================ */}

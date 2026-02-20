@@ -44,7 +44,7 @@ Vision, Mission, Values      </h1>
             >
               <h2 className="text-4xl font-bold text-red-600">Our Vision</h2>
 
-              <p className="mt-8 text-lg text-gray-700 leading-relaxed">
+              <p className="mt-8 text-lg text-gray-700 leading-relaxed border border-black rounded-2xl p-10">
                 We aim to reduce global deaths from cardiovascular diseases through
                 accessibility, awareness, and medical support.
               </p>
@@ -84,7 +84,7 @@ Vision, Mission, Values      </h1>
               VALUES SECTION
           ====================================== */}
           <section className="py-20">
-            <h2 className="text-4xl font-bold text-center text-red-600">Our Core Values</h2>
+            <h2 className="text-4xl font-bold text-center text-red-600">Our Values</h2>
 
             <div className="grid sm:grid-cols-3 gap-10 mt-16">
               {values.map((v, i) => (

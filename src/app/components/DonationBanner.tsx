@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -21,11 +22,12 @@ const slides = [
     subtitle: "",
   },
   {
-    image: "/banner image qq copy 1.webp",
+    image: "/banner image qq1 copy.webp",
     title: "",
     subtitle: "",
   },
 ];
+
 
 export default function DonationBanner() {
   const [current, setCurrent] = useState(0);
@@ -92,15 +94,24 @@ export default function DonationBanner() {
         {/* DONATION BOX – ONLY FIRST SLIDE */}
         {current === 0 && (
           <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl">
-            <h2 className="text-2xl font-bold text-gray-900 text-center">
+            <h2 className="text-2xl font-bold text-red-600 text-center">
              DONATE
             </h2>
 
-            <p className="mt-4 text-gray-600 text-center">
-              Give from the heart...Give for a heart
-            </p>
+        
+            <motion.h3
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, delay: 0.3 }}
+                  className=" text-[20px] text-red-600 flex  text-center mt-2"
+                  style={{
+                    fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
+                  }}
+                >
+                   Give from the heart...Give for a heart
+                </motion.h3>
 
-            <Link href="/donate" className="block mt-6">
+            <Link href="/make-a-donation" className="block mt-2">
               <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold hover:bg-red-700 transition">
                 DONATE NOW
               </button>

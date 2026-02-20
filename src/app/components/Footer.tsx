@@ -151,7 +151,7 @@ export default function FooterSection() {
 
       {/* ================= BOTTOM ================= */}
       <div className="mt-16 pt-6 border-t border-[#d4af37]/20 text-center text-xs text-gray-400">
-        © {new Date().getFullYear()} The Mercy Azoh-Mbi Heart Foundation. All rights reserved. Designed by{" "}
+        © {new Date().getFullYear()} The Mercy Azoh-Mbi Heart Foundation. All rights reserved. Designed by{" "} <br />
         <a
           href="https://gemwebservices.com/"
           target="_blank"

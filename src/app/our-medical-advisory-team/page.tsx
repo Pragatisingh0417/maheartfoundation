@@ -34,7 +34,7 @@ const advisors: Advisor[] = [
   
   {
     name: "Dr. Gopichand Mannam",
-    photo: "/Dr. Gopichand Mannam.webp",
+    photo: "/Dr Gopichand Mannam.jpeg",
     shortBio: "",
     credentials: "",
     fullBio:
@@ -94,17 +94,17 @@ Meet the experts who serve as the Foundation's clinical compass, to ensure that 
 </div>
 
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-800">
+              <h3 className="text-xl font-bold text-gray-800 text-center">
                 {advisor.name}
               </h3>
-              <p className="mt-3 text-gray-700">{advisor.shortBio}</p>
+              <p className="mt-3 text-gray-700 text-center">{advisor.shortBio}</p>
               <p className="mt-2 text-gray-600 italic text-sm">
                 {advisor.credentials}
               </p>
 
               {/* Expand / Modal Button */}
               <details className="mt-4 group">
-                <summary className="cursor-pointer text-red-600 font-medium">
+                <summary className="cursor-pointer text-red-600 font-medium text-center">
                   Read Bio
                 </summary>
                 <p className="mt-2 text-gray-700">{advisor.fullBio}</p>

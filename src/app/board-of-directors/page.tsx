@@ -34,7 +34,7 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
     {
       name: "DENISE ALLEN-MACARTNEY",
       role: "Director",
-      image: "/Bod-7.jpg",
+      image: "/Denise A-M2018.JPG",
       bio: `An ordained minister, Denise pastors Gloucester Presbyterian Church in Ottawa, thanks to which she keeps discovering God’s deep compassion for people and their neighbourhoods. Earlier, she served six years as Director of Communications for Fidus Systems. Through her own business, Dynamic Writing, Denise provided training and communications consulting services to government agencies, corporate, and non-profit clients across Canada.`,
     },
     {

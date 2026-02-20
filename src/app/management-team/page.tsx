@@ -24,7 +24,7 @@ const advisors: Advisor[] = [
   {
     name: "Dr. Sese Ekolle",
     role: "Cameroon Country Manager",
-    photo: "/Dr. Sese Ekolle - Cameroon Country Manager.jpeg",
+    photo: "/Dr. Sese Ekolle.jpeg",
     shortBio: "",
     credentials: "",
   },

@@ -8,33 +8,24 @@ export default function FactsAndStatsPage() {
   return (
     <main className="w-full">
       {/* HERO */}
-      <section className="relative w-full h-[300px] md:h-[360px]">
-        <Image
-          // local uploaded file path (your tooling will convert this to a URL)
-          src="/imgi_15_IMG_1500-scaled.webp"
-          alt="Heart disease facts"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-blue-900/65"></div>
-
-        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 text-white max-w-6xl mx-auto">
+      <section className="">
+        <div className="bg-[#b8962e] py-20 px-6 text-center text-white ">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
             Heart Disease Facts & Statistics
           </h1>
-          <p className="mt-3 max-w-3xl text-sm md:text-lg opacity-95">
+          <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
             Key facts and figures about cardiovascular disease — worldwide and in the United States.
           </p>
         </div>
       </section>
 <PageWithSidebar>      {/* CONTENT + SIDEBAR */}
-      <section className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-4 gap-10">
+      <section className="max-w-7xl mx-auto px-6  gap-10">
         {/* MAIN */}
         <article className="lg:col-span-3 space-y-8 text-gray-800 text-base leading-relaxed">
 
           {/* Worldwide */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">World-wide</h2>
+            <h2 className="text-2xl font-bold text-red-600">World-wide</h2>
             <ul className="list-disc pl-6 mt-4 space-y-2">
               <li>
                 Cardiovascular diseases (CVDs), commonly referred to as heart disease
@@ -123,24 +114,7 @@ export default function FactsAndStatsPage() {
           </div>
         </article>
 
-        {/* SIDEBAR: quick nav / CTA */}
-        <aside className="lg:col-span-1 space-y-6">
-          <div className="sticky top-28 bg-white border rounded-lg p-6 shadow-sm">
-            <h4 className="font-bold text-lg">On this page</h4>
-            <nav className="mt-4 text-sm">
-              <a className="block py-2 text-gray-700 hover:underline" href="#worldwide">World-wide</a>
-              <a className="block py-2 text-gray-700 hover:underline" href="#us">In the United States</a>
-              <a className="block py-2 text-gray-700 hover:underline" href="#early-action">Early Action</a>
-              <a className="block py-2 text-gray-700 hover:underline" href="#resources">Resources</a>
-            </nav>
-          </div>
-
-          <div className="bg-red-50 border-l-4 border-red-500 rounded-lg p-6">
-            <h4 className="font-semibold text-lg">Need help?</h4>
-            <p className="mt-2 text-sm">If you or someone shows heart attack symptoms, call your local emergency number immediately.</p>
-            <Link href="/contact" className="inline-block mt-4 px-4 py-2 bg-red-500 text-white rounded-full text-sm">Contact us</Link>
-          </div>
-        </aside>
+        
       </section>
 </PageWithSidebar>
 

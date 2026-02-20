@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import PageWithSidebar from "../components/PageWithSidebar";
 
 export default function WorldHeartDayCampaignPage() {
     return (
@@ -22,11 +23,11 @@ export default function WorldHeartDayCampaignPage() {
                     Organized by: The Mercy Azoh-Mbi Heart Foundation
                 </p>
             </section>
-
+<PageWithSidebar>
             {/* ============================
           CONTENT SECTION
       ============================= */}
-            <section className="max-w-5xl mx-auto px-6 py-20">
+            <section className="max-w-5xl mx-auto px-6 ">
 
                 {/* White Card */}
                 <div className="bg-white p-10 shadow-lg border rounded-2xl">
@@ -122,7 +123,7 @@ export default function WorldHeartDayCampaignPage() {
                         </p>
                     </div>
             </section>
-
+</PageWithSidebar>
         </main>
     );
 }

@@ -16,8 +16,8 @@ export default function Home() {
      <Whatwedo />
      <GetInvolved />
      <OutreachActivities />
-     <Partners />
           <LatestNews />
+     <Partners />
 
     </div>
   );

@@ -32,14 +32,14 @@ Dedicated to creating a world where heart health is accessible for all.
 
           <div className="grid gap-12 items-start md:grid-cols-[420px_1fr]">
             {/* IMAGE */}
-            <div className="relative w-full h-[420px] rounded-3xl overflow-hidden shadow-xl">
-              <Image
-                src="/about-image1.webp"
-                alt="Mercy Azoh-Mbi Story"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <div className="relative w-full h-[420px] rounded-3xl overflow-hidden shadow-xl md:translate-y-50">
+  <Image
+    src="/about-image1.webp"
+    alt="Mercy Azoh-Mbi Story"
+    fill
+    className="object-cover"
+  />
+</div>
 
             {/* SINGLE PARAGRAPH */}
             <div className="relative bg-gray-50 border border-gray-200 rounded-3xl p-10 md:p-12">
