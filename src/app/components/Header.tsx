@@ -50,7 +50,7 @@ export default function Header() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.3 }}
-                  className=" text-[20px] text-red-600 flex items-center"
+                  className=" text-[26px] text-white flex items-center"
                   style={{
                     fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
                   }}
@@ -98,7 +98,7 @@ export default function Header() {
               <MenuLink href="/word-from-mercy">A Word From Mercy</MenuLink>
               <MenuLink href="/our-inspiration">Our Inspiration</MenuLink>
               <MenuLink href="/what-we-do">What We Do</MenuLink>
-              <MenuLink href="/board-of-directors">Board Directors</MenuLink>
+              <MenuLink href="/board-of-directors">Board Of Directors</MenuLink>
               <MenuLink href="/our-medical-advisory-team">Medical Advisory Board</MenuLink>
               <MenuLink href="/management-team">Management Team</MenuLink>
               <MenuLink href="/our-partners">Our Partners</MenuLink>
@@ -134,7 +134,7 @@ export default function Header() {
                 <MenuLink href="/mevick-school-campaign">Mevick School Campaign</MenuLink>
                                 <MenuLink href="/World-Heart-Day-2025">World Heart Day @ Nil High School</MenuLink>
 
-                <MenuLink href="/lycee-Bilingue-Mbalmayo">.Lycée Bilingue Mbalmayo</MenuLink>
+                <MenuLink href="/lycee-Bilingue-Mbalmayo">Lycée Bilingue Mbalmayo</MenuLink>
 
               </SubMenu>
 
@@ -236,7 +236,7 @@ export default function Header() {
             <MobileLink href="/franky-campaign">Franky School Campaign</MobileLink>
             <MobileLink href="/mevick-school-campaign">Mevick School Campaign</MobileLink>
             <MobileLink href="/World-Heart-Day-2025">World Heart Day @ Nil High School</MobileLink>
-             <MobileLink href="/lycee-Bilingue-Mbalmayo">Lycée Bilingue Mbalmayo</MobileLink>
+             <MobileLink href="/lycee-Bilingue-Mbalmayo">Lycee Bilingue Mbalmayo</MobileLink>
 <MobileLink href="/salvation-campaign">Salvation Baptist Church</MobileLink>
  <MobileLink href="/babadjou-rural-campaign"> Babadjou Rural Campaign </MobileLink> 
 <MobileLink href="/dylet-bible-school-campaign">Dylet Bible School Campaign</MobileLink> 

@@ -15,12 +15,12 @@ const partners = [
 
 export default function Partners() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-[#d4af37] py-20">
       <div className="max-w-6xl mx-auto px-4 md:px-10">
 
         {/* SECTION HEADER */}
         <div className="text-center mb-10">
-         <div className="text-center mb-14">
+         <div className="text-center mb-5">
           <h2 className="text-3xl md:text-4xl font-bold text-red-600">
            Our Partners
           </h2>
@@ -32,7 +32,7 @@ export default function Partners() {
           >
             <path
               d="M0 12 C40 -6 160 24 200 4"
-              stroke="#d4af37"
+              stroke="#ffffff"
               strokeWidth="6"
               strokeLinecap="round"
               fill="none"
@@ -41,7 +41,7 @@ export default function Partners() {
           </svg>        </div>
 
 
-          <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
+          <p className=" text-white max-w-2xl mx-auto">
             We are grateful to our partners whose support and collaboration
             help us expand heart health awareness, outreach, and life-saving
             initiatives around the world.
@@ -53,12 +53,12 @@ export default function Partners() {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="flex items-center justify-center w-56 h-32 p-6 rounded-2xl border border-[#d4af37]/30 bg-white hover:border-[#d4af37] hover:shadow-md transition"
+              className="flex items-center justify-center w-30 h-30 p-6 rounded-2xl border border-[#d4af37]/30 bg-white hover:border-[#d4af37] hover:shadow-md transition"
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
-                width={160}
+                width={100}
                 height={80}
                 className="object-contain"
               />

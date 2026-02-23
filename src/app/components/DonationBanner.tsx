@@ -103,7 +103,7 @@ export default function DonationBanner() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.3 }}
-                  className=" text-[20px] text-red-600 flex  text-center mt-2"
+                  className=" text-[20px] text-red-600   text-center mt-2"
                   style={{
                     fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
                   }}

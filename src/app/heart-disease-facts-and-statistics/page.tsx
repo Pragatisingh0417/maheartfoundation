@@ -47,7 +47,7 @@ export default function FactsAndStatsPage() {
 
           {/* In the United States */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">In the United States</h2>
+            <h2 className="text-2xl font-bold text-red-600">In the United States</h2>
             <p className="mt-4">
               Heart disease is the leading cause of death for both men and women. Below are
               a few key statistics and facts:
@@ -64,7 +64,7 @@ export default function FactsAndStatsPage() {
 
           {/* Early Action */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">Early Action is Important for Heart Attack</h2>
+            <h2 className="text-2xl font-bold text-red-600">Early Action is Important for Heart Attack</h2>
             <p className="mt-4">
               Know the warning signs and act quickly — survival chances improve when treatment begins early.
             </p>
@@ -100,7 +100,7 @@ export default function FactsAndStatsPage() {
 
           {/* Links for further reading */}
           <div className="mt-6">
-            <h3 className="text-xl font-bold">More resources</h3>
+            <h3 className="text-xl font-bold text-red-600">More resources</h3>
             <p className="mt-3 text-sm text-gray-700">
               Kindly check out the following for more detailed statistics and breakdowns:
             </p>

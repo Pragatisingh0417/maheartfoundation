@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function OutreachActivities() {
   return (
-    <section className="bg-[#fff6d8] py-20">
+    <section className="bg-[#d4af37] py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20">
 
-        <div className="text-center mb-14">
+        <div className="text-center mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-red-600">
 Outreach          </h2>
  {/* Red underline */}
@@ -18,7 +18,7 @@ Outreach          </h2>
           >
             <path
               d="M0 12 C40 -6 160 24 200 4"
-              stroke="#d4af37"
+              stroke="#ffffff"
               strokeWidth="6"
               strokeLinecap="round"
               fill="none"
@@ -27,7 +27,7 @@ Outreach          </h2>
           </svg>        </div>
 
         {/* CENTERED DESCRIPTION */}
-        <p className="text-gray-700 text-center max-w-3xl mx-auto mb-16">
+        <p className="text-white text-center max-w-3xl mx-auto mb-16">
           Through our outreach programs, we extend heart health education,
           awareness, and life-saving skills to schools, communities, and
           corporate organizations.
@@ -38,7 +38,7 @@ Outreach          </h2>
 
           {/* SCHOOL OUTREACH */}
           <div className="flex flex-col bg-white rounded-3xl shadow-sm hover:shadow-lg transition border border-[#d4af37]/30">
-            <div className="h-2 bg-[#d4af37] rounded-t-3xl" />
+            {/* <div className="h-2 bg-[#ffffff] rounded-t-3xl" /> */}
 
             <div className="p-8 flex flex-col flex-1">
               <h3 className="text-2xl font-semibold text-red-600 mb-4">
@@ -62,7 +62,7 @@ Outreach          </h2>
 
           {/* COMMUNITY OUTREACH */}
           <div className="flex flex-col bg-white rounded-3xl shadow-sm hover:shadow-lg transition border border-[#d4af37]/30">
-            <div className="h-2 bg-[#d4af37] rounded-t-3xl" />
+            {/* <div className="h-2 bg-[#d4af37] rounded-t-3xl" /> */}
 
             <div className="p-8 flex flex-col flex-1">
               <h3 className="text-2xl font-semibold text-red-600 mb-4">
@@ -86,7 +86,7 @@ Outreach          </h2>
 
           {/* CORPORATE OUTREACH */}
           <div className="flex flex-col bg-white rounded-3xl shadow-sm hover:shadow-lg transition border border-[#d4af37]/30">
-            <div className="h-2 bg-[#d4af37] rounded-t-3xl" />
+            {/* <div className="h-2 bg-[#d4af37] rounded-t-3xl" /> */}
 
             <div className="p-8 flex flex-col flex-1">
               <h3 className="text-2xl font-semibold text-red-600 mb-4">

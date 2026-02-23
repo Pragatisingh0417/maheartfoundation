@@ -50,7 +50,7 @@ export default function WhatIsHeartDiseasePage() {
           </ul>
 
           {/* TYPES */}
-          <h2 className="text-3xl font-extrabold text-gray-900 mt-16">Types of Heart Disease</h2>
+          <h2 className="text-3xl font-extrabold text-red-600 mt-16">Types of Heart Disease</h2>
 
           <p>
             There are many different types of heart disease that affect the heart in
@@ -61,7 +61,7 @@ export default function WhatIsHeartDiseasePage() {
 
             {/* 1. CONGENITAL */}
             <div>
-              <h3 className="text-2xl font-bold text-red-600">Congenital Heart Disease</h3>
+              <h3 className="text-[18px] font-bold">Congenital Heart Disease</h3>
               <p className="mt-2">
                 A general term for deformities present from birth, including:
               </p>
@@ -74,7 +74,7 @@ export default function WhatIsHeartDiseasePage() {
 
             {/* 2. ARRHYTHMIA */}
             <div>
-              <h3 className="text-2xl font-bold text-red-600">Arrhythmia</h3>
+              <h3 className="text-[18px] font-bold ">Arrhythmia</h3>
               <p className="mt-2">
                 An irregular heartbeat caused by malfunctioning electrical impulses in the heart.
               </p>
@@ -89,7 +89,7 @@ export default function WhatIsHeartDiseasePage() {
 
             {/* 3. CORONARY ARTERY DISEASE */}
             <div>
-              <h3 className="text-2xl font-bold text-red-600">Coronary Artery Disease</h3>
+              <h3 className="text-[18px] font-bold">Coronary Artery Disease</h3>
               <p className="mt-2">
                 Caused by plaque buildup that narrows coronary arteries, reducing oxygen
                 supply to the heart.
@@ -98,7 +98,7 @@ export default function WhatIsHeartDiseasePage() {
 
             {/* 4. DILATED CARDIOMYOPATHY */}
             <div>
-              <h3 className="text-2xl font-bold text-red-600">Dilated Cardiomyopathy</h3>
+              <h3 className="text-[18px] font-bold">Dilated Cardiomyopathy</h3>
               <p className="mt-2">
                 Heart chambers become enlarged and weakened, often due to long-term oxygen deficiency.
               </p>
@@ -106,7 +106,7 @@ export default function WhatIsHeartDiseasePage() {
 
             {/* 5. HEART ATTACK */}
             <div>
-              <h3 className="text-2xl font-bold text-red-600">Myocardial Infarction (Heart Attack)</h3>
+              <h3 className="text-[18px] font-bold">Myocardial Infarction (Heart Attack)</h3>
               <p className="mt-2">
                 Occurs when blood flow to the heart is blocked, damaging heart tissue.
               </p>
@@ -114,7 +114,7 @@ export default function WhatIsHeartDiseasePage() {
 
             {/* 6. HEART FAILURE */}
             <div>
-              <h3 className="text-2xl font-bold text-red-600">Heart Failure</h3>
+              <h3 className="text-[18px] font-bold">Heart Failure</h3>
               <p className="mt-2">
                 The heart becomes too weak or stiff to pump blood effectively.
               </p>
@@ -122,7 +122,7 @@ export default function WhatIsHeartDiseasePage() {
 
             {/* 7. OTHER TYPES */}
             <div>
-              <h3 className="text-2xl font-bold text-red-600">Other Types</h3>
+              <h3 className="text-2xl font-bold ">Other Types</h3>
               <ul className="list-disc pl-6 mt-2 space-y-2">
                 <li>Hypertrophic cardiomyopathy</li>
                 <li>Mitral regurgitation</li>
@@ -133,7 +133,7 @@ export default function WhatIsHeartDiseasePage() {
           </div>
 
           {/* SYMPTOMS */}
-          <h2 className="text-3xl font-extrabold text-gray-900 mt-16">Symptoms</h2>
+          <h2 className="text-3xl font-extrabold text-red-600 mt-16">Symptoms</h2>
           <p className="mt-2">
             Symptoms vary depending on the heart condition, but common signs include:
           </p>
@@ -147,7 +147,7 @@ export default function WhatIsHeartDiseasePage() {
           </ul>
 
           {/* CAUSES */}
-          <h2 className="text-3xl font-extrabold text-gray-900 mt-16">Causes</h2>
+          <h2 className="text-[24px] font-extrabold text-gray-900 mt-10">Causes</h2>
           <p className="mt-2">
             Heart disease can be caused by damage to the heart, poor blood supply,
             lifestyle habits, or genetic factors.
@@ -165,9 +165,9 @@ export default function WhatIsHeartDiseasePage() {
           </ul>
 
           {/* TREATMENT */}
-          <h2 className="text-3xl font-extrabold text-gray-900 mt-16">Treatment</h2>
+          <h2 className="text-[24px] font-extrabold text-gray-900 mt-10">Treatment</h2>
 
-          <h3 className="text-xl font-semibold mt-6">Medication</h3>
+          <h3 className="text-xl font-semibold mt-3">Medication</h3>
           <p className="mt-2">Common medicines include:</p>
           <ul className="list-disc pl-6 mt-2 space-y-2">
             <li>Statins</li>
@@ -176,14 +176,14 @@ export default function WhatIsHeartDiseasePage() {
             <li>ACE inhibitors</li>
           </ul>
 
-          <h3 className="text-xl font-semibold mt-6">Surgery</h3>
+          <h3 className="text-[24px] font-semibold mt-6">Surgery</h3>
           <p className="mt-2">
             Surgical procedures may include angioplasty, bypass surgery,
             valve repair, pacemakers, or heart transplants.
           </p>
 
           {/* PREVENTION */}
-          <h2 className="text-3xl font-extrabold text-gray-900 mt-16">Prevention</h2>
+          <h2 className="text-[24px] font-extrabold text-gray-900 mt-16">Prevention</h2>
 
           <ul className="list-disc pl-6 mt-2 space-y-2">
             <li>Eat a balanced, low-fat, high-fiber diet.</li>

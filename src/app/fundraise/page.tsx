@@ -122,22 +122,7 @@ export default function FundraisePage() {
         </motion.div>
       </section>
 
-      {/* ===========================
-          DONATION CTA
-      ============================ */}
-      <section className="bg-red-600 text-white py-16 text-center px-6">
-        <h3 className="text-3xl font-bold">Make A Donation</h3>
-        <p className="mt-3 max-w-2xl mx-auto text-gray-100">
-          Your contribution makes our work sustainable and helps us reach
-          communities across the world.
-        </p>
-
-        <Link href="/make-a-donation">
-          <button className="mt-6 px-8 py-3 bg-white text-red-600 font-semibold rounded-full shadow-lg hover:bg-gray-100 transition">
-            Donate Now
-          </button>
-        </Link>
-      </section>
+    
 
        {/* ===========================
           TIPS FOR SUCCESS

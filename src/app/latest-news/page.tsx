@@ -71,10 +71,10 @@ type CardProps = {
 
 function NewsCard({ image, title, description, link }: CardProps) {
   return (
-    <div className="bg-[#d4af37] rounded-2xl overflow-hidden shadow-lg flex flex-col">
+    <div className="bg-[#d4af37] rounded-2xl overflow-hidden shadow-lg flex flex-col h-full">
 
       {/* IMAGE */}
-      <div className="relative w-full h-64">
+      <div className="relative w-full h-60">
         <Image
           src={image}
           alt={title}
@@ -85,16 +85,16 @@ function NewsCard({ image, title, description, link }: CardProps) {
 
       {/* CONTENT */}
       <div className="p-6 text-white flex flex-col flex-1">
-        <h3 className="text-lg font-bold uppercase">
+        <h3 className="text-sm font-bold uppercase">
           {title}
         </h3>
 
-        <p className="text-sm text-gray-100 mt-3 leading-relaxed">
+        <p className="text-sm text-gray-100 mt-3 leading-relaxed flex-grow">
           {description}
         </p>
 
         {/* BUTTON */}
-        <Link href={link} className="mt-6">
+        <Link href={link} className="mt-auto">
           <button className="w-full bg-red-500 hover:bg-red-600 transition py-3 rounded-full font-semibold">
             Read More
           </button>

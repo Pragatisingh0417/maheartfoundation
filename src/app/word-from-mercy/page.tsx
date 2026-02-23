@@ -14,7 +14,7 @@ export default function WordFromMercy() {
     <main className="w-full">
 
       {/* HERO STRIP */}
-      <section className="bg-[#b8962e] text-red-600 py-20 px-6 text-center">
+      <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
           A Word from Mercy
         </h1>

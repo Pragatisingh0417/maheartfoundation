@@ -44,7 +44,7 @@ Vision, Mission, Values      </h1>
             >
               <h2 className="text-4xl font-bold text-red-600">Our Vision</h2>
 
-              <p className="mt-8 text-lg text-gray-700 leading-relaxed border border-black rounded-2xl p-10">
+              <p className="mt-8 text-[17px] text-gray-700 leading-relaxed border border-black rounded-2xl p-10">
                 We aim to reduce global deaths from cardiovascular diseases through
                 accessibility, awareness, and medical support.
               </p>
@@ -65,7 +65,7 @@ Vision, Mission, Values      </h1>
                 Our Mission
               </h2>
 
-              <div className="grid md:grid-cols-2 gap-10 mt-16">
+              <div className="grid md:grid-cols-3 gap-10 mt-16 ">
                 {missionList.map((text, index) => (
                   <motion.div
                     key={index}
@@ -115,8 +115,8 @@ Vision, Mission, Values      </h1>
 ------------------------------------------*/
 function MissionCard({ text }: { text: string }) {
   return (
-    <div className="bg-white p-8 rounded-2xl shadow-md border hover:shadow-lg transition duration-300">
-      <p className="text-gray-700 text-lg leading-relaxed">{text}</p>
+    <div className="bg-white p-5 rounded-2xl shadow-md border hover:shadow-lg transition duration-300">
+      <p className="text-gray-700 text-[16px] leading-relaxed ">{text}</p>
     </div>
   );
 }
@@ -127,7 +127,7 @@ function MissionCard({ text }: { text: string }) {
 function ValueCard({ title, text }: { title: string; text: string }) {
   return (
     <div className="bg-white p-10 rounded-2xl shadow-lg border text-center">
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <h3 className="text-[16px] font-bold mb-3">{title}</h3>
       <p className="text-gray-600 leading-relaxed">{text}</p>
     </div>
   );
@@ -160,7 +160,7 @@ function StorySection({
           transition={{ duration: 0.7 }}
         >
           <h2 className="text-4xl font-bold">{title}</h2>
-          <p className="mt-6 text-lg leading-relaxed text-gray-700">{text}</p>
+          <p className="mt-6 text-[16px] leading-relaxed text-gray-700">{text}</p>
         </motion.div>
 
         <motion.div

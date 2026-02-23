@@ -17,18 +17,22 @@ const newsletters = {
 export default function NewsletterPage() {
   return (
     <section className="bg-white text-gray-900 ">
+        <section className="">
+        <div className="bg-[#b8962e] py-20 px-6 text-center text-white ">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
+            Newsletter
+          </h1>
+          <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
+ Stay informed with our latest updates, initiatives, and stories.
+          Browse past editions or subscribe to receive our newsletters directly.          </p>
+        </div>
+      </section>
       <div className="max-w-8xl mx-auto px-6">
+
+        
         <PageWithSidebar>
 
-        {/* PAGE TITLE */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-red-600">
-          Newsletter
-        </h1>
-
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-16">
-          Stay informed with our latest updates, initiatives, and stories.
-          Browse past editions or subscribe to receive our newsletters directly.
-        </p>
+       
         {/* PAST EDITIONS */}
         <div className="space-y-16">
           {Object.entries(newsletters).map(([year, editions]) => (

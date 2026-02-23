@@ -6,12 +6,12 @@ export default function VolunteerForm() {
   const [eventType, setEventType] = useState("");
 
   return (
-    <section className="px-6 md:px-20 py-14 bg-gray-100">
-      <h2 className="text-3xl font-bold text-black mb-10">
+    <section className="mx-auto md:px-20 py-14 bg-gray-100 max-w-4xl ">
+      <h2 className="text-3xl font-bold text-red-600 mb-10">
         Become a Volunteer
       </h2>
 
-      <form className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+      <form className=" grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
 
         {/* First Name */}
         <div className="flex flex-col">

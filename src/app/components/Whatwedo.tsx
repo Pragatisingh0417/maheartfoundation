@@ -53,7 +53,7 @@ const programs: Program[] = [
 ];
 
   return (
-    <section className="relative w-full  p-10  overflow-hidden ">
+    <section className="relative w-full  p-10  overflow-hidden  bg-[#d4af37]">
 
       <div className="relative max-w-6xl mx-auto text-center ">
         <h2 className="text-red-600 text-3xl font-bold tracking-wider mb-3 mt-10">What We Do</h2>
@@ -66,7 +66,7 @@ const programs: Program[] = [
         >
           <path
             d="M0 12 C40 -6 160 24 200 4"
-            stroke="#d4af37"
+            stroke="#ffffff"
             strokeWidth="6"
             strokeLinecap="round"
             fill="none"
@@ -74,7 +74,7 @@ const programs: Program[] = [
           />
         </svg>
         {/* Grid */}
-      <section className=" px-4">
+      <section className=" px-4 py-10">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {programs.map((program, idx) => (
               <motion.div

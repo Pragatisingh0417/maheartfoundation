@@ -27,7 +27,7 @@ export default function VolunteerPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           <div>
-            <h2 className="text-3xl font-bold text-black mb-10">
+            <h2 className="text-3xl font-bold text-red-600 mb-10">
               Volunteering is one of the most effective ways we can help others.
             </h2>
 
@@ -37,10 +37,10 @@ export default function VolunteerPage() {
               <span className="font-semibold"> The Mercy Azoh-Mbi Heart Foundation.</span>
             </p>
 
-            <h2 className="text-xl mt-4 font-bold text-black mb-5 mt-5">
+            <h2 className="text-xl mt-4 font-bold text-red-600 mb-5">
           3 WAYS TO VOLUNTEER
         </h2>
-          <p className="text-gray-700 mb-2 text-lg">
+          <p className="text-gray-700 mb-2 text-lg text-samll ">
           You can leverage your skills, talents and experience in three ways:
         </p>
          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-10">
@@ -89,8 +89,8 @@ export default function VolunteerPage() {
           </div>
 
           <div className="text-gray-700 space-y-6 text-lg">
-            <h2 className="text-3xl font-bold text-black">
-              VOLUNTEER WITH OUR ADMINISTRATIVE TEAM
+            <h2 className="text-3xl font-bold text-red-600 ">
+              Volunteer with our administrative team 
             </h2>
 
             <p>
@@ -151,8 +151,8 @@ export default function VolunteerPage() {
         <div className="grid md:grid-cols-2 gap-14 items-center">
 
           <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl font-bold text-black">
-              VOLUNTEER ABROAD
+            <h2 className="text-3xl font-bold text-red-600">
+              Volunteer Abroad
             </h2>
 
             <p>

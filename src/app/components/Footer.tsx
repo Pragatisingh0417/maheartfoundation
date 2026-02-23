@@ -47,7 +47,7 @@ export default function FooterSection() {
           </Link>
 
           <p className="text-sm leading-relaxed">
-           Devoted to promoting healthy hearts
+           Devoted to promoting <br />  healthy hearts
           </p>
 
           <div className="flex gap-4 mt-4">
@@ -109,7 +109,7 @@ export default function FooterSection() {
 <div className="flex items-start gap-3">
               <FaMapMarkerAlt className="text-[#d4af37] mt-1" />
               <p>
-                Entrée CNPS Etug'Ebe, Yaounde Cameroon
+                Entrée CNPS Etug'Ebe, <br /> Yaounde Cameroon
               </p>
              
             </div>
@@ -151,14 +151,13 @@ export default function FooterSection() {
 
       {/* ================= BOTTOM ================= */}
       <div className="mt-16 pt-6 border-t border-[#d4af37]/20 text-center text-xs text-gray-400">
-        © {new Date().getFullYear()} The Mercy Azoh-Mbi Heart Foundation. All rights reserved. Designed by{" "} <br />
-        <a
+        © {new Date().getFullYear()} The Mercy Azoh-Mbi Heart Foundation. All rights reserved. {" "}<br />Designed by  <a
           href="https://gemwebservices.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#d4af37]"
         >
-          GEM WEB SERVICES
+            GEM WEB SERVICES
         </a>
       </div>
     </footer>

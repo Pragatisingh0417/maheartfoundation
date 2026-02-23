@@ -12,10 +12,10 @@ export default function LycéeCampaignPage() {
       ============================= */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-          Heart Health Campaign at Lycée de Mbalmayo     </h1>
-        {/* <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
-          Yaounde, Cameroon • April 25, 2025
-        </p> */}
+           Lycee de Mbalmayo Campaign  </h1>
+        <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
+          Mbalmayo, Cameroon • November 25, 2025
+        </p>
       </section>
 
       {/* ============================
