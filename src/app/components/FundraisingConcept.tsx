@@ -135,7 +135,7 @@ export default function FundraisingConceptForm() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="bg-[#b8962e] text-white px-10 py-3 rounded-full font-semibold shadow-lg hover:opacity-90 transition"
+              className="bg-red-600 text-white px-10 py-3 rounded-full font-semibold shadow-lg hover:opacity-90 transition"
             >
               Submit
             </motion.button>

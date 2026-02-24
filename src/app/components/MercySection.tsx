@@ -99,7 +99,7 @@ export default function MercySection() {
               <Link
                 href="https://www.amazon.com/Miracle-Mercy-Story-Courage-Adversity/dp/1664280375/ref=sr_1_1?crid=A9TXJHFH7QBV&dib=eyJ2IjoiMSJ9.vdc_BXT8lHZFsJNnjVr0OxnmG-MBNSmMPcK91WcMwkE.dZbkf9Ux_widcBY15mbq1y746r1qnpWnhQJV3xshqvQ&dib_tag=se&keywords=mercy+azoh-mbi&qid=1771868890&sprefix=mercy+azoh-mbi%2Caps%2C179&sr=8-1"
                 target="_blank"
-                className="text-red-600 text-sm font-semibold hover:underline"
+  className="inline-block bg-red-600 text-white text-sm font-semibold px-6 py-3 rounded-full shadow-md transition-all duration-300 hover:bg-red-700 hover:shadow-lg active:scale-95"
               >
                 Get your copy today
               </Link>
