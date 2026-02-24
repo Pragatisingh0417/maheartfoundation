@@ -62,7 +62,21 @@ export default function SalvationcampaignPage() {
                 className="object-cover"
                 priority
               />
+
+              
             </div>
+
+             <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10 mt-10">
+                            <video
+                                src="/videos/Salvation2.mp4"
+                                className="absolute inset-0 w-full h-full object-cover"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                controls
+                            />
+                        </div>
 
             <p className="text-sm text-gray-600 mt-2 italic">
               Fig 1: A group picture with Salvation Baptist Church men/ women group and MA Heart Team, Yaounde -Cameroon

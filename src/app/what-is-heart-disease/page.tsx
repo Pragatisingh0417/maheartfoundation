@@ -147,7 +147,7 @@ export default function WhatIsHeartDiseasePage() {
           </ul>
 
           {/* CAUSES */}
-          <h2 className="text-[24px] font-extrabold text-gray-900 mt-10">Causes</h2>
+          <h2 className="text-[24px] font-extrabold text-red-600 mt-10">Causes</h2>
           <p className="mt-2">
             Heart disease can be caused by damage to the heart, poor blood supply,
             lifestyle habits, or genetic factors.
@@ -165,7 +165,7 @@ export default function WhatIsHeartDiseasePage() {
           </ul>
 
           {/* TREATMENT */}
-          <h2 className="text-[24px] font-extrabold text-gray-900 mt-10">Treatment</h2>
+          <h2 className="text-[24px] font-extrabold text-red-600 mt-10">Treatment</h2>
 
           <h3 className="text-xl font-semibold mt-3">Medication</h3>
           <p className="mt-2">Common medicines include:</p>
@@ -183,7 +183,7 @@ export default function WhatIsHeartDiseasePage() {
           </p>
 
           {/* PREVENTION */}
-          <h2 className="text-[24px] font-extrabold text-gray-900 mt-16">Prevention</h2>
+          <h2 className="text-[24px] font-extrabold text-red-600 mt-16">Prevention</h2>
 
           <ul className="list-disc pl-6 mt-2 space-y-2">
             <li>Eat a balanced, low-fat, high-fiber diet.</li>

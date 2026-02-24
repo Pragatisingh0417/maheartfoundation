@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import PageWithSidebar from "../components/PageWithSidebar";
+import FundraisingConceptForm from "../components/FundraisingConcept";
 
 export default function FundraisePage() {
   return (
@@ -133,7 +134,7 @@ export default function FundraisePage() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-2xl font-bold text-gray-900"
+            className="text-2xl font-bold text-red-600"
           >
             Tips for a Successful Fundraising Event
           </motion.h3>
@@ -161,6 +162,7 @@ export default function FundraisePage() {
         </div>
       </section>
       </PageWithSidebar>
+      <FundraisingConceptForm />
 
     </main>
   );

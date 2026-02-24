@@ -97,7 +97,7 @@ export default function MercySection() {
               </p>
 
               <Link
-                href="https://www.amazon.com"
+                href="https://www.amazon.com/Miracle-Mercy-Story-Courage-Adversity/dp/1664280375/ref=sr_1_1?crid=A9TXJHFH7QBV&dib=eyJ2IjoiMSJ9.vdc_BXT8lHZFsJNnjVr0OxnmG-MBNSmMPcK91WcMwkE.dZbkf9Ux_widcBY15mbq1y746r1qnpWnhQJV3xshqvQ&dib_tag=se&keywords=mercy+azoh-mbi&qid=1771868890&sprefix=mercy+azoh-mbi%2Caps%2C179&sr=8-1"
                 target="_blank"
                 className="text-red-600 text-sm font-semibold hover:underline"
               >
@@ -108,7 +108,7 @@ export default function MercySection() {
           </div>
 
           {/* ================= NEWSLETTER (NOW INDEPENDENT) ================= */}
-          <div className="border border-[#d4af37]/40 rounded-xl p-6 bg-[#fff6d8]">
+          <div className="border border-red-200 rounded-xl p-6 bg-white">
             <h3 className="text-base font-semibold text-gray-900 mb-2 text-center">
               Sign up for our newsletter
             </h3>
@@ -125,7 +125,7 @@ export default function MercySection() {
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-[#d4af37] hover:bg-[#b8962e] text-white text-sm font-semibold rounded-full transition"
+                className="px-6 py-2 bg-red-600  text-white text-sm font-semibold rounded-full transition"
               >
                 Subscribe
               </button>

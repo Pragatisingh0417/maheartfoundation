@@ -23,16 +23,16 @@ export default function WordFromMercy() {
       <PageWithSidebar>
 
 
-        <section className="w-full bg-gradient-to-b from-red-50 to-white p-10">
+        <section className="max-w-6xl bg-gradient-to-b from-red-50 to-white p-10">
 
           {/* ================= HEADING + INTRO ================= */}
-          <div className="mb-10 max-w-5xl">
+          <div className="mb-3">
 
 
-            <p className=" text-gray-700 leading-relaxed">
+            <p className=" text-gray-700 leading-relaxed mb-3">
               I wish you a warm welcome to the website of the Mercy Azoh-Mbi Heart Foundation.
             </p>
-            <p className="mt-6  text-gray-700 leading-relaxed">
+            <p className="  text-gray-700 leading-relaxed">
               In 2009, heart disease radically maimed, mutilated and morphed me into a helpless,
               almost hopeless woman. I was barely 37 years old. I deeply mourned the loss of my
               four limbs for years, but gradually began to appreciate the ultimate gift of life itself.
@@ -98,14 +98,15 @@ export default function WordFromMercy() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.3 }}
-                  className=" text-[20px] text-red-600 flex items-center"
+                  className=" text-[20px] text-black flex items-center"
                   style={{
                     fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
                   }}
                 >
-                  MERCY AZOH-MBI <br />
-                  FOUNDER
+                  Mercy Azoh-Mbi<br />
                 </motion.h3>
+                                  Founder
+
               </div>
             </motion.div>
 

@@ -114,15 +114,17 @@ export default function LycéeCampaignPage() {
         {/* ========== Image ========== */}
         <div className="w-full mt-10">
           {/* Replace with real image */}
-          <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10">
-            <Image
-              src=""
-              alt="lycée Bilingue Mbalmayo   
-"
-              fill
-              className="object-cover"
-            />
-          </div>
+           <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-10 mt-10">
+                            <video
+                                src="/videos/Mbalmayo 2.mp4"
+                                className="absolute inset-0 w-full h-full object-cover"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                controls
+                            />
+                        </div>
 
           {/* <p className="text-sm text-gray-600 mt-2 italic">
               Fig 1: A group picture with Franky Secondary students and MA Heart Team, Yaounde - Cameroon

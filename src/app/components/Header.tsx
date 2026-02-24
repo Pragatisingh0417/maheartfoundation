@@ -206,7 +206,14 @@ export default function Header() {
 
       {/* MOBILE */}
       <div className="lg:hidden flex items-center justify-between bg-black px-4 h-[90px]">
-        <Image src="/new-logo.jpg" alt="Logo" width={280} height={20} className="h-[80px]" />
+        <Link href="/">
+    <Image
+      src="/new-logo.jpg"
+      alt="Logo"
+      width={280} height={20} className="h-[80px]"
+      
+    />
+  </Link>
         <button onClick={() => setMobileOpen(true)} className="text-white text-3xl">☰</button>
       </div>
 
