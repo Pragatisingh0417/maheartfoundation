@@ -8,8 +8,12 @@ const partners = [
     logo: "/LUKMEF-Logo (2).jpg",
   },
   {
-    name: "Partner Two",
+    name: "Partner Two",  
     logo: "/50-years-ohi-rgb-logo.svg",
+  },
+  {
+    name: "Partner YThree",
+    logo: "/CAMESA_logo2.jpeg",
   },
 ];
 
@@ -53,14 +57,14 @@ export default function Partners() {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="flex items-center justify-center w-30 h-30 p-6 rounded-2xl border border-[#d4af37]/30 bg-white hover:border-[#d4af37] hover:shadow-md transition"
+              className="flex items-center justify-center w-35   h-30 p-6 rounded-2xl border border-[#d4af37]/30 bg-white hover:border-[#d4af37] hover:shadow-md transition"
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
                 width={100}
                 height={80}
-                className="object-contain"
+                className="object-contain "
               />
             </div>
           ))}

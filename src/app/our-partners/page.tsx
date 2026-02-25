@@ -6,9 +6,13 @@ const partners = [
         name: "Partner One",
         logo: "/LUKMEF-Logo (2).jpg",
     },
-    {
-        name: "Partner Two",
+    { 
+        name: "Partner Two", 
         logo: "/50-years-ohi-rgb-logo.svg",
+    },
+    {
+        name: "Partner Three",
+        logo: "/CAMESA_logo2.jpeg",
     },
 ];
 export default function OurPartners() {
