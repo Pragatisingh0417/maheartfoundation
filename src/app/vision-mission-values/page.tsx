@@ -45,8 +45,7 @@ Vision, Mission, Values      </h1>
               <h2 className="text-4xl font-bold text-red-600">Our Vision</h2>
 
               <p className="mt-8 text-[17px] text-gray-700 leading-relaxed border border-black rounded-2xl p-10">
-                We aim to reduce global deaths from cardiovascular diseases through
-                accessibility, awareness, and medical support.
+              Contribute in the global effort to promote healthy hearts and reduce the high rate of mortality from heart diseases.
               </p>
             </motion.div>
 
@@ -58,14 +57,13 @@ Vision, Mission, Values      </h1>
           ====================================== */}
           <section className="bg-gradient-to-b from-gray-50 to-white relative rounded-2xl mt-20">
 
-            <div className="absolute inset-0 bg-[url('/pattern-light.png')] opacity-5"></div>
 
-            <div className="relative z-10 px-6">
+            <div className="">
               <h2 className="text-4xl font-bold text-center text-red-600">
                 Our Mission
               </h2>
 
-              <div className="grid md:grid-cols-3 gap-10 mt-16 ">
+              <div className="grid md:grid-cols-3 gap-10 mt-16  ">
                 {missionList.map((text, index) => (
                   <motion.div
                     key={index}
@@ -73,7 +71,8 @@ Vision, Mission, Values      </h1>
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
-                    <MissionCard text={text} />
+                    
+                    <MissionCard text={text}  />
                   </motion.div>
                 ))}
               </div>
@@ -127,82 +126,35 @@ function MissionCard({ text }: { text: string }) {
 function ValueCard({ title, text }: { title: string; text: string }) {
   return (
     <div className="bg-white p-10 rounded-2xl shadow-lg border text-center">
-      <h3 className="text-[16px] font-bold mb-3">{title}</h3>
-      <p className="text-gray-600 leading-relaxed">{text}</p>
+      <p className="text-gray-600 leading-relaxed h-[50px] text-[15px]">{text}</p>
     </div>
   );
 }
 
-/* -----------------------------------------
-   STORY SECTION
-------------------------------------------*/
-function StorySection({
-  title,
-  text,
-  image,
-  reverse,
-}: {
-  title: string;
-  text: string;
-  image: string;
-  reverse: boolean;
-}) {
-  return (
-    <section className="py-24 bg-red-50/40">
-      <div
-        className={`max-w-6xl mx-auto grid md:grid-cols-2 gap-14 px-6 items-center ${
-          reverse ? "md:flex-row-reverse" : ""
-        }`}
-      >
-        <motion.div
-          initial={{ opacity: 0, x: reverse ? 50 : -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <h2 className="text-4xl font-bold">{title}</h2>
-          <p className="mt-6 text-[16px] leading-relaxed text-gray-700">{text}</p>
-        </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, x: reverse ? -50 : 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <Image
-            src={image}
-            width={520}
-            height={520}
-            alt="Mercy Founder"
-            className="rounded-2xl shadow-2xl object-cover"
-          />
-        </motion.div>
-      </div>
-    </section>
-  );
-}
 
 /* -----------------------------------------
    DATA
 ------------------------------------------*/
 const missionList = [
-  "Conduct outreach activities to raise awareness about heart disease.",
-  "Promote community cardiovascular health support centers.",
-  "Support medical students & researchers in cardiac care.",
-  "Strengthen medical institutions’ diagnostic & treatment capacities.",
-  "Coordinate global cardiologist networks for free care.",
+  "Conduct outreach activities to educate the public about heart disease, its prevention and treatment, with emphasis on women and the underprivileged.",
+  "Strengthening the capacity of medical institutions and practitioners to prevent, diagnose and cure heart conditions.",
+  "Promoting community based support centres for heart health to foster awareness and action in preventing heart disease.",
+  "Establish and coordinate a network of cardiologists and cardiac institutes across the world that are willing to sponsor or provide free  heart related health services to an underprivileged population.",
+  "Support medical students and researchers in developing countries in order to foster research in cardiac care.",
 ];
 
 const values = [
   {
-    title: "Accountability & Transparency",
-    text: "Responsible management of the Foundation’s affairs.",
+    title: "",
+    text: " Accountability & transparency in managing the  affairs of the Foundation.",
   },
   {
-    title: "Care & Compassion",
-    text: "Empathetic and human-driven cardiovascular services.",
+    title: "",
+    text: " Consummate care & compassion service delivery.",
   },
   {
-    title: "Credibility & Trust",
-    text: "Reliable partnerships with patients and stakeholders.",
+    title: "",
+    text: " Credibility and trust in dealing with patients, partners and other stakeholders.",
   },
 ];

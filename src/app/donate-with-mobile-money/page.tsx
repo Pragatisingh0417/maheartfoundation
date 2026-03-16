@@ -67,8 +67,28 @@ export default function MobileMoneyDonationPage() {
           <span>How to Donate via Mobile Money</span>
         </motion.div>
 
+        <div className="mt-5 ">
+ <p className="mb-3">
+          To donate by Orange Money:
+        </p>
+        <p>
+          1. Send your donation to the following number: +237-682-084-962
+
+
+        </p>
+<p>
+2. To enable us acknowledge your donation when it arrives, please notify us of your donation by sending an email to:
+
+info@maheartfoundation.org, together with your name and phone number.
+</p>
+
+
+        </div>
+       
+
+
         {/* Instructions / Details */}
-        <motion.ul
+        {/* <motion.ul
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -86,7 +106,7 @@ export default function MobileMoneyDonationPage() {
           </li>
           <li>Confirm the transaction and note your reference / transaction ID.</li>
           <li>You can email or WhatsApp us the reference ID so that we can send you a tax receipt.</li>
-        </motion.ul>
+        </motion.ul> */}
       </section>
 
       {/* CTA to Copy Details or Send */}

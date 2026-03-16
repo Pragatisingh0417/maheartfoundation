@@ -47,7 +47,7 @@ export default function ManagementTeam() {
 
       </h1>
         <p className="mt-6 text-lg text-white leading-relaxed">
-         Meet the professionals who steer the Foundation's administartion and operations
+         Meet the professionals who steer the Foundation's administartion and operations period
       </p>
     </section>
 <PageWithSidebar>

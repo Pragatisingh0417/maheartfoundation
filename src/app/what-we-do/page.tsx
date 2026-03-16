@@ -16,37 +16,37 @@ const programs: Program[] = [
   {
     name: "Screening & Testing",
     description:
-      "We run heart-disease awareness campaigns to educate communities, especially women, on early prevention and treatment.",
+      "Conduct free clinics to screen for heart disease and test individuals identified as high risk.",
     imgSrc: "/MA-1.png",
   },
   {
     name: "Treatment & Counseling",
     description:
-      "Providing free or subsidized heart disease screening camps, and supporting treatment for at-risk individuals.",
+      "Establish and coordinate a network of cardiologists and cardiac institutes across the  world willing to sponsor or provide free heart-related health services to  underprivileged populations.",
     imgSrc: "/MA-2.png",
   },
   {
     name: "Prevention, Education & Outreach",
     description:
-      "Supporting research into heart disease and advocating for policy changes to improve healthcare infrastructure.",
+      "Conduct outreach activities to educate the public about heart disease and its prevention.",
     imgSrc: "/MA-3.png",
   },
   {
     name: "Heart Health Centres & Clinics",
     description:
-      "Partnering with local organizations to reach rural and underserved areas, providing resources and training.",
+      "Promote community-based support centres for heart health in order foster awareness and action to prevent cardiovascular diseases.",
     imgSrc: "/MA-4.png",
   },
   {
     name: "Capacity Building",
     description:
-      "Partnering with local organizations to reach rural and underserved areas, providing resources and training.",
+      "Strengthen the capacity of medical institutions and practitioners in developing countries to  diagnosis and treat of heart conditions.",
     imgSrc: "/MA-5.png",
   },
   {
     name: "Research Funding",
     description:
-      "Partnering with local organizations to reach rural and underserved areas, providing resources and training.",
+      "Provide support to medical students and researchers in developing countries  in order to boost research in cardiac care.",
     imgSrc: "/MA-6.png",
   },
 ];

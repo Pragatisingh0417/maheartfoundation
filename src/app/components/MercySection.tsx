@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function MercySection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
+    <section className="max-w-7xl mx-auto px-4 py-10 border border-gray-2 mt-10 mb-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
         {/* ================= LEFT COLUMN ================= */}
@@ -14,7 +14,7 @@ export default function MercySection() {
             A Word from Mercy
           </h2>
 
-          <div className="relative w-full h-[260px] mb-4 rounded-lg overflow-hidden shadow-sm">
+          <div className="relative  w-[100px] h-[100px] mb-4 rounded-lg overflow-hidden shadow-sm">
             <Image
               src="/Mercy Azoh-Mbi2.jpg"
               alt="Mercy Azoh-Mbi"
@@ -34,12 +34,7 @@ export default function MercySection() {
               but gradually began to appreciate the ultimate gift of life itself.
             </p>
 
-            <p>
-              Upon realizing that heart disease is a major global public health challenge,
-              especially in developing countries, and that far too many people simply die
-              without a battle for survival, I reckoned that my life could be a galvanizing
-              tale and testimony to this daunting health challenge.
-            </p>
+           
 
            
           </div>
@@ -64,7 +59,10 @@ export default function MercySection() {
               </h2>
 
               <p className="text-sm text-gray-700 leading-relaxed mb-4">
-               Shortly after arriving in Ottawa with her two young children following her husband’s appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s life would take a dramatic turn. On Octobe r 23, 2009, she complained of fatigue, fever, a head ache, blurred vision … and was rushed to hospital for what she thought was a routine ailment. Amid t he H1N1 crisis, Emergency Room staff overlooked her medical history, misdiagnosed her condition, prescribed Tamiflu, and sent her home, only for her to be rushed again to the emergency department two days later following a rapid deterioration of her condition. When she was placed in a wheelchair shortly thereafter, little did she know that she had just taken her last steps on her own two feet. She was in fact in the throes of endocarditis, a virulent infection of the heart valves. She soon slipped into a coma and spent several weeks wavering between life and death.
+               Shortly after arriving in Ottawa with her two young children following her husband’s appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s life would take a dramatic turn. 
+               On Octobe r 23, 2009, she complained of fatigue, fever, a head ache, blurred vision … and was rushed to hospital for what she thought was a routine ailment. Amid t he H1N1
+                crisis, Emergency Room staff overlooked her medical history, misdiagnosed her condition, prescribed Tamiflu, and sent her home, only for her to be rushed again to the emergency department two days later following a rapid deterioration of her condition.
+                 
               </p>
 
               <Link href="/our-inspiration">
@@ -76,11 +74,11 @@ export default function MercySection() {
 
             {/* ================= RIGHT COLUMN ================= */}
             <div>
-              <h2 className="text-xl font-bold text-red-600 mb-3">
+              <h2 className="text-xl font-bold text-red-600 ">
                 The Book That Tells Our Story
               </h2>
 
-              <div className="relative w-full h-[280px] mb-4 rounded-lg overflow-hidden">
+              <div className="relative w-[100px] h-[150px]  rounded-lg overflow-hidden">
                 <Image
                   src="/images/Image of book - Miracle of Mercy.jpg"
                   alt="Miracle of Mercy Book"
@@ -89,7 +87,7 @@ export default function MercySection() {
                 />
               </div>
 
-              <p className="text-sm text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm text-gray-700 leading-relaxed mb-14">
                 Mercy’s story is chronicled in the best-selling memoir{" "}
                 <em>
                   Miracle of Mercy: A True Story of Courage in the Face of Adversity

@@ -136,9 +136,11 @@ export default function VolunteerPage() {
       <p>Member Services</p>
       <p>Communications</p>
     </div>
-
   </div>
+  
 </div>
+<p className="text-red-600 text-center"> Fill out the form below to get started </p>
+
           </div>
 
         </div>
@@ -171,6 +173,8 @@ export default function VolunteerPage() {
                             <li> Cardiac Surgeons</li>
 
             </ul>
+            <p className="text-red-600 "> Fill out the form below to get started </p>
+
           </div>
 
           <div className="relative h-[450px] rounded-2xl overflow-hidden shadow-xl">

@@ -13,7 +13,7 @@ const slides = [
   },
   {
     image: "/images/Lady demonstrating CPR.jpeg",
-    title: "",
+    title: "Health and Hope from Heart to Heart",
     subtitle: "",
   },
   {
@@ -71,12 +71,15 @@ export default function DonationBanner() {
   </div>
 
   {/* CONTENT */}
-  <div className="relative max-w-7xl mx-auto px-6 h-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-12 md:gap-10 py-20 md:py-0 z-10">
+<div className={`relative max-w-7xl mx-auto px-6 h-full flex flex-col items-center 
+${current === 1 ? "justify-center text-center  md:text-4xl " : "md:flex-row md:justify-between"} 
+gap-12 md:gap-10 py-20 md:py-0 z-10`}>
 
     {/* LEFT TEXT */}
-    <div className="text-white max-w-xl text-center md:text-left">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-xl">
-        {slides[current].title}
+<div className={`text-white max-w-xl ${current === 1 ? "text-center mx-auto " : "text-center md:text-4xl md:text-left"}`}>    
+  
+<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow-xl">
+          {slides[current].title}
         <br />
         {slides[current].subtitle}
       </h1>

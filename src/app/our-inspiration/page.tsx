@@ -34,7 +34,7 @@ Dedicated to creating a world where heart health is accessible for all.
             {/* IMAGE */}
             <div className="relative w-full h-[420px] rounded-3xl overflow-hidden shadow-xl md:translate-y-50">
   <Image
-    src="/about-image1.webp"
+    src="/Inspiration.jpeg"
     alt="Mercy Azoh-Mbi Story"
     fill
     className="object-cover"
@@ -46,11 +46,14 @@ Dedicated to creating a world where heart health is accessible for all.
               {/* Accent Line */}
               <div className="absolute left-0 top-0 h-full w-2 bg-red-600 rounded-l-3xl" />
 
-              <p className="text-lg leading-relaxed text-gray-700 whitespace-pre-line">
+              <p className=" leading-relaxed text-gray-700 whitespace-pre-line">
                 Shortly after arriving in Ottawa with her two young children following her husband’s
 appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s life would
 take a dramatic turn. On October 23, 2009, she complained of fatigue, fever, a head ache,
-blurred vision … and was rushed to hospital for what she thought was a routine ailment. Amid
+blurred vision … and was rushed to hospital for what she thought was a routine ailment. 
+</p>
+              <p className=" leading-relaxed text-gray-700 whitespace-pre-line">
+Amid
 the H1N1 crisis, Emergency Room staff overlooked her medical history, misdiagnosed her
 condition, prescribed Tamiflu, and sent her home, only for her to be rushed again to the
 emergency department two days later following a rapid deterioration of her condition. When
@@ -58,8 +61,9 @@ she was placed in a wheelchair shortly thereafter, little did she know that she 
 last steps on her own two feet. She was in fact in the throes of endocarditis, a virulent infection
 of the heart valves. She soon slipped into a coma and spent several weeks wavering between
 life and death.
-              </p>
-              <p className="text-lg leading-relaxed text-gray-700 whitespace-pre-line mt-2">
+</p>
+
+              <p className=" leading-relaxed text-gray-700 whitespace-pre-line mt-2">
 
 
                 Despite the cataclysmic prognosis from the doctors and the pressure brought to bear on him,
@@ -69,7 +73,11 @@ hours to live. In the weeks and months that followed, she would undergo four hea
 as well as the amputation of her two arms and two legs – the only options left to save her life.
 Following intensive physical and psychological therapy and the fitting of prostheses, Mercy
 became a virtual prosthetic woman: two prosthetic heart valves, two prosthetic arms and two
-prosthetic legs. The bouts of depression and the suicidal thoughts she battled with following
+prosthetic legs. 
+</p>
+              <p className=" leading-relaxed text-gray-700 whitespace-pre-line mt-2">
+
+The bouts of depression and the suicidal thoughts she battled with following
 her amputations were merely the clouds that foreshadowed the sunshine. Guided by her faith,
 fortitude and the support of her family and community, Mercy has found a new calling as
 champion for the afflicted. Through the Mercy Azoh-Mbi Heart Foundation, she aims to spread
