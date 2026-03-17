@@ -60,7 +60,7 @@ testing, and life-saving outreach programs around the world.
               Secure online donation using any major credit card.
             </p>
 
-            <Link href="/donate-with-mobile-money">
+            <Link href="/donate-by-credit-card">
               <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition">
                 Donate Now
               </button>
