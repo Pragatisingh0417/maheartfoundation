@@ -35,24 +35,133 @@ export default function CreditPage() {
             <span>How to Donate Via Credit Card</span>
           </motion.div>
 
-          {/* <div className="mt-5 ">
-            <p className="mb-3">
-              To donate by Orange Money:
-            </p>
-            <p>
-              1. Send your donation to the following number: +237-640-775-706
 
 
-            </p>
-            <p>
-              2. To enable us acknowledge your donation when it arrives, please notify us of your donation by sending an email to:
+<div className="mt-8 bg-white shadow-xl rounded-2xl p-6 md:p-8">
+  <h3 className="text-xl font-bold text-gray-800 mb-6">
+    Donation Details
+  </h3>
 
-              info@maheartfoundation.org, together with your name and phone number.
-            </p>
+  <form className="space-y-5">
+    
+    {/* Amount */}
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        Donation Amount
+      </label>
+      <input
+        type="number"
+        placeholder="Enter amount"
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+      />
+    </div>
 
+    {/* Name */}
+    <div className="grid md:grid-cols-2 gap-4">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          First Name
+        </label>
+        <input
+          type="text"
+          placeholder="First Name"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500"
+        />
+      </div>
 
-          </div> */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          Last Name
+        </label>
+        <input
+          type="text"
+          placeholder="Last Name"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500"
+        />
+      </div>
+    </div>
 
+    {/* Email */}
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        Email Address
+      </label>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500"
+      />
+    </div>
+
+    {/* Phone */}
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        Phone Number
+      </label>
+      <input
+        type="text"
+        placeholder="Enter phone number"
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500"
+      />
+    </div>
+
+    {/* Card Details */}
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        Card Number
+      </label>
+      <input
+        type="text"
+        placeholder="1234 5678 9012 3456"
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500"
+      />
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-4">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          Expiry Date
+        </label>
+        <input
+          type="text"
+          placeholder="MM/YY"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500"
+        />
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          CVV
+        </label>
+        <input
+          type="password"
+          placeholder="***"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500"
+        />
+      </div>
+    </div>
+
+    {/* Message */}
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        Message (Optional)
+      </label>
+      <textarea
+        rows={3}
+        placeholder="Write a message..."
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500"
+      />
+    </div>
+
+    {/* Button */}
+    <button
+      type="submit"
+      className="w-full bg-red-600 text-white py-3 rounded-full font-semibold hover:bg-red-700 transition"
+    >
+      Donate Now
+    </button>
+  </form>
+</div>
         </section>
 
 
