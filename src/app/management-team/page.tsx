@@ -43,12 +43,13 @@ export default function ManagementTeam() {
       {/* HERO */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
       <h1 className="text-4xl md:text-5xl font-extrabold">
-        Our Management Team
+         Management Team
 
       </h1>
         <p className="mt-6 text-lg text-white leading-relaxed">
-         Meet the professionals who steer the Foundation's administartion and operations period
-      </p>
+Meet the professionals who steer the Foundation's administration and
+
+operations.      </p>
     </section>
 <PageWithSidebar>
       {/* TEAM GRID */}

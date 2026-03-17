@@ -108,12 +108,11 @@ export default function MercySection() {
           {/* ================= NEWSLETTER (NOW INDEPENDENT) ================= */}
           <div className="border border-red-200 rounded-xl p-6 bg-white">
             <h3 className="text-base font-semibold text-gray-900 mb-2 text-center">
-              Sign up for our newsletter
-            </h3>
+Subscribe to receive updates, heart health tips, and Foundation news.            </h3>
 
-            <p className="text-sm text-gray-600 mb-4 text-center">
+            {/* <p className="text-sm text-gray-600 mb-4 text-center">
               Stay informed about our outreach activities, events, and impact.
-            </p>
+            </p> */}
 
             <form className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
               <input

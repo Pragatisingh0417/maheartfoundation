@@ -128,8 +128,7 @@ export default function FooterSection() {
           <h2 className="text-[#d4af37] font-semibold mb-4">Newsletter</h2>
 
           <p className="text-sm mb-4">
-            Subscribe to receive updates, heart health tips, and foundation news.
-          </p>
+Subscribe to receive updates, heart health tips, and Foundation news.          </p>
 
           <form className="flex flex-col gap-3">
             <input

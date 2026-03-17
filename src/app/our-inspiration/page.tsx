@@ -14,8 +14,7 @@ export default function OurInspirationPage() {
           OUR INSPIRATION
         </h1>
         <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
-Dedicated to creating a world where heart health is accessible for all.
-
+The genesis of the Foundation.
         </p>
       </section>
 
@@ -52,7 +51,7 @@ appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s 
 take a dramatic turn. On October 23, 2009, she complained of fatigue, fever, a head ache,
 blurred vision … and was rushed to hospital for what she thought was a routine ailment. 
 </p>
-              <p className=" leading-relaxed text-gray-700 whitespace-pre-line">
+              <p className=" leading-relaxed text-gray-700 whitespace-pre-line mt-2">
 Amid
 the H1N1 crisis, Emergency Room staff overlooked her medical history, misdiagnosed her
 condition, prescribed Tamiflu, and sent her home, only for her to be rushed again to the

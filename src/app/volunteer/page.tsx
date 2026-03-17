@@ -17,6 +17,9 @@ export default function VolunteerPage() {
                      Volunteer
 
                     </h1>
+        <p className="mt-3 text-lg text-white leading-relaxed">
+                      Helping others strengthens your sense of purpose and personal identity.
+                    </p>
                   
                 </section>
 <PageWithSidebar>

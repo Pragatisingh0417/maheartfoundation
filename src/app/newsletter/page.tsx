@@ -7,7 +7,7 @@ const newsletters = {
   2025: [
     { title: "January – March 2025", link: "https://mailchi.mp/0c13ccb9a683/ma-heart-foundation-newsletter?e=[UNIQID]" },
     { title: "April – June 2025", link: " https://us6.campaign-archive.com/?e=[UNIQID]&u=7e43703b99354f7560eeb6ace&id=7e1b6437a4" },
-    { title: "July – September 2025", link: "https://mailchi.m/584e7d84f50f/quarterly-newsletter-of-the-mercy-azoh-mbi-foundation-1082527?e=[UNIQID]" },
+    { title: "July – September 2025", link: "https://mailchi.mp/584e7d84f50f/quarterly-newsletter-of-the-mercy-azoh-mbi-foundation-1082527?e=[UNIQID]" },
     { title: "October – December 2025", link: "https://us6.campaign-archive.com/?e=[UNIQID]&u=7e43703b99354f7560eeb6ace&id=9e7b5e8bce" },
   ],
 
@@ -62,13 +62,12 @@ export default function NewsletterPage() {
         </div>
         {/* NEWSLETTER SIGNUP */}
         <div className="mt-24 bg-gray-50 border rounded-2xl p-8 md:p-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-            Sign up to receive our newsletters
-          </h2>
+          <h2 className="text-2xl md:text-2xl font-semibold mb-4">
+Subscribe to receive updates, heart health tips, and Foundation news.          </h2>
 
-          <p className="text-gray-600 mb-6">
+          {/* <p className="text-gray-600 mb-6">
             Get the latest news delivered straight to your inbox.
-          </p>
+          </p> */}
 
           <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
             <input

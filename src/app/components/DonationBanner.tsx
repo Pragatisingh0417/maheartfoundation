@@ -8,8 +8,8 @@ import { useEffect, useState } from "react";
 const slides = [
   {
     image: "/heart-banner-image.png",
-    title: "Stronger Hearts,",
-    subtitle: "Stronger Futures",
+    title: "Stronger Hearts, Stronger Futures",
+    subtitle: "",
   },
   {
     image: "/images/Lady demonstrating CPR.jpeg",
@@ -71,18 +71,32 @@ export default function DonationBanner() {
   </div>
 
   {/* CONTENT */}
-<div className={`relative max-w-7xl mx-auto px-6 h-full flex flex-col items-center 
-${current === 1 ? "justify-center text-center  md:text-4xl " : "md:flex-row md:justify-between"} 
-gap-12 md:gap-10 py-20 md:py-0 z-10`}>
+ <div
+  className={`relative max-w-7xl mx-auto px-6 h-full flex flex-col items-center justify-center
+  ${
+    current === 1
+      ? "text-center"
+      : "md:flex-row md:justify-between"
+  }
+  gap-12 md:gap-10 py-20 md:py-0 z-10`}
+>
 
     {/* LEFT TEXT */}
-<div className={`text-white max-w-xl ${current === 1 ? "text-center mx-auto " : "text-center md:text-4xl md:text-left"}`}>    
-  
-<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow-xl">
-          {slides[current].title}
-        <br />
-        {slides[current].subtitle}
-      </h1>
+<div
+  className={`text-white ${
+    current === 1
+      ? "text-center mx-auto w-full"
+      : "max-w-xl text-center md:text-left"
+  }`}
+>  
+<h1
+  className={`text-2xl sm:text-3xl md:text-4xl  lg:text-5xl text-center font-extrabold leading-tight drop-shadow-xl ${
+    current === 1 ? "whitespace-nowrap" : ""
+  }`}
+>
+  {slides[current].title}
+  {slides[current].subtitle}
+</h1>
     </div>
 
     {/* DONATION BOX – ONLY FIRST SLIDE */}

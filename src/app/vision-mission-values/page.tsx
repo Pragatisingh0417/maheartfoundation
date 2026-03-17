@@ -138,20 +138,20 @@ function ValueCard({ title, text }: { title: string; text: string }) {
 ------------------------------------------*/
 const missionList = [
   "Conduct outreach activities to educate the public about heart disease, its prevention and treatment, with emphasis on women and the underprivileged.",
-  "Strengthening the capacity of medical institutions and practitioners to prevent, diagnose and cure heart conditions.",
-  "Promoting community based support centres for heart health to foster awareness and action in preventing heart disease.",
-  "Establish and coordinate a network of cardiologists and cardiac institutes across the world that are willing to sponsor or provide free  heart related health services to an underprivileged population.",
+  "Strengthen the capacity of medical institutions and practitioners to prevent, diagnose and cure heart conditions.",
+  "Promote community based support centres for heart health to foster awareness and action in preventing heart disease.",
+  "Establish and coordinate a network of cardiologists and cardiac institutes across the world that are willing to sponsor or provide free  heart related health services to underprivileged populations.",
   "Support medical students and researchers in developing countries in order to foster research in cardiac care.",
 ];
 
 const values = [
   {
     title: "",
-    text: " Accountability & transparency in managing the  affairs of the Foundation.",
+    text: " Accountability and transparency in managing the  affairs of the Foundation.",
   },
   {
     title: "",
-    text: " Consummate care & compassion service delivery.",
+    text: " Consummate care and compassion in service delivery.",
   },
   {
     title: "",

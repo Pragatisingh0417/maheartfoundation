@@ -59,8 +59,8 @@ He studied at the Universidad Tenologica De Santiago and did his Intensive Care 
           Board of Directors
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg opacity-90">
-          Meet the dedicated leaders guiding the Mercy Azoh-Mbi Heart Foundation
-        </p>
+Meet the dedicated leaders who provide oversight, guidance, and strategic direction to
+ensure that the Foundation stays true to its mission.        </p>
       </section>
       <PageWithSidebar>
         {/* DIRECTORS */}

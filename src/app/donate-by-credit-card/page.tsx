@@ -6,19 +6,19 @@ import Link from "next/link";
 import { Smartphone } from "lucide-react";
 import PageWithSidebar from "../components/PageWithSidebar";
 
-export default function MobileMoneyDonationPage() {
+export default function CreditPage() {
   return (
     <main className="w-full">
 
       {/* Hero / Banner */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-          Donate with Mobile Money
+          Donate with Credit Card
         </h1>
-        <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
+        {/* <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
           Quick, secure donations using mobile money.
 
-        </p>
+        </p> */}
       </section>
       <PageWithSidebar>
         {/* Content */}
@@ -32,10 +32,10 @@ export default function MobileMoneyDonationPage() {
             className=" flex items-center gap-3 text-red-600 text-2xl font-bold"
           >
             <Smartphone className="w-8 h-8" />
-            <span>How to Donate via Mobile Money</span>
+            <span>How to Donate Via Credit Card</span>
           </motion.div>
 
-          <div className="mt-5 ">
+          {/* <div className="mt-5 ">
             <p className="mb-3">
               To donate by Orange Money:
             </p>
@@ -51,7 +51,7 @@ export default function MobileMoneyDonationPage() {
             </p>
 
 
-          </div>
+          </div> */}
 
         </section>
 
