@@ -15,6 +15,10 @@ const partners = [
     name: "Partner YThree",
     logo: "/CAMESA_logo2.jpeg",
   },
+       { 
+        name: "Partner Four", 
+        logo: "/our-partner-logo-3.png",
+    },
 ];
 
 export default function Partners() {
@@ -57,13 +61,13 @@ export default function Partners() {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="flex items-center justify-center w-35   h-30 p-6 rounded-2xl border border-[#d4af37]/30 bg-white hover:border-[#d4af37] hover:shadow-md transition"
+              className="flex items-center justify-center w-35 h-30 p-6 rounded-2xl border border-[#d4af37]/30 bg-white hover:border-[#d4af37] hover:shadow-md transition"
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
                 width={100}
-                height={80}
+                height={20}
                 className="object-contain "
               />
             </div>

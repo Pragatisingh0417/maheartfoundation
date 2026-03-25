@@ -12,7 +12,12 @@ const partners = [
     },
     {
         name: "Partner Three",
-        logo: "/CAMESA_logo2.jpeg",
+        logo: "/CAMESA_logo2.jpeg",   
+    },
+
+     { 
+        name: "Partner Four", 
+        logo: "/our-partner-logo-3.png",
     },
 ];
 export default function OurPartners() {
@@ -32,7 +37,7 @@ export default function OurPartners() {
                 </section>
                 <PageWithSidebar>
                     {/* PARTNER LOGOS */}
-                    <div className="max-w-4xl flex flex-wrap justify-center gap-10 mt-10">
+                    <div className="max-w-7xl flex flex-wrap justify-center gap-10 mt-10">
                         {partners.map((partner, index) => (
                             <div
                                 key={index}
