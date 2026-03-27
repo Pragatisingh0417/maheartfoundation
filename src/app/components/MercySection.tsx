@@ -67,7 +67,7 @@ export default function MercySection() {
             </div>
 
             {/* ================= RIGHT COLUMN ================= */}
-            <div>
+            {/* <div>
               <h2 className="text-xl font-bold text-red-600 mb-3">
                 The Book that Tells Our Story
               </h2>
@@ -103,8 +103,37 @@ export default function MercySection() {
                 </div>
 
               </div>
-            </div>
+            </div> */}
 
+ <div className="flex gap-6 items-start">
+
+          <div className="relative w-[100px] h-[100px] rounded-lg overflow-hidden shadow-sm shrink-0">
+            <Image
+              src="/images/Image of book - Miracle of Mercy.jpg"
+              alt="Mercy Azoh-Mbi"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          <div className="text-sm text-gray-700 leading-relaxed flex-1">
+             <p>
+                    Mercy’s story is chronicled in the best-selling memoir{" "}
+                    <em>
+                      Miracle of Mercy: A True Story of Courage in the Face of Adversity
+                    </em>, available on Amazon.
+                  </p>
+
+            <Link 
+                    href="https://www.amazon.com/Miracle-Mercy-Story-Courage-Adversity/dp/1664280375/ref=sr_1_1?crid=A9TXJHFH7QBV&dib=eyJ2IjoiMSJ9.vdc_BXT8lHZFsJNnjVr0OxnmG-MBNSmMPcK91WcMwkE.dZbkf9Ux_widcBY15mbq1y746r1qnpWnhQJV3xshqvQ&dib_tag=se&keywords=mercy+azoh-mbi&qid=1771868890&sprefix=mercy+azoh-mbi%2Caps%2C179&sr=8-1"
+target="blank"            >
+              <button className="mt-4 px-5 py-2.5 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition">
+                    Get your copy today
+              </button>
+            </Link>
+          </div>
+
+        </div>
           </div>
 
         </div>
