@@ -31,7 +31,7 @@ export default function FooterSection() {
      
 
       {/* ================= MAIN GRID ================= */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 ">
 
         {/* COLUMN 1 - ABOUT FOUNDATION */}
         <div>
@@ -46,11 +46,11 @@ export default function FooterSection() {
             />
           </Link>
 
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm leading-relaxed text-center">
            Devoted to promoting <br />  healthy hearts
           </p>
 
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-4 mt-4 text-center px-6">
             <Social href="https://www.facebook.com/people/MA-Heart-Foundation/61574807995896/?sk=about" target="blank"><FaFacebookF /></Social>
             <Social href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F106902013%2Fadmin%2Fdashboard%2F" target="blank"><FaLinkedinIn /></Social>
             <Social href="https://instagram.com"><FaInstagram /></Social>
@@ -79,9 +79,8 @@ export default function FooterSection() {
         <div>
           <h2 className="text-[#d4af37] font-semibold mb-4">Resources & Action</h2>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/school-Outreach" className="hover:text-[#d4af37]">School Outreach</Link></li>
-            <li><Link href="/community-Outreach" className="hover:text-[#d4af37]">Community Outreach</Link></li>
-            <li><Link href="/corporate-Outreach" className="hover:text-[#d4af37]">Corporate Outreach</Link></li>
+            <li><Link href="/outreach" className="hover:text-[#d4af37]"> Outreach</Link></li>
+           
             <li><Link href="/heart-health" className="hover:text-[#d4af37]">Heart Health</Link></li>
             <li><Link href="/fundraise" className="hover:text-[#d4af37]">Fundraise</Link></li>
             

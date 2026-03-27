@@ -8,13 +8,13 @@ const campaigns = [
     title: "CSPH",
     location: "Yaounde, Cameroon",
     image: "/",
-    href: "/",
+    href: "/csph",
   },
    {
     title: "CAMTEL",
     location: "Yaounde, Cameroon",
     image: "/",
-    href: "/",
+    href: "/camtel",
   },
   
    

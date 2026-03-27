@@ -38,7 +38,7 @@ export default function LatestNews() {
             image="/lady-image.webp"
             title="OBITUARY"
             description="The Azoh-Mbi and Egbe families of Awing, Santa and Eyanchang Manyu – Central, announce the transition into eternity..."
-            link="/"
+            link="/obituary"
           />
 
           {/* CARD 2 */}

@@ -98,7 +98,7 @@ export default function Header() {
               <MenuLink href="/word-from-mercy">A Word From Mercy</MenuLink>
               <MenuLink href="/our-inspiration">Our Inspiration</MenuLink>
               <MenuLink href="/what-we-do">What We Do</MenuLink>
-              <MenuLink href="/board-of-directors">Board Of Directors</MenuLink>
+              <MenuLink href="/board-of-directors">Board of Directors</MenuLink>
               <MenuLink href="/our-medical-advisory-team">Medical Advisory Board</MenuLink>
               <MenuLink href="/management-team">Management Team</MenuLink>
               <MenuLink href="/our-partners">Our Partners</MenuLink>
@@ -156,8 +156,8 @@ export default function Header() {
                 active={activeSubMenu === "corporate"}
                 setActive={() => setActiveSubMenu("corporate")}
               >
-                <MenuLink href="/">CSPH</MenuLink>
-                                <MenuLink href="/">CAMTEL</MenuLink>
+                <MenuLink href="/csph">CSPH</MenuLink>
+                                <MenuLink href="/camtel">CAMTEL</MenuLink>
 
               </SubMenu>
             </Dropdown>
@@ -247,8 +247,8 @@ export default function Header() {
 <MobileLink href="/salvation-campaign">Salvation Baptist Church</MobileLink>
  <MobileLink href="/babadjou-rural-campaign"> Babadjou Rural Campaign </MobileLink> 
 <MobileLink href="/dylet-bible-school-campaign">Dylet Bible School Campaign</MobileLink> 
-<MobileLink href="/">CSPH</MobileLink>
- <MobileLink href="/">CAMTEL</MobileLink>
+<MobileLink href="/csph">CSPH</MobileLink>
+ <MobileLink href="/camtel">CAMTEL</MobileLink>
           </MobileAccordion>
 
           <MobileAccordion label="HEART HEALTH">

@@ -12,9 +12,11 @@ export default function DyletBiblecampaignPage() {
       ============================= */}
             <section className="bg-[#d4af37] text-white py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold">
-                    BIBLE SCHOOL AND CHURCH CAMPAIGN                </h1>
+                    DYLET BIBLE SCHOOL AND CHURCH CAMPAIGN                </h1>
                 <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
                     Yaounde, Cameroon </p>
+                     <p className="text-lg md:text-xl mt-2 max-w-3xl mx-auto opacity-90">
+                    June 21, 2025 </p>
             </section>
 
             {/* ============================

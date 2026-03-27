@@ -13,6 +13,8 @@ export default function MevickSchoolCampaign() {
         <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
         Yaounde, Cameroon
         </p>
+         <p className="text-lg md:text-xl mt-2 max-w-3xl mx-auto opacity-90">
+March 20, 2025  </p>
       </section>
 
       <PageWithSidebar>      <section>

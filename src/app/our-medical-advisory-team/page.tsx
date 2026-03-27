@@ -158,15 +158,7 @@ export default function MedicalAdvisoryTeam() {
               Interested in collaborating or joining as an advisor?
             </p>
 
-            <Link href="/contact">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="mt-4 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition"
-              >
-                Contact Us
-              </motion.button>
-            </Link>
+          
           </motion.div>
 
         </div>

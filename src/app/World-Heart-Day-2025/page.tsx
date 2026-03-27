@@ -18,10 +18,7 @@ export default function WorldHeartDayCampaignPage() {
                     Nil International Bilingual High School, Emana – Yaoundé  <br />
                     September 26, 2025
                 </p>
-                <p>
-
-                    Organized by: The Mercy Azoh-Mbi Heart Foundation
-                </p>
+               
             </section>
             <PageWithSidebar>
                 {/* ============================

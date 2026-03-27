@@ -13,10 +13,9 @@ export default function BabadjouRuralCampaign() {
             <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold">
                     Babadjou Health Campaign Summary                </h1>
-                {/* <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
-                    Nil International Bilingual High School, Emana – Yaoundé  <br />
-                    September 26, 2025
-                </p> */}
+                <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
+                   Babadjou, West Region, Cameroon August 2025
+                </p>
                 {/* <p>
 
                     Organized by: The Mercy Azoh-Mbi Heart Foundation
@@ -43,7 +42,7 @@ export default function BabadjouRuralCampaign() {
                     <p className="text-gray-800 leading-relaxed mb-6">
                         The Mercy Azoh-Mbi Heart Foundation partnered with The Cameroon English-speaking
                         Medical Students Association (CAMESA) to run a one-week cardiovascular health campaign
-                        BAbadjou, in Bamboutos Division, Cameroon. The team screened 621 people, most of them
+                        Babadjou, in Bamboutos Division, Cameroon. The team screened 621 people, most of them
                         rural farmers over 45 years old, with women making up the majority.
                     </p>
 

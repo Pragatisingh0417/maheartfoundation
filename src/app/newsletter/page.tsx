@@ -22,9 +22,8 @@ export default function NewsletterPage() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
             Newsletter
           </h1>
-          <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
- Stay informed with our latest updates, initiatives, and stories.
-          Browse past editions or subscribe to receive our newsletters directly.          </p>
+          <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
+ Stay informed with the  latest updates, heart health tips, and Foundation news. </p>
         </div>
       </section>
       <div className="max-w-8xl mx-auto px-6">
@@ -37,9 +36,9 @@ export default function NewsletterPage() {
         <div className="space-y-16">
           {Object.entries(newsletters).map(([year, editions]) => (
             <div key={year}>
-              <h2 className="text-2xl font-semibold mb-8">
+              {/* <h2 className="text-2xl font-semibold mb-8">
                 {year} Editions
-              </h2>
+              </h2> */}
 
               {/* 4 × 4 GRID */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -62,6 +61,11 @@ export default function NewsletterPage() {
         </div>
         {/* NEWSLETTER SIGNUP */}
         <div className="mt-24 bg-gray-50 border rounded-2xl p-8 md:p-12 text-center">
+
+            <h2 className="text-2xl md:text-2xl font-semibold mb-4">
+Newsletter 
+</h2>
+
           <h2 className="text-2xl md:text-2xl font-semibold mb-4">
 Subscribe to receive updates, heart health tips, and Foundation news.          </h2>
 

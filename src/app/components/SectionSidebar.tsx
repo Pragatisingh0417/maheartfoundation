@@ -8,10 +8,10 @@ const sections = {
     title: "ABOUT US",
     links: [
       { label: "Vision, Mission, Values", href: "/vision-mission-values" },
-      { label: "A Word From Mercy", href: "/word-from-mercy" },
+      { label: "A Word from Mercy", href: "/word-from-mercy" },
       { label: "Our Inspiration", href: "/our-inspiration" },
       { label: "What We Do", href: "/what-we-do" },
-      { label: "Board Of Directors", href: "/board-of-directors" },
+      { label: "Board of Directors", href: "/board-of-directors" },
       { label: "Medical Advisory Board", href: "/our-medical-advisory-team" },
       { label: "Management Team", href: "/management-team" },
       { label: "Our Partners", href: "/our-partners" },
