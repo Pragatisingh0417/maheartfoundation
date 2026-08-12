@@ -7,6 +7,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import LanguageSelector from "./LanguageSelector";
+import T from "./Translate";
 
 export default function Header() {
   const pathname = usePathname();
@@ -22,63 +24,63 @@ export default function Header() {
       <div className="hidden lg:grid grid-cols-[220px_1fr]">
 
         {/* LOGO COLUMN */}
-       <div className="row-span-2 flex flex-col justify-center px-2 bg-black">
-  <Link href="/">
-    <Image
-      src="/new-logo.jpg"
-      alt="Logo"
-      width={0}
-      height={0}
-      sizes="100vw"
-      className="h-[140px] w-auto object-contain"
-      priority
-    />
-  </Link>
-</div>
+        <div className="row-span-2 flex flex-col justify-center px-2 bg-black">
+          <Link href="/">
+            <Image
+              src="/new-logo.jpg"
+              alt="Logo"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="h-[140px] w-auto object-contain"
+              priority
+            />
+          </Link>
+        </div>
 
 
         {/* TOP RIGHT BAR */}
-        
-<div className="flex items-center justify-between px-10 h-[80px] bg-black">
 
-  {/* Left Empty Space (optional if needed for balance) */}
-  <div className="w-1/6" />
+        <div className="flex items-center justify-between px-10 h-[80px] bg-black">
 
-  {/* Center Text */}
-  <div className="w-1/3 text-center">
-    <motion.h3
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.3 }}
-                  className=" text-[26px] text-white flex items-center"
-                  style={{
-                    fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
-                  }}
-                >
-                  Devoted to promoting healthy hearts.
-                </motion.h3>
-  </div>
+          {/* Left Empty Space (optional if needed for balance) */}
+          <div className="w-1/6" />
 
-  {/* Right Side Content */}
-  <div className="w-1/3 flex items-center justify-end gap-8">
-    <Link href="/contact" className="text-[#d4af37] text-[20px] hover:text-white">
-      Contact Us
-    </Link>
+          {/* Center Text */}
+          <div className="w-1/3 text-center">
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className=" text-[26px] text-white flex items-center"
+              style={{
+                fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
+              }}
+            >
+              Devoted to promoting healthy hearts.
+            </motion.h3>
+          </div>
 
-    <div className="flex gap-4">
-      <Social href="https://www.facebook.com/people/MA-Heart-Foundation/61574807995896/?sk=about" target="blank">
-        <FaFacebookF />
-      </Social>
-      <Social href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F106902013%2Fadmin%2Fdashboard%2F" target="blank">
-        <FaLinkedinIn />
-      </Social>
-      <Social href="#">
-        <FaInstagram />
-      </Social>
-    </div>
-  </div>
+          {/* Right Side Content */}
+          <div className="w-1/3 flex items-center justify-end gap-8">
+            <Link href="/contact" className="text-[#d4af37] text-[20px] hover:text-white">
+              Contact Us
+            </Link>
 
-</div>
+            <div className="flex gap-4">
+              <Social href="https://www.facebook.com/people/MA-Heart-Foundation/61574807995896/?sk=about" target="blank">
+                <FaFacebookF />
+              </Social>
+              <Social href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F106902013%2Fadmin%2Fdashboard%2F" target="blank">
+                <FaLinkedinIn />
+              </Social>
+              <Social href="#">
+                <FaInstagram />
+              </Social>
+            </div>
+          </div>
+
+        </div>
 
 
         {/* NAVIGATION BAR */}
@@ -132,7 +134,7 @@ export default function Header() {
               >
                 <MenuLink href="/franky-campaign">Franky School Campaign</MenuLink>
                 <MenuLink href="/mevick-school-campaign">Mevick School Campaign</MenuLink>
-                                <MenuLink href="/World-Heart-Day-2025">World Heart Day @ Nil High School</MenuLink>
+                <MenuLink href="/World-Heart-Day-2025">World Heart Day @ Nil High School</MenuLink>
 
                 <MenuLink href="/lycee-Bilingue-Mbalmayo">Lycée Bilingue Mbalmayo</MenuLink>
 
@@ -145,8 +147,8 @@ export default function Header() {
               >
 
                 <MenuLink href="/salvation-campaign">Salvation Baptist Church</MenuLink>
-                                <MenuLink href="/dylet-bible-school-campaign">Dylet Bible School Campaign</MenuLink>
-                                                <MenuLink href="/babadjou-rural-campaign">Babadjou Rural Campaign</MenuLink>
+                <MenuLink href="/dylet-bible-school-campaign">Dylet Bible School Campaign</MenuLink>
+                <MenuLink href="/babadjou-rural-campaign">Babadjou Rural Campaign</MenuLink>
 
 
               </SubMenu>
@@ -157,7 +159,7 @@ export default function Header() {
                 setActive={() => setActiveSubMenu("corporate")}
               >
                 <MenuLink href="/csph">CSPH</MenuLink>
-                                <MenuLink href="/camtel">CAMTEL</MenuLink>
+                <MenuLink href="/camtel">CAMTEL</MenuLink>
 
               </SubMenu>
             </Dropdown>
@@ -189,16 +191,11 @@ export default function Header() {
           <div className="ml-auto flex items-center gap-4">
             <Link href="/make-a-donation">
               <button className="bg-red-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-red-700">
-                DONATE
+                <T>DONATE</T>
               </button>
             </Link>
 
-            <Link
-              href="/login"
-              className="bg-[#d4af37] px-6 py-2 rounded-full font-semibold"
-            >
-              Login
-            </Link>
+            <LanguageSelector />
           </div>
 
         </div>
@@ -207,35 +204,40 @@ export default function Header() {
       {/* MOBILE */}
       <div className="lg:hidden flex items-center justify-between bg-black px-4 h-[90px]">
         <Link href="/">
-    <Image
-      src="/new-logo.jpg"
-      alt="Logo"
-      width={280} height={20} className="h-[80px]"
-      
-    />
-  </Link>
-        <button onClick={() => setMobileOpen(true)} className="text-white text-3xl">☰</button>
+          <Image
+            src="/new-logo.jpg"
+            alt="Logo"
+            width={280} height={20} className="h-[80px]"
+          />
+        </Link>
+        <div className="flex items-center gap-3">
+          <LanguageSelector />
+          <button onClick={() => setMobileOpen(true)} className="text-white text-3xl">☰</button>
+        </div>
       </div>
 
       {mobileOpen && (
         <div className="fixed inset-0 bg-black text-white z-[999] overflow-y-auto p-6">
-          <button onClick={() => setMobileOpen(false)} className="mb-6">✕</button>
+          <div className="flex justify-between items-center mb-6">
+            <LanguageSelector />
+            <button onClick={() => setMobileOpen(false)} className="text-2xl">✕</button>
+          </div>
 
           <MobileAccordion label="ABOUT US">
             <MobileLink href="/vision-mission-values">Mission, Vision, Values</MobileLink>
             <MobileLink href="/word-from-mercy">Word From Mercy</MobileLink>
-            <MobileLink href="/our-inspiration">Our Inspiration</MobileLink> 
+            <MobileLink href="/our-inspiration">Our Inspiration</MobileLink>
             <MobileLink href="/what-we-do">What We Do</MobileLink>
-             <MobileLink href="/board-of-directors">Board of Directors</MobileLink> 
-             <MobileLink href="/our-medical-advisory-team">Medical Advisory Board</MobileLink>
-              <MobileLink href="/management-team">Management Team</MobileLink> 
+            <MobileLink href="/board-of-directors">Board of Directors</MobileLink>
+            <MobileLink href="/our-medical-advisory-team">Medical Advisory Board</MobileLink>
+            <MobileLink href="/management-team">Management Team</MobileLink>
             <MobileLink href="/our-partners">Our Partners</MobileLink>
           </MobileAccordion>
 
           <MobileAccordion label="GET INVOLVED">
             <MobileLink href="/fundraise">Fundraise</MobileLink>
             <MobileLink href="/volunteer">Volunteer</MobileLink>
-                        <MobileLink href="/make-a-donation">Donate</MobileLink>
+            <MobileLink href="/make-a-donation">Donate</MobileLink>
 
           </MobileAccordion>
 
@@ -243,26 +245,26 @@ export default function Header() {
             <MobileLink href="/franky-campaign">Franky School Campaign</MobileLink>
             <MobileLink href="/mevick-school-campaign">Mevick School Campaign</MobileLink>
             <MobileLink href="/World-Heart-Day-2025">World Heart Day @ Nil High School</MobileLink>
-             <MobileLink href="/lycee-Bilingue-Mbalmayo">Lycee Bilingue Mbalmayo</MobileLink>
-<MobileLink href="/salvation-campaign">Salvation Baptist Church</MobileLink>
- <MobileLink href="/babadjou-rural-campaign"> Babadjou Rural Campaign </MobileLink> 
-<MobileLink href="/dylet-bible-school-campaign">Dylet Bible School Campaign</MobileLink> 
-<MobileLink href="/csph">CSPH</MobileLink>
- <MobileLink href="/camtel">CAMTEL</MobileLink>
+            <MobileLink href="/lycee-Bilingue-Mbalmayo">Lycee Bilingue Mbalmayo</MobileLink>
+            <MobileLink href="/salvation-campaign">Salvation Baptist Church</MobileLink>
+            <MobileLink href="/babadjou-rural-campaign"> Babadjou Rural Campaign </MobileLink>
+            <MobileLink href="/dylet-bible-school-campaign">Dylet Bible School Campaign</MobileLink>
+            <MobileLink href="/csph">CSPH</MobileLink>
+            <MobileLink href="/camtel">CAMTEL</MobileLink>
           </MobileAccordion>
 
           <MobileAccordion label="HEART HEALTH">
             <MobileLink href="/what-is-heart-disease">What Is Heart Disease?</MobileLink>
             <MobileLink href="/heart-disease-facts-and-statistics">Facts & Statistics</MobileLink>
-             <MobileLink href="/tips-for-a-healthy-heart">Healthy Heart Tips</MobileLink>
+            <MobileLink href="/tips-for-a-healthy-heart">Healthy Heart Tips</MobileLink>
           </MobileAccordion>
 
           <MobileAccordion label="NEWS">
-<MobileLink href="/latest-news">Latest News</MobileLink>
- <MobileLink href="/newsletter">Newsletter</MobileLink>
-  <MobileLink href="/jobs">Jobs</MobileLink>         
-   </MobileAccordion>
-   
+            <MobileLink href="/latest-news">Latest News</MobileLink>
+            <MobileLink href="/newsletter">Newsletter</MobileLink>
+            <MobileLink href="/jobs">Jobs</MobileLink>
+          </MobileAccordion>
+
         </div>
       )}
     </header>
@@ -279,7 +281,7 @@ function Dropdown({ label, active, setActive, clear, children }: any) {
       onMouseLeave={clear}
     >
       <button className="uppercase text-red-600 font-semibold flex items-center gap-1 h-[70px]">
-        {label}
+        <T>{label}</T>
         <ChevronDown size={16} />
       </button>
 
@@ -296,12 +298,12 @@ function SubMenu({ label, active, setActive, children }: any) {
   return (
     <div className="relative" onMouseEnter={setActive}>
       <div className="px-4 py-2 text-red-600 font-medium flex justify-between items-center hover:bg-[#d4af37] hover:text-white cursor-pointer">
-        {label}
-        <ChevronDown size={14} className="-rotate-90" />
+        <T>{label}</T>
+        <ChevronDown size={14} className="-rotate-90 ltr:-rotate-90 rtl:rotate-90" />
       </div>
 
       {active && (
-        <div className="absolute top-0 left-full bg-white shadow-2xl rounded-2xl py-3 w-64 z-50">
+        <div className="absolute top-0 left-full ltr:left-full rtl:right-full bg-white shadow-2xl rounded-2xl py-3 w-64 z-50">
           {children}
         </div>
       )}
@@ -312,7 +314,7 @@ function SubMenu({ label, active, setActive, children }: any) {
 function MenuLink({ href, children }: any) {
   return (
     <Link href={href} className="block px-4 py-2 text-red-600 hover:bg-[#d4af37] hover:text-white">
-      {children}
+      {typeof children === "string" ? <T>{children}</T> : children}
     </Link>
   );
 }
@@ -322,7 +324,7 @@ function MobileAccordion({ label, children }: any) {
   return (
     <div className="mb-4">
       <button onClick={() => setOpen(!open)} className="w-full text-left uppercase font-semibold py-3 flex justify-between">
-        {label}
+        <T>{label}</T>
         <ChevronDown size={18} className={`${open ? "rotate-180" : ""}`} />
       </button>
       {open && <div className="pl-4">{children}</div>}
@@ -331,7 +333,11 @@ function MobileAccordion({ label, children }: any) {
 }
 
 function MobileLink({ href, children }: any) {
-  return <Link href={href} className="block py-2 text-gray-300">{children}</Link>;
+  return (
+    <Link href={href} className="block py-2 text-gray-300">
+      {typeof children === "string" ? <T>{children}</T> : children}
+    </Link>
+  );
 }
 
 function MainLink({ href, label, pathname }: any) {
@@ -342,7 +348,7 @@ function MainLink({ href, label, pathname }: any) {
       href={href}
       className="relative uppercase text-red-600 font-semibold flex items-center h-[70px]"
     >
-      {label}
+      <T>{label}</T>
       {active && (
         <span className="absolute left-0 bottom-3 w-full h-[2px] bg-red-600"></span>
       )}

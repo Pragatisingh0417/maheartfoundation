@@ -30,7 +30,7 @@ Donate conveniently by mailing a chaeque to us.
           className=" flex items-center gap-3 text-red-600 text-2xl font-bold"
         >
           <Smartphone className="w-8 h-8" />
-          <span>How to Donate via Mobile Money</span>
+          <span>How to Donate via Mailing Cheque</span>
         </motion.div>
 
            

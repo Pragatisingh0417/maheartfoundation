@@ -4,59 +4,61 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
+import T from "./Translate";
 
 export default function WhatWeDo() {
- type Program = {
-  name: string;
-  description: string;
-  imgSrc: string;
-};
+  type Program = {
+    name: string;
+    description: string;
+    imgSrc: string;
+  };
 
-const programs: Program[] = [
-  {
-    name: "Screening & Testing",
-    description:
-      "Conduct free clinics to screen for heart disease and test individuals identified as high risk.",
-    imgSrc: "/MA-1.png",
-  },
-  {
-    name: "Treatment & Counseling",
-    description:
-      "Establish and coordinate a network of cardiologists and cardiac institutes across the  world willing to sponsor or provide free heart-related health services to  underprivileged populations.",
-    imgSrc: "/MA-2.png",
-  },
-  {
-    name: "Prevention, Education & Outreach",
-    description:
-      "Conduct outreach activities to educate the public about heart disease and its prevention.",
-    imgSrc: "/MA-3.png",
-  },
-  {
-    name: "Heart Health Centres & Clinics",
-    description:
-      "Promote community-based support centres for heart health in order foster awareness and action to prevent cardiovascular diseases.",
-    imgSrc: "/MA-4.png",
-  },
-  {
-    name: "Capacity Building",
-    description:
-      "Strengthen the capacity of medical institutions and practitioners in developing countries to  diagnosis and treat of heart conditions.",
-    imgSrc: "/MA-5.png",
-  },
-  {
-    name: "Research Funding",
-    description:
-      "Provide support to medical students and researchers in developing countries  in order to boost research in cardiac care.",
-    imgSrc: "/MA-6.png",
-  },
-];
+  const programs: Program[] = [
+    {
+      name: "Screening & Testing",
+      description:
+        "Conduct free clinics to screen for heart disease and test individuals identified as high risk.",
+      imgSrc: "/MA-1.png",
+    },
+    {
+      name: "Treatment & Counseling",
+      description:
+        "Establish and coordinate a network of cardiologists and cardiac institutes across the world willing to sponsor or provide free heart-related health services to underprivileged populations.",
+      imgSrc: "/MA-2.png",
+    },
+    {
+      name: "Prevention, Education & Outreach",
+      description:
+        "Conduct outreach activities to educate the public about heart disease and its prevention.",
+      imgSrc: "/MA-3.png",
+    },
+    {
+      name: "Heart Health Centres & Clinics",
+      description:
+        "Promote community-based support centres for heart health in order foster awareness and action to prevent cardiovascular diseases.",
+      imgSrc: "/MA-4.png",
+    },
+    {
+      name: "Capacity Building",
+      description:
+        "Strengthen the capacity of medical institutions and practitioners in developing countries to diagnosis and treat of heart conditions.",
+      imgSrc: "/MA-5.png",
+    },
+    {
+      name: "Research Funding",
+      description:
+        "Provide support to medical students and researchers in developing countries in order to boost research in cardiac care.",
+      imgSrc: "/MA-6.png",
+    },
+  ];
 
   return (
-    <section className="relative w-full  p-10  overflow-hidden  bg-[#d4af37]">
+    <section className="relative w-full p-10 overflow-hidden bg-[#d4af37]">
 
       <div className="relative max-w-6xl mx-auto text-center ">
-        <h2 className="text-red-600 text-3xl font-bold tracking-wider mb-3 mt-10">What We Do</h2>
+        <h2 className="text-red-600 text-3xl font-bold tracking-wider mb-3 mt-10">
+          <T>What We Do</T>
+        </h2>
 
         {/* Red underline */}
         <svg
@@ -73,8 +75,9 @@ const programs: Program[] = [
             opacity="0.95"
           />
         </svg>
+
         {/* Grid */}
-      <section className=" px-4 py-10">
+        <section className="px-4 py-10">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {programs.map((program, idx) => (
               <motion.div
@@ -93,19 +96,19 @@ const programs: Program[] = [
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">{program.name}</h3>
-                <p className="mt-3 text-gray-600 text-sm">{program.description}</p>
+                <h3 className="text-xl font-bold text-gray-800">
+                  <T>{program.name}</T>
+                </h3>
+                <p className="mt-3 text-gray-600 text-sm">
+                  <T>{program.description}</T>
+                </p>
               </motion.div>
             ))}
           </div>
         </section>
 
-
-
-
-
       </div>
 
     </section>
   );
-}
+}

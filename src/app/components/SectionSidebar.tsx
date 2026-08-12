@@ -1,5 +1,6 @@
 "use client";
 
+import { Target } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -81,7 +82,7 @@ export default function SectionSidebar() {
 
   // ✅ Donate sub-links
   const donateLinks = [
-    { label: "By Credit Card", href: "/donate-by-credit-card" },
+    { label: "By Credit Card", href: "https://donate.stripe.com/00w8wPcVN3j90r96pndAk00"  },
     { label: "By Mobile Money", href: "/donate-with-mobile-money" },
     { label: "By Cheque", href: "/donate-by-mailing-cheque" },
   ];

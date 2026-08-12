@@ -102,6 +102,40 @@ Donate conveniently by mailing a cheque to one of our hearts            </p>
             </Link>
           </motion.div>
 
+{/* 4 MONEY */}
+          <motion.div
+            whileHover={{ scale: 1.04 }}
+            className="bg-white shadow-xl rounded-2xl p-8 text-center border border-red-100"
+          >
+            <FileText  className="mx-auto w-12 h-12 text-red-600 mb-4" />
+            <h4 className="text-xl font-semibold text-gray-900"> Donate through Interac </h4>
+            <p className="mt-3 text-gray-700 leading-relaxed">
+You can Donate by sending an Interac transfer to:
+<span className="mx-auto w-12 h-12 text-red-600 mb-4"> donate@maheartfoundation.org.  </span> Your donation will be deposited directly into our account; no need for a secret question/answer.           </p>
+
+            {/* <Link href="/donate-by-mailing-cheque">
+              <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition">
+                Donate Now
+              </button>
+            </Link> */}
+          </motion.div>
+
+          {/* 5 MONEY */}
+          <motion.div
+            whileHover={{ scale: 1.04 }}
+            className="bg-white shadow-xl rounded-2xl p-8 text-center border border-red-100"
+          >
+            <FileText  className="mx-auto w-12 h-12 text-red-600 mb-4" />
+            <h4 className="text-xl font-semibold text-gray-900">Donate by wire transfer.
+If you prefer to pay by wire ķ</h4>
+           
+
+            {/* <Link href="/donate-by-mailing-cheque">
+              <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition">
+                Donate Now
+              </button>
+            </Link> */}
+          </motion.div>
 
         </section>
       </PageWithSidebar>

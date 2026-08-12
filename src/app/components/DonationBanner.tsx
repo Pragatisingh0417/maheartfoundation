@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import T from "./Translate";
 
 const slides = [
   {
@@ -94,8 +95,8 @@ export default function DonationBanner() {
     current === 1 ? "whitespace-nowrap" : ""
   }`}
 >
-  {slides[current].title}
-  {slides[current].subtitle}
+  {slides[current].title && <T>{slides[current].title}</T>}
+  {slides[current].subtitle && <T>{slides[current].subtitle}</T>}
 </h1>
     </div>
 
@@ -103,7 +104,7 @@ export default function DonationBanner() {
     {current === 0 && (
       <div className="w-full sm:max-w-md bg-white rounded-2xl p-6 sm:p-8 shadow-2xl">
         <h2 className="text-xl sm:text-2xl font-bold text-red-600 text-center">
-          DONATE
+          <T>DONATE</T>
         </h2>
 
         <motion.h3
@@ -115,12 +116,12 @@ export default function DonationBanner() {
             fontFamily: `"Bradley Hand ITC", "Bradley Hand", cursive`,
           }}
         >
-          Give from the heart...Give for a heart
+          <T>Give from the heart...Give for a heart</T>
         </motion.h3>
 
         <Link href="/make-a-donation" className="block mt-4">
           <button className="w-full px-6 py-3 rounded-full bg-red-600 text-white font-semibold hover:bg-red-700 transition">
-            DONATE NOW
+            <T>DONATE NOW</T>
           </button>
         </Link>
       </div>

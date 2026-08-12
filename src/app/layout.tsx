@@ -5,6 +5,8 @@ import { Montserrat } from "next/font/google";
 
 import Header from "./components/Header";
 import FooterSection from "./components/Footer";
+import { LanguageProvider } from "@/context/LanguageContext";
+import { getActiveLanguages, DEFAULT_LANGUAGE } from "@/config/languages";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,7 +25,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MA Heart Foundation Website",
-  description: "MA Heart Foundation Website",
+  description: "Devoted to promoting healthy hearts across communities.",
 };
 
 export default function RootLayout({
@@ -31,15 +33,34 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const activeLangs = getActiveLanguages();
+
   return (
     <html lang="en">
+      <head>
+        {activeLangs.map((lang) => (
+          <link
+            key={lang.code}
+            rel="alternate"
+            hrefLang={lang.code}
+            href={
+              lang.code === DEFAULT_LANGUAGE
+                ? "/"
+                : `/${lang.code}/`
+            }
+          />
+        ))}
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} {montserrat.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.className} antialiased`}
       >
-        <Header />
-        {children}
-        <FooterSection />
+        <LanguageProvider>
+          <Header />
+          {children}
+          <FooterSection />
+        </LanguageProvider>
       </body>
     </html>
   );
 }
+
