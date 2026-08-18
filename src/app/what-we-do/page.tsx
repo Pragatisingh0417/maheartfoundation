@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import PageWithSidebar from "../components/PageWithSidebar";
-
+import T from "../components/Translate";
 
 type Program = {
   name: string;
@@ -22,7 +22,7 @@ const programs: Program[] = [
   {
     name: "Treatment & Counseling",
     description:
-      "Establish and coordinate a network of cardiologists and cardiac institutes across the  world willing to sponsor or provide free heart-related health services to  underprivileged populations.",
+      "Establish and coordinate a network of cardiologists and cardiac institutes across the world willing to sponsor or provide free heart-related health services to underprivileged populations.",
     imgSrc: "/MA-2.png",
   },
   {
@@ -40,13 +40,13 @@ const programs: Program[] = [
   {
     name: "Capacity Building",
     description:
-      "Strengthen the capacity of medical institutions and practitioners in developing countries to  diagnosis and treat of heart conditions.",
+      "Strengthen the capacity of medical institutions and practitioners in developing countries to diagnosis and treat of heart conditions.",
     imgSrc: "/MA-5.png",
   },
   {
     name: "Research Funding",
     description:
-      "Provide support to medical students and researchers in developing countries  in order to boost research in cardiac care.",
+      "Provide support to medical students and researchers in developing countries in order to boost research in cardiac care.",
     imgSrc: "/MA-6.png",
   },
 ];
@@ -54,17 +54,13 @@ const programs: Program[] = [
 export default function WhatWeDoPage() {
   return (
     <div className="w-full bg-white">
-      {/* Hero */}
       {/* HERO */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-          What We Do
+          <T>What We Do</T>
         </h1>
         <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
-          Our mission is to prevent heart disease through education, early intervention, and community support.
-
-
-
+          <T>Our mission is to prevent heart disease through education, early intervention, and community support.</T>
         </p>
       </section>
 
@@ -89,16 +85,16 @@ export default function WhatWeDoPage() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">{program.name}</h3>
-                <p className="mt-3 text-gray-600 text-sm">{program.description}</p>
+                <h3 className="text-xl font-bold text-gray-800"><T>{program.name}</T></h3>
+                <p className="mt-3 text-gray-600 text-sm"><T>{program.description}</T></p>
               </motion.div>
             ))}
           </div>
         </section>
-
 
       </PageWithSidebar>
 
     </div>
   );
 }
+

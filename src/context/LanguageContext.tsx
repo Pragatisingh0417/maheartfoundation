@@ -114,34 +114,44 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const registerTexts = useCallback((texts: string[]) => {
     if (!texts || texts.length === 0) return;
     setRegisteredTextsQueue((prev) => {
-      const nextSet = new Set(prev);
       let added = false;
-      for (const t of texts) {
-        if (t && t.trim() && !nextSet.has(t.trim())) {
-          nextSet.add(t.trim());
-          added = true;
+      const nextSet = new Set(prev);
+      for (const text of texts) {
+        if (text && typeof text === "string") {
+          const trimmed = text.trim();
+          if (trimmed && !nextSet.has(trimmed)) {
+            nextSet.add(trimmed);
+            added = true;
+          }
         }
       }
       return added ? nextSet : prev;
     });
   }, []);
 
-  // Synchronous string translation getter
+  // Synchronous string translation getter (PURE during render - NO STATE UPDATES)
   const t = useCallback(
     (sourceText: string): string => {
-      if (!sourceText || currentLanguage.code === DEFAULT_LANGUAGE) {
+      if (!sourceText || typeof sourceText !== "string" || currentLanguage.code === DEFAULT_LANGUAGE) {
         return sourceText;
       }
       const trimmed = sourceText.trim();
       if (translationsMap.has(trimmed)) {
         return translationsMap.get(trimmed)!;
       }
-      // Automatically register for batch translation
-      registerTexts([sourceText]);
       return sourceText;
     },
-    [currentLanguage.code, translationsMap, registerTexts]
+    [currentLanguage.code, translationsMap]
   );
+
+  // Clear translations map when switching target language
+  const prevLangRef = React.useRef(currentLanguage.code);
+  useEffect(() => {
+    if (prevLangRef.current !== currentLanguage.code) {
+      prevLangRef.current = currentLanguage.code;
+      setTranslationsMap(new Map());
+    }
+  }, [currentLanguage.code]);
 
   // Fetch pending queued translations from /api/translate
   useEffect(() => {
@@ -195,6 +205,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       isMounted = false;
     };
   }, [currentLanguage.code, registeredTextsQueue, translationsMap]);
+
 
   return (
     <LanguageContext.Provider

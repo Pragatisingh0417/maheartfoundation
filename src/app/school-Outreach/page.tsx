@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import T from "../components/Translate";
 
 const campaigns = [
   {
@@ -16,14 +17,14 @@ const campaigns = [
     image: "/WHD2.jpg",
     href: "/mevick-school-campaign",
   },
-   {
+  {
     title: "World Heart Day @ Nil High School",
     location: "Yaounde, Cameroon",
     image: "/",
     href: "/World-Heart-Day-2025",
   },
-   {
-    title: ".Lycée Bilingue Mbalmayo",
+  {
+    title: "Lycée Bilingue Mbalmayo",
     location: "Yaounde, Cameroon",
     image: "/",
     href: "/lycee-Bilingue-Mbalmayo",
@@ -38,13 +39,11 @@ export default function SchoolOutreachPage() {
         {/* PAGE HEADER */}
         <div className="mb-14">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-            School Outreach
+            <T>School Outreach</T>
           </h1>
           <div className="w-24 h-1 bg-[#d4af37] mt-4 rounded-full"></div>
           <p className="mt-6 text-gray-600 max-w-2xl">
-            Our school outreach programs focus on educating young people about
-            heart health, early prevention, and life-saving skills through
-            practical and interactive sessions.
+            <T>Our school outreach programs focus on educating young people about heart health, early prevention, and life-saving skills through practical and interactive sessions.</T>
           </p>
         </div>
 
@@ -69,23 +68,22 @@ export default function SchoolOutreachPage() {
               {/* CONTENT */}
               <div className="p-6 bg-white">
                 <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#d4af37] transition">
-                  {item.title}
+                  <T>{item.title}</T>
                 </h3>
                 <p className="text-sm text-gray-600 mt-1">
-                  {item.location}
+                  <T>{item.location}</T>
                 </p>
 
                 <div className="mt-5 inline-block text-sm font-semibold text-[#d4af37]">
-                  View Campaign →
+                  <T>View Campaign</T> →
                 </div>
               </div>
             </Link>
           ))}
         </div>
 
-        
-
       </div>
     </section>
   );
 }
+

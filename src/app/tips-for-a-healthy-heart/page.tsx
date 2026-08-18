@@ -1,6 +1,7 @@
 "use client";
 
 import PageWithSidebar from "../components/PageWithSidebar";
+import T from "../components/Translate";
 
 export default function TipsForAHealthyHeart() {
   const tips = [
@@ -119,24 +120,22 @@ export default function TipsForAHealthyHeart() {
   ];
 
   return (
-    
     <section className="max-w-8xl mx-auto px-6 py-10">
       <PageWithSidebar>
-
-      <h1 className="text-4xl font-bold text-red-600 mb-2">28 Healthy Heart Tips</h1>
-      <p className="text-gray-700 mb-10 text-lg">
-        HEALTH AND HOPE FROM HEART TO HEART
-      </p>
-      <div className="space-y-10">
-        {tips.map((item, i) => (
-          <div key={i} className="p-6 bg-white rounded-xl shadow border">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-3">{i + 1}. {item.title}</h2>
-            <p className="text-gray-700 leading-relaxed">{item.text}</p>
-          </div>
-        ))}
-      </div>
+        <h1 className="text-4xl font-bold text-red-600 mb-2"><T>28 Healthy Heart Tips</T></h1>
+        <p className="text-gray-700 mb-10 text-lg">
+          <T>HEALTH AND HOPE FROM HEART TO HEART</T>
+        </p>
+        <div className="space-y-10">
+          {tips.map((item, i) => (
+            <div key={i} className="p-6 bg-white rounded-xl shadow border">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-3">{i + 1}. <T>{item.title}</T></h2>
+              <p className="text-gray-700 leading-relaxed"><T>{item.text}</T></p>
+            </div>
+          ))}
+        </div>
       </PageWithSidebar>
     </section>
-    
   );
 }
+

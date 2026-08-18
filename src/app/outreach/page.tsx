@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import T from "../components/Translate";
 
 export default function OutreachPage() {
   return (
@@ -11,10 +12,8 @@ export default function OutreachPage() {
       ============================= */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-Outreach        </h1>
-        {/* <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
-          Resources for a healthy heart
-        </p> */}
+          <T>Outreach</T>
+        </h1>
       </section>
 
       {/* ============================
@@ -30,7 +29,8 @@ Outreach        </h1>
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
             <h3 className="text-xl font-bold text-gray-900">
-School   Outreach         </h3>
+              <T>School Outreach</T>
+            </h3>
           </Link>
 
           {/* Card 2 */}
@@ -39,7 +39,7 @@ School   Outreach         </h3>
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
             <h3 className="text-xl font-bold text-gray-900">
-             Community Outreach
+              <T>Community Outreach</T>
             </h3>
           </Link>
 
@@ -49,7 +49,7 @@ School   Outreach         </h3>
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
             <h3 className="text-xl font-bold text-gray-900">
-             Corporate Outreach
+              <T>Corporate Outreach</T>
             </h3>
           </Link>
 
@@ -59,3 +59,4 @@ School   Outreach         </h3>
     </main>
   );
 }
+

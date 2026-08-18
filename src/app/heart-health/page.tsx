@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import T from "../components/Translate";
 
 export default function HeartHealthPage() {
   return (
@@ -11,10 +12,10 @@ export default function HeartHealthPage() {
       ============================= */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-          Heart Health
+          <T>Heart Health</T>
         </h1>
         <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
-          Resources for a healthy heart
+          <T>Resources for a healthy heart</T>
         </p>
       </section>
 
@@ -31,7 +32,7 @@ export default function HeartHealthPage() {
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
             <h3 className="text-xl font-bold text-gray-900">
-              What Is Heart Disease?
+              <T>What Is Heart Disease?</T>
             </h3>
           </Link>
 
@@ -41,7 +42,7 @@ export default function HeartHealthPage() {
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
             <h3 className="text-xl font-bold text-gray-900">
-              Heart Disease Facts & Stats
+              <T>Heart Disease Facts & Stats</T>
             </h3>
           </Link>
 
@@ -51,7 +52,7 @@ export default function HeartHealthPage() {
             className="p-8 bg-white border shadow-md rounded-2xl text-center hover:shadow-lg transition cursor-pointer"
           >
             <h3 className="text-xl font-bold text-gray-900">
-              Tips For A Healthy Heart
+              <T>Tips For A Healthy Heart</T>
             </h3>
           </Link>
 
@@ -61,3 +62,4 @@ export default function HeartHealthPage() {
     </main>
   );
 }
+

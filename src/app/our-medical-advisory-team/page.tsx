@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import PageWithSidebar from "../components/PageWithSidebar";
+import T from "../components/Translate";
 
 type Advisor = {
   name: string;
@@ -75,21 +76,21 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
 
         {advisor.shortBio && (
           <p className="mt-3 text-gray-700 text-center">
-            {advisor.shortBio}
+            <T>{advisor.shortBio}</T>
           </p>
         )}
 
         {advisor.credentials && (
           <p className="mt-2 text-gray-600 italic text-sm text-center">
-            {advisor.credentials}
+            <T>{advisor.credentials}</T>
           </p>
         )}
 
         <details className="mt-4 group">
           <summary className="cursor-pointer text-red-600 font-medium text-center">
-            Read Bio
+            <T>Read Bio</T>
           </summary>
-          <p className="mt-2 text-gray-700">{advisor.fullBio}</p>
+          <p className="mt-2 text-gray-700"><T>{advisor.fullBio}</T></p>
         </details>
       </div>
     </div>
@@ -102,13 +103,10 @@ export default function MedicalAdvisoryTeam() {
       {/* Hero Section */}
       <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold">
-          Medical Advisory Board
+          <T>Medical Advisory Board</T>
         </h1>
         <p className="mt-6 text-[15px] text-white leading-relaxed">
-          Meet the experts who serve as the Foundation's clinical compass, 
-          to ensure that every program <br />
- message, and strategic decision is grounded
-          in credible, up-to-date cardiovascular science.
+          <T>Meet the experts who serve as the Foundation's clinical compass, to ensure that every program, message, and strategic decision is grounded in credible, up-to-date cardiovascular science.</T>
         </p>
       </section>
 
@@ -155,14 +153,12 @@ export default function MedicalAdvisoryTeam() {
             className="mt-16 text-center"
           >
             <p className="text-gray-700 text-lg">
-              Interested in collaborating or joining as an advisor?
+              <T>Interested in collaborating or joining as an advisor?</T>
             </p>
-
-          
           </motion.div>
 
         </div>
       </PageWithSidebar>
     </div>
   );
-}
+}

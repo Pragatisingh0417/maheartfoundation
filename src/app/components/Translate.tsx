@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import { useTranslation } from "@/context/LanguageContext";
+import { DEFAULT_LANGUAGE } from "@/config/languages";
 
 interface TranslateProps {
   children: string;
@@ -15,7 +16,7 @@ export function T({ children }: TranslateProps) {
   const { t, registerTexts, currentLanguage } = useTranslation();
 
   useEffect(() => {
-    if (typeof children === "string" && currentLanguage.code !== "en") {
+    if (typeof children === "string" && children.trim() && currentLanguage.code !== DEFAULT_LANGUAGE) {
       registerTexts([children]);
     }
   }, [children, registerTexts, currentLanguage.code]);
@@ -28,3 +29,4 @@ export function T({ children }: TranslateProps) {
 }
 
 export default T;
+

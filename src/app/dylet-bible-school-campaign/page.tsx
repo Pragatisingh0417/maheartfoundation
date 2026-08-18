@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import PageWithSidebar from "../components/PageWithSidebar";
+import T from "../components/Translate";
 
 export default function DyletBiblecampaignPage() {
     return (
@@ -12,54 +13,46 @@ export default function DyletBiblecampaignPage() {
       ============================= */}
             <section className="bg-[#d4af37] text-white py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold">
-                    DYLET BIBLE SCHOOL AND CHURCH CAMPAIGN                </h1>
+                    <T>DYLET BIBLE SCHOOL AND CHURCH CAMPAIGN</T>
+                </h1>
                 <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto opacity-90">
-                    Yaounde, Cameroon </p>
-                     <p className="text-lg md:text-xl mt-2 max-w-3xl mx-auto opacity-90">
-                    June 21, 2025 </p>
+                    <T>Yaounde, Cameroon</T>
+                </p>
+                <p className="text-lg md:text-xl mt-2 max-w-3xl mx-auto opacity-90">
+                    <T>June 21, 2025</T>
+                </p>
             </section>
 
             {/* ============================
           CONTENT SECTION
       ============================= */}
-      <PageWithSidebar>
-            <section className="max-w-5xl mx-auto px-6">
+            <PageWithSidebar>
+                <section className="max-w-5xl mx-auto px-6">
 
-                {/* White Card */}
-                <div className="bg-white p-10 shadow-lg border rounded-2xl">
+                    {/* White Card */}
+                    <div className="bg-white p-10 shadow-lg border rounded-2xl">
 
-                   
+                        {/* ========== Heading ========== */}
+                        <h2 className="text-2xl font-bold text-red-600 mb-6">
+                            <T>About the Campaign</T>
+                        </h2>
 
-                    {/* ========== Heading ========== */}
-                    <h2 className="text-2xl font-bold text-red-600 mb-6">
-                        About the Campaign
-                    </h2>
+                        {/* ========== Paragraphs ========== */}
+                        <p className="text-gray-800 leading-relaxed mb-6">
+                            <T>We’re thrilled to share the success of The Mercy Azoh-Mbi Heart Foundation’s recent Heart Health Sensitization and Screening Campaign at the Dylet Bible School and Church in Biyemassi-Yaoundé. On June 21, 2025, we brought vital heart health awareness and services directly to the community.</T>
+                        </p>
 
-                    {/* ========== Paragraphs ========== */}
-                    <p className="text-gray-800 leading-relaxed mb-6">
-                        We’re thrilled to share the success of The Mercy Azoh-Mbi Heart Foundation’s recent Heart Health Sensitization and Screening Campaign at the Dylet Bible School and Church in Biyemassi-Yaoundé. On June 21, 2025, we brought vital heart health awareness and services directly to the community.
+                        <p className="text-gray-800 leading-relaxed mb-6">
+                            <T>Our mission was clear: to educate, detect, and empower. We provided interactive health talks on essential topics like hypertension, healthy eating, physical activity, and lifestyle modifications. Following these discussions, we offered FREE on-site screenings for blood pressure, body mass index (BMI), and blood sugar levels, helping to identify individuals at risk.</T>
+                        </p>
 
-                    </p>
+                        <p className="text-gray-800 leading-relaxed mb-6">
+                            <T>Out of 33 total participants, 25 members of the congregation were screened. The event was supported by 7 volunteers, including 3 medical doctors and 4 medical students from the Faculty of Medicine and Biomedical Sciences, Yaoundé. They served as trainers, facilitators, and assisted with screening and general consultations.</T>
+                        </p>
 
-                    <p className="text-gray-800 leading-relaxed mb-6">
-                        Our mission was clear: to educate, detect, and empower. We provided interactive health talks on essential topics like hypertension, healthy eating, physical activity, and lifestyle modifications. Following these discussions, we offered FREE on-site screenings for blood pressure, body mass index (BMI), and blood sugar levels, helping to identify individuals at risk.
-
-
-
-
-                    </p>
-
-                    <p className="text-gray-800 leading-relaxed mb-6">
-                        Out of 33 total participants, 25 members of the congregation were screened. The event was supported by 7 volunteers, including 3 medical doctors and 4 medical students from the Faculty of Medicine and Biomedical Sciences, Yaoundé. They served as trainers, facilitators, and assisted with screening and general consultations.
-
-
-
-                    </p>
-
-                </div>
-                 {/* ========== Image ========== */}
-                    <div className="w-full  mt-10">
-                        {/* Replace with real image */}
+                    </div>
+                    {/* ========== Image ========== */}
+                    <div className="w-full mt-10">
                         <div className="w-full h-72 bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
                             <div className="relative w-full h-72 rounded-xl overflow-hidden">
                                 <Image
@@ -69,14 +62,16 @@ export default function DyletBiblecampaignPage() {
                                     className="object-cover"
                                     priority
                                 />
-                            </div>                        </div>
+                            </div>
+                        </div>
 
                         <p className="text-sm text-gray-600 mt-2 italic">
-                            Fig 1: Hall view of participants ready for free screening against NCDs at Dylet Bible School -Biyemassi Yaounde
+                            <T>Fig 1: Hall view of participants ready for free screening against NCDs at Dylet Bible School -Biyemassi Yaounde</T>
                         </p>
                     </div>
-            </section>
-</PageWithSidebar>
+                </section>
+            </PageWithSidebar>
         </main>
     );
 }
+

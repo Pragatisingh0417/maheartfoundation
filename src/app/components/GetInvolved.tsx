@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import T from "./Translate";
 
 export default function GetInvolved() {
   return (
@@ -10,7 +11,7 @@ export default function GetInvolved() {
         {/* SECTION TITLE */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-red-600">
-            Get Involved
+            <T>Get Involved</T>
           </h2>
  {/* Red underline */}
           <svg
@@ -34,19 +35,19 @@ export default function GetInvolved() {
           {/* VOLUNTEER */}
           <div className="flex flex-col border border-[#d4af37]/30 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold text-red-600 mb-4">
-              Volunteer
+              <T>Volunteer</T>
             </h3>
 
             <p className="text-gray-600 leading-relaxed mb-8">
-              Volunteering is one of the most effective ways to help others.
+              <T>Volunteering is one of the most effective ways to help others.
               A little of your time can make a world of difference in the lives
-              of others.
+              of others.</T>
             </p>
 
             {/* Button pinned to bottom */}
             <Link href="/volunteer" className="mt-auto">
               <button className="w-full h-12 bg-red-600  text-white font-semibold rounded-full transition">
-                Become a Volunteer
+                <T>Become a Volunteer</T>
               </button>
             </Link>
           </div>
@@ -54,18 +55,18 @@ export default function GetInvolved() {
           {/* FUNDRAISE */}
           <div className="flex flex-col border border-[#d4af37]/30 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold text-red-600 mb-4">
-              Fundraise
+              <T>Fundraise</T>
             </h3>
 
             <p className="text-gray-600 leading-relaxed mb-8">
-              We can only succeed in achieving our mission by raising funds each
+              <T>We can only succeed in achieving our mission by raising funds each
               year to make this project sustainable. This means offering our
-              services in more parts of the world and saving more lives.
+              services in more parts of the world and saving more lives.</T>
             </p>
 
             <Link href="/fundraise" className="mt-auto">
               <button className="w-full h-12 bg-red-600  text-white font-semibold rounded-full transition">
-                Start Fundraising
+                <T>Start Fundraising</T>
               </button>
             </Link>
           </div>
@@ -73,20 +74,20 @@ export default function GetInvolved() {
           {/* DONATE */}
           <div className="flex flex-col border border-[#d4af37]/30 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold text-red-600 mb-4">
-              Donate
+              <T>Donate</T>
             </h3>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Your donation will go a long way in helping us achieve our mission.
+              <T>Your donation will go a long way in helping us achieve our mission.</T>
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-8">
-              You can donate by Credit Card, or Mobile Money.
+              <T>You can donate by Credit Card, or Mobile Money.</T>
             </p>
 
             <Link href="/make-a-donation" className="mt-auto">
               <button className="w-full h-12 bg-red-600  text-white font-semibold rounded-full transition">
-                Donate Now
+                <T>Donate Now</T>
               </button>
             </Link>
           </div>

@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import SectionSidebar from "../components/SectionSidebar";
-
+import T from "../components/Translate";
 
 export default function VissionPage() {
  return (
@@ -16,7 +16,8 @@ export default function VissionPage() {
     ====================================== */}
     <section className="bg-[#b8962e] text-white py-30 px-6 text-center">
       <h1 className="text-4xl md:text-5xl font-extrabold">
-Vision, Mission, Values      </h1>
+        <T>Vision, Mission, Values</T>
+      </h1>
     </section>
 
     {/* ======================================
@@ -25,7 +26,7 @@ Vision, Mission, Values      </h1>
     <div className="max-w-8xl mx-auto px-6 md:px-20 py-16">
       <div className="flex gap-16">
 
-        {/* LEFT SIDEBAR (AUTO DETECTS ABOUT SECTION) */}
+        {/* LEFT SIDEBAR */}
         <SectionSidebar />
 
         {/* RIGHT MAIN CONTENT */}
@@ -42,25 +43,21 @@ Vision, Mission, Values      </h1>
               transition={{ duration: 0.7 }}
               className="text-center max-w-4xl mx-auto"
             >
-              <h2 className="text-4xl font-bold text-red-600">Our Vision</h2>
+              <h2 className="text-4xl font-bold text-red-600"><T>Our Vision</T></h2>
 
               <p className="mt-8 text-[17px] text-gray-700 leading-relaxed border border-black rounded-2xl p-10">
-              Contribute in the global effort to promote healthy hearts and reduce the high rate of mortality from heart diseases.
+                <T>Contribute in the global effort to promote healthy hearts and reduce the high rate of mortality from heart diseases.</T>
               </p>
             </motion.div>
-
-            
           </section>
 
           {/* ======================================
               MISSION SECTION
           ====================================== */}
           <section className="bg-gradient-to-b from-gray-50 to-white relative rounded-2xl mt-20">
-
-
             <div className="">
               <h2 className="text-4xl font-bold text-center text-red-600">
-                Our Mission
+                <T>Our Mission</T>
               </h2>
 
               <div className="grid md:grid-cols-3 gap-10 mt-16  ">
@@ -71,7 +68,6 @@ Vision, Mission, Values      </h1>
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
-                    
                     <MissionCard text={text}  />
                   </motion.div>
                 ))}
@@ -83,7 +79,7 @@ Vision, Mission, Values      </h1>
               VALUES SECTION
           ====================================== */}
           <section className="py-20">
-            <h2 className="text-4xl font-bold text-center text-red-600">Our Values</h2>
+            <h2 className="text-4xl font-bold text-center text-red-600"><T>Our Values</T></h2>
 
             <div className="grid sm:grid-cols-3 gap-10 mt-16">
               {values.map((v, i) => (
@@ -115,7 +111,7 @@ Vision, Mission, Values      </h1>
 function MissionCard({ text }: { text: string }) {
   return (
     <div className="bg-white p-5 rounded-2xl shadow-md border hover:shadow-lg transition duration-300">
-      <p className="text-gray-700 text-[16px] leading-relaxed ">{text}</p>
+      <p className="text-gray-700 text-[16px] leading-relaxed "><T>{text}</T></p>
     </div>
   );
 }
@@ -126,12 +122,10 @@ function MissionCard({ text }: { text: string }) {
 function ValueCard({ title, text }: { title: string; text: string }) {
   return (
     <div className="bg-white p-10 rounded-2xl shadow-lg border text-center">
-      <p className="text-gray-600 leading-relaxed h-[50px] text-[15px]">{text}</p>
+      <p className="text-gray-600 leading-relaxed h-[50px] text-[15px]"><T>{text}</T></p>
     </div>
   );
 }
-
-
 
 /* -----------------------------------------
    DATA
@@ -158,3 +152,4 @@ const values = [
     text: " Credibility and trust in dealing with patients, partners and other stakeholders.",
   },
 ];
+

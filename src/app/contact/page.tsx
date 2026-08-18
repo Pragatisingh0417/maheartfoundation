@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import T from "../components/Translate";
 
 type ContactForm = {
   name: string;
@@ -64,7 +65,7 @@ export default function ContactPage() {
         {/* Email Row */}
         <div className="border-b border-gray-800 py-6">
           <p className="text-lg">
-            <span className="font-semibold">Email:</span>{" "}
+            <span className="font-semibold"><T>Email</T>:</span>{" "}
             <a
               href="mailto:info@maheartfoundation.org"
               className="text-blue-600 underline"
@@ -77,33 +78,32 @@ export default function ContactPage() {
         {/* Offices */}
         <div className="grid grid-cols-1 md:grid-cols-2 border-b border-gray-800">
           <div className="py-8 px-6 border-b md:border-b-0 md:border-r border-gray-800">
-            <h3 className="font-bold text-lg mb-3">Canada Office</h3>
+            <h3 className="font-bold text-lg mb-3"><T>Canada Office</T></h3>
             <p>
               255 D&apos;Anjou Blvd, Suite 257F,
               <br />
               Châteauguay, Quebec, J6J 2R4
             </p>
-            <p className="mt-3">Tel: 1-438-795-3481</p>
+            <p className="mt-3"><T>Tel</T>: 1-438-795-3481</p>
           </div>
 
           <div className="py-8 px-6">
-            <h3 className="font-bold text-lg mb-3">Cameroon Office</h3>
+            <h3 className="font-bold text-lg mb-3"><T>Cameroon Office</T></h3>
             <p>
               Entrée CNPS,
               <br />
               Etug’Ebe, Yaounde
             </p>
-            <p className="mt-3">Tel: +237 682-084-962</p>
+            <p className="mt-3"><T>Tel</T>: +237 682-084-962</p>
           </div>
         </div>
 
         {/* Form */}
         <div className="py-10 px-6">
-          <h3 className="font-bold text-lg mb-4">Get In Touch</h3>
+          <h3 className="font-bold text-lg mb-4"><T>Get In Touch</T></h3>
 
           <p className="max-w-3xl mx-auto mb-6">
-            Please communicate with us if you have any requests or questions
-            about the Foundation.
+            <T>Please communicate with us if you have any requests or questions about the Foundation.</T>
           </p>
 
           <form
@@ -115,7 +115,6 @@ export default function ContactPage() {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="Your Name"
               className="border p-3"
               required
             />
@@ -125,7 +124,6 @@ export default function ContactPage() {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="Your Email"
               className="border p-3"
               required
             />
@@ -135,7 +133,6 @@ export default function ContactPage() {
               name="phone"
               value={form.phone}
               onChange={handleChange}
-              placeholder="Your Phone"
               className="border p-3"
             />
 
@@ -144,7 +141,6 @@ export default function ContactPage() {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="Your Message"
               className="border p-3"
               required
             />
@@ -154,14 +150,15 @@ export default function ContactPage() {
               disabled={loading}
               className="bg-red-600 text-white py-3 font-semibold disabled:opacity-50"
             >
-              {loading ? "Sending..." : "Submit"}
+              {loading ? <T>Sending...</T> : <T>Submit</T>}
             </button>
 
-            {success && <p className="text-green-600">{success}</p>}
-            {error && <p className="text-red-600">{error}</p>}
+            {success && <p className="text-green-600"><T>{success}</T></p>}
+            {error && <p className="text-red-600"><T>{error}</T></p>}
           </form>
         </div>
       </section>
     </div>
   );
 }
+

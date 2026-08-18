@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import T from "./Translate";
 
 export default function NewsletterBanner() {
   return (
@@ -8,17 +9,18 @@ export default function NewsletterBanner() {
         
         {/* TEXT */}
         <h2 className="text-white text-2xl sm:text-3xl font-bold text-center md:text-left">
-          Keep Updated About Our Newsletter
+          <T>Keep Updated About Our Newsletter</T>
         </h2>
 
         {/* BUTTON */}
         <Link href="/contact">
-  <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
-    Learn more
-  </button>
-</Link>
+          <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition">
+            <T>Learn more</T>
+          </button>
+        </Link>
         
       </div>
     </section>
   );
 }
+

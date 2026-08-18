@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import T from "../components/Translate";
 
 export default function AboutPage() {
   return (
@@ -31,11 +31,11 @@ export default function AboutPage() {
           className="absolute inset-0 flex flex-col justify-center px-6 max-w-6xl mx-auto text-white"
         >
           <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-xl leading-snug">
-            About The Mercy Azoh-Mbi Heart Foundation
+            <T>About The Mercy Azoh-Mbi Heart Foundation</T>
           </h1>
 
           <p className="mt-5 text-xl max-w-2xl opacity-90 tracking-wide">
-            Dedicated to creating a world where heart health is accessible for all.
+            <T>Dedicated to creating a world where heart health is accessible for all.</T>
           </p>
         </motion.div>
       </section>
@@ -51,36 +51,31 @@ export default function AboutPage() {
           transition={{ duration: 0.7 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl font-bold">Our Vision</h2>
+          <h2 className="text-4xl font-bold"><T>Our Vision</T></h2>
           <p className="text-red-600 mt-2 text-lg font-semibold">
-            Cardiovascular health for everyone
+            <T>Cardiovascular health for everyone</T>
           </p>
 
           <p className="mt-8 text-lg text-gray-700 leading-relaxed">
-            We aim to reduce global deaths from cardiovascular diseases through
-            accessibility, awareness, and medical support.
+            <T>We aim to reduce global deaths from cardiovascular diseases through accessibility, awareness, and medical support.</T>
           </p>
         </motion.div>
-<Link href="/heart-health">
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    className="mt-10 px-8 py-3 bg-red-600 hover:bg-red-700 transition text-white rounded-full font-semibold flex items-center gap-2 mx-auto shadow-lg"
-  >
-    More On Heart Disease <ChevronRight size={18} />
-  </motion.button>
-</Link>
+        <Link href="/heart-health">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            className="mt-10 px-8 py-3 bg-red-600 hover:bg-red-700 transition text-white rounded-full font-semibold flex items-center gap-2 mx-auto shadow-lg"
+          >
+            <T>More On Heart Disease</T> <ChevronRight size={18} />
+          </motion.button>
+        </Link>
       </section>
 
       {/* ======================================
           MISSION SECTION — NOW PREMIUM
       ====================================== */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-24 relative">
-
-        {/* Subtle Pattern */}
-        <div className="absolute inset-0 bg-[url('/pattern-light.png')] opacity-5"></div>
-
         <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center">Our Mission</h2>
+          <h2 className="text-4xl font-bold text-center"><T>Our Mission</T></h2>
 
           <div className="grid md:grid-cols-2 gap-10 mt-16">
             {missionList.map((text, index) => (
@@ -101,7 +96,7 @@ export default function AboutPage() {
           VALUES SECTION — PREMIUM CARDS
       ====================================== */}
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-4xl font-bold text-center">Our Core Values</h2>
+        <h2 className="text-4xl font-bold text-center"><T>Our Core Values</T></h2>
 
         <div className="grid sm:grid-cols-3 gap-10 mt-16">
           {values.map((v, i) => (
@@ -123,22 +118,14 @@ export default function AboutPage() {
       ====================================== */}
       <StorySection
         title="OUR INSPIRATION"
-        text="Shortly after arriving in Ottawa with her two young children following her husband’s appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s life would take a dramatic turn. On October 23, 2009, she complained of fatigue, fever, 
-        a headache, blurred vision … and was rushed to the hospital for what she thought was a routine ailment. Amid the H1N1 crisis, emergency room staff overlooked her medical history, misdiagnosed her condition, prescribed Tamiflu, and sent her home, only for her to be rushed again to the emergency department two days later following a sudden deterioration of her condition. When she was placed in a wheelchair shortly thereafter, little did she know that she had just taken her last steps on her own two feet. She was in fact in the throes of endocarditis, a virulent infection of the heart valves. She soon slipped into a coma and spent several weeks wavering between life and death.
-        Despite the cataclysmic prognosis from the doctors and the pressure brought to bear on him, her husband refused to grant consent for her to be taken off life support. Mercy would later make a miraculous recovery just when her caregivers had pointed out that she had only a few hours to live. In the weeks and months that followed, she would undergo four heart surgeries as well as the amputation of her two arms and two legs – the only options left to save her life. Following intensive physical and psychological therapy and the fitting of prostheses, Mercy became a virtual prosthetic woman: two prosthetic heart valves, two prosthetic arms and two prosthetic legs. The bouts of depression and the suicidal thoughts she battled with following her amputations were merely the clouds that foreshadowed the sunshine. Guided by her faith, fortitude and the support of her family and community, Mercy has found a new calling as champion for the afflicted. Through The Mercy Azoh-Mbi Heart Foundation, she aims to spread rays of sunshine the world over so that others do not suffer unnecessarily from easily treatable heart conditions.
-
-"
+        text="Shortly after arriving in Ottawa with her two young children following her husband’s appointment as Cameroon’s High Commissioner (Ambassador) to Canada, Mercy’s life would take a dramatic turn. On October 23, 2009, she complained of fatigue, fever, a headache, blurred vision … and was rushed to the hospital for what she thought was a routine ailment. Amid the H1N1 crisis, emergency room staff overlooked her medical history, misdiagnosed her condition, prescribed Tamiflu, and sent her home, only for her to be rushed again to the emergency department two days later following a sudden deterioration of her condition. When she was placed in a wheelchair shortly thereafter, little did she know that she had just taken her last steps on her own two feet. She was in fact in the throes of endocarditis, a virulent infection of the heart valves. She soon slipped into a coma and spent several weeks wavering between life and death. Despite the cataclysmic prognosis from the doctors and the pressure brought to bear on him, her husband refused to grant consent for her to be taken off life support. Mercy would later make a miraculous recovery just when her caregivers had pointed out that she had only a few hours to live. In the weeks and months that followed, she would undergo four heart surgeries as well as the amputation of her two arms and two legs – the only options left to save her life. Following intensive physical and psychological therapy and the fitting of prostheses, Mercy became a virtual prosthetic woman: two prosthetic heart valves, two prosthetic arms and two prosthetic legs. The bouts of depression and the suicidal thoughts she battled with following her amputations were merely the clouds that foreshadowed the sunshine. Guided by her faith, fortitude and the support of her family and community, Mercy has found a new calling as champion for the afflicted. Through The Mercy Azoh-Mbi Heart Foundation, she aims to spread rays of sunshine the world over so that others do not suffer unnecessarily from easily treatable heart conditions."
         image="/about-image1.webp"
         reverse={false}
       />
 
       <StorySection
         title="TRAGEDY TO TRIUMPH"
-        text="Mercy would later make a miraculous recovery just when her caregivers had pointed out that she had only a few hours to live. In the weeks and months that followed, she would undergo four heart surgeries as well as the amputation of her two arms and two legs – the only options left to save her life. Following intensive physical and psychological therapy and the fitting of prostheses, Mercy became a virtual prosthetic woman: two prosthetic heart valves, two prosthetic arms and two prosthetic legs.
-
-The bouts of depression and the suicidal thoughts she wrestled with following her amputations were merely the clouds that foreshadowed the sunshine. Guided by her faith, fortitude and the support of her family and community, Mercy has found a new calling as champion for the afflicted. Through The Mercy Azoh-Mbi Heart
-
-Foundation, she aims to spread rays of sunshine so that others do not die needlessly from easily treatable heart conditions."
+        text="Mercy would later make a miraculous recovery just when her caregivers had pointed out that she had only a few hours to live. In the weeks and months that followed, she would undergo four heart surgeries as well as the amputation of her two arms and two legs – the only options left to save her life. Following intensive physical and psychological therapy and the fitting of prostheses, Mercy became a virtual prosthetic woman: two prosthetic heart valves, two prosthetic arms and two prosthetic legs. The bouts of depression and the suicidal thoughts she wrestled with following her amputations were merely the clouds that foreshadowed the sunshine. Guided by her faith, fortitude and the support of her family and community, Mercy has found a new calling as champion for the afflicted. Through The Mercy Azoh-Mbi Heart Foundation, she aims to spread rays of sunshine so that others do not die needlessly from easily treatable heart conditions."
         image="/about-image1.webp"
         reverse={true}
       />
@@ -152,7 +139,7 @@ Foundation, she aims to spread rays of sunshine so that others do not die needle
 function MissionCard({ text }: { text: string }) {
   return (
     <div className="bg-white p-8 rounded-2xl shadow-md border hover:shadow-lg transition duration-300">
-      <p className="text-gray-700 text-lg leading-relaxed">{text}</p>
+      <p className="text-gray-700 text-lg leading-relaxed"><T>{text}</T></p>
     </div>
   );
 }
@@ -163,8 +150,8 @@ function MissionCard({ text }: { text: string }) {
 function ValueCard({ title, text }: { title: string; text: string }) {
   return (
     <div className="bg-white p-10 rounded-2xl shadow-lg border text-center">
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
-      <p className="text-gray-600 leading-relaxed">{text}</p>
+      <h3 className="text-xl font-bold mb-3"><T>{title}</T></h3>
+      <p className="text-gray-600 leading-relaxed"><T>{text}</T></p>
     </div>
   );
 }
@@ -195,8 +182,8 @@ function StorySection({
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-4xl font-bold">{title}</h2>
-          <p className="mt-6 text-lg leading-relaxed text-gray-700">{text}</p>
+          <h2 className="text-4xl font-bold"><T>{title}</T></h2>
+          <p className="mt-6 text-lg leading-relaxed text-gray-700"><T>{text}</T></p>
         </motion.div>
 
         <motion.div
@@ -242,3 +229,4 @@ const values = [
     text: "Reliable partnerships with patients and stakeholders.",
   },
 ];
+

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import T from "./Translate";
 
 const partners = [
   {
@@ -15,10 +16,10 @@ const partners = [
     name: "Partner YThree",
     logo: "/CAMESA_logo2.jpeg",
   },
-       { 
-        name: "Partner Four", 
-        logo: "/our-partner-logo-3.png",
-    },
+  { 
+    name: "Partner Four", 
+    logo: "/our-partner-logo-3.png",
+  },
 ];
 
 export default function Partners() {
@@ -28,31 +29,29 @@ export default function Partners() {
 
         {/* SECTION HEADER */}
         <div className="text-center mb-10">
-         <div className="text-center mb-5">
-          <h2 className="text-3xl md:text-4xl font-bold text-red-600">
-           Our Partners
-          </h2>
- {/* Red underline */}
-          <svg
-            viewBox="0 0 200 20"
-            className="mx-auto mt-2 w-36 h-6"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 12 C40 -6 160 24 200 4"
-              stroke="#ffffff"
-              strokeWidth="6"
-              strokeLinecap="round"
-              fill="none"
-              opacity="0.95"
-            />
-          </svg>        </div>
-
+          <div className="text-center mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-red-600">
+              <T>Our Partners</T>
+            </h2>
+            {/* Red underline */}
+            <svg
+              viewBox="0 0 200 20"
+              className="mx-auto mt-2 w-36 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 12 C40 -6 160 24 200 4"
+                stroke="#ffffff"
+                strokeWidth="6"
+                strokeLinecap="round"
+                fill="none"
+                opacity="0.95"
+              />
+            </svg>
+          </div>
 
           <p className=" text-white max-w-2xl mx-auto">
-            We are grateful to our partners whose support and collaboration
-            help us expand heart health awareness, outreach, and life-saving
-            initiatives around the world.
+            <T>We are grateful to our partners whose support and collaboration help us expand heart health awareness, outreach, and life-saving initiatives around the world.</T>
           </p>
         </div>
 
@@ -78,3 +77,4 @@ export default function Partners() {
     </section>
   );
 }
+

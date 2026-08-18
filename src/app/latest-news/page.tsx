@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PageWithSidebar from "../components/PageWithSidebar";
+import T from "../components/Translate";
 
 export default function LatestNewsPage() {
     return (
@@ -12,20 +13,18 @@ export default function LatestNewsPage() {
       ============================= */}
             <section className="bg-[#b8962e] text-white py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-extrabold">
-                    Latest News
+                    <T>Latest News</T>
                 </h1>
                 <p className="text-lg md:text-xl mt-4 max-w-2xl mx-auto opacity-90">
-                    Updates from our outreach and humanitarian efforts
+                    <T>Updates from our outreach and humanitarian efforts</T>
                 </p>
             </section>
 <PageWithSidebar>
             {/* ============================
           CONTENT SECTION
       ============================= */}
-         <section className="w-full  bg-white">
+         <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-6">
-
-       
 
         {/* CARDS GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -86,20 +85,23 @@ function NewsCard({ image, title, description, link }: CardProps) {
       {/* CONTENT */}
       <div className="p-6 text-white flex flex-col flex-1">
         <h3 className="text-sm font-bold uppercase">
-          {title}
+          <T>{title}</T>
         </h3>
 
-        <p className="text-sm text-gray-100 mt-3 leading-relaxed flex-grow">
-          {description}
-        </p>
+        {description && (
+          <p className="text-sm text-gray-100 mt-3 leading-relaxed flex-grow">
+            <T>{description}</T>
+          </p>
+        )}
 
         {/* BUTTON */}
         <Link href={link} className="mt-auto">
           <button className="w-full bg-red-500 hover:bg-red-600 transition py-3 rounded-full font-semibold">
-            Read More
+            <T>Read More</T>
           </button>
         </Link>
       </div>
     </div>
   );
 }
+

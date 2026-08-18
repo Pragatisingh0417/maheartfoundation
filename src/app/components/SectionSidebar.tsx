@@ -3,6 +3,7 @@
 import { Target } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import T from "./Translate";
 
 const sections = {
   about: {
@@ -139,7 +140,7 @@ export default function SectionSidebar() {
 
         {/* Section Title */}
         <p className="px-3 mb-5 text-red-600 font-bold text-lg">
-          {currentSection.title}
+          <T>{currentSection.title}</T>
         </p>
 
         {/* ✅ Outreach (grouped) */}
@@ -147,7 +148,7 @@ export default function SectionSidebar() {
           currentSection.groups.map((group, i) => (
             <div key={i} className="mb-6">
               <p className="px-3 mb-2 text-sm font-semibold text-black uppercase tracking-wide">
-                {group.subTitle}
+                <T>{group.subTitle}</T>
               </p>
 
               <ul className="space-y-2">
@@ -161,7 +162,7 @@ export default function SectionSidebar() {
                           : "text-gray-700 hover:text-red-600"
                       }`}
                     >
-                      {item.label}
+                      <T>{item.label}</T>
                     </Link>
                   </li>
                 ))}
@@ -172,7 +173,7 @@ export default function SectionSidebar() {
           <>
             {/* ✅ DONATE ACTIVE */}
             <p className="px-3 py-2 mb-3 text-sm font-bold bg-red-600 text-white rounded-lg inline-block">
-              DONATE
+              <T>DONATE</T>
             </p>
 
             <ul className="space-y-2">
@@ -186,7 +187,7 @@ export default function SectionSidebar() {
                         : "text-gray-700 hover:text-red-600"
                     }`}
                   >
-                    {item.label}
+                    <T>{item.label}</T>
                   </Link>
                 </li>
               ))}
@@ -204,7 +205,7 @@ export default function SectionSidebar() {
                       : "text-black hover:text-red-600"
                   }`}
                 >
-                  {item.label}
+                  <T>{item.label}</T>
                 </Link>
               </li>
             ))}
@@ -213,4 +214,4 @@ export default function SectionSidebar() {
       </div>
     </aside>
   );
-}
+}

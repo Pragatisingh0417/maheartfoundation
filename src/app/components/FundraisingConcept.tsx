@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import T from "./Translate";
 
 export default function FundraisingConceptForm() {
   const [formData, setFormData] = useState({
@@ -37,12 +38,11 @@ export default function FundraisingConceptForm() {
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl font-bold text-center text-red-600"
         >
-          Submit Your Fundraising Concept
+          <T>Submit Your Fundraising Concept</T>
         </motion.h2>
 
         <p className="mt-4 text-center text-gray-600">
-          Have an idea to raise funds for our mission? Share your concept with
-          us and our team will review and get back to you.
+          <T>Have an idea to raise funds for our mission? Share your concept with us and our team will review and get back to you.</T>
         </p>
 
         <motion.form
@@ -100,7 +100,7 @@ export default function FundraisingConceptForm() {
           {/* Description */}
           <div>
             <label className="block mb-2 font-medium text-gray-700">
-              Detailed Description
+              <T>Detailed Description</T>
             </label>
             <textarea
               name="description"
@@ -109,7 +109,6 @@ export default function FundraisingConceptForm() {
               value={formData.description}
               onChange={handleChange}
               className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#b8962e]"
-              placeholder="Describe your fundraising idea, how it works, target audience, etc."
             />
           </div>
 
@@ -137,7 +136,7 @@ export default function FundraisingConceptForm() {
               type="submit"
               className="bg-red-600 text-white px-10 py-3 rounded-full font-semibold shadow-lg hover:opacity-90 transition"
             >
-              Submit
+              <T>Submit</T>
             </motion.button>
           </div>
         </motion.form>
@@ -164,7 +163,7 @@ function InputField({
   return (
     <div>
       <label className="block mb-2 font-medium text-gray-700">
-        {label}
+        <T>{label}</T>
       </label>
       <input
         type={type}
@@ -176,4 +175,4 @@ function InputField({
       />
     </div>
   );
-}
+}

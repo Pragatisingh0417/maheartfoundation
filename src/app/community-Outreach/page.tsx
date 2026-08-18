@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import T from "../components/Translate";
 
 const campaigns = [
   {
-    title: "Salvation Bapist Church",
+    title: "Salvation Baptist Church",
     location: "Yaounde, Cameroon",
     image: "/Corporate-1.png",
     href: "/salvation-campaign",
@@ -16,13 +17,12 @@ const campaigns = [
     image: "/Dylet 1.jpg",
     href: "/dylet-bible-school-campaign",
   },
-   {
+  {
     title: "Babadjou Rural Campaign",
     location: "Yaounde, Cameroon",
     image: "/Babadjou 1.jpg",
     href: "/babadjou-rural-campaign",
   },
-   
 ];
 
 export default function CommunityOutreachPage() {
@@ -33,13 +33,11 @@ export default function CommunityOutreachPage() {
         {/* PAGE HEADER */}
         <div className="mb-14">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Community Outreach
+            <T>Community Outreach</T>
           </h1>
           <div className="w-24 h-1 bg-[#d4af37] mt-4 rounded-full"></div>
           <p className="mt-6 text-gray-600 max-w-2xl">
-            Our Community outreach programs focus on educating young people about
-            heart health, early prevention, and life-saving skills through
-            practical and interactive sessions.
+            <T>Our Community outreach programs focus on educating young people about heart health, early prevention, and life-saving skills through practical and interactive sessions.</T>
           </p>
         </div>
 
@@ -64,23 +62,22 @@ export default function CommunityOutreachPage() {
               {/* CONTENT */}
               <div className="p-6 bg-white">
                 <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#d4af37] transition">
-                  {item.title}
+                  <T>{item.title}</T>
                 </h3>
                 <p className="text-sm text-gray-600 mt-1">
-                  {item.location}
+                  <T>{item.location}</T>
                 </p>
 
                 <div className="mt-5 inline-block text-sm font-semibold text-[#d4af37]">
-                  View Campaign →
+                  <T>View Campaign</T> →
                 </div>
               </div>
             </Link>
           ))}
         </div>
 
-        
-
       </div>
     </section>
   );
 }
+

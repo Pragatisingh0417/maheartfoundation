@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import T from "./Translate";
 
 const cards = [
   {
@@ -23,19 +24,19 @@ const cards = [
     text: "Support our mission by getting involved in our activities...",
     img: "/testimonial-1.jpg",
   },
-   {
+  {
     id: 4,
     title: "SUPPORT",
     text: "Support our mission by getting involved in our activities...",
     img: "/testimonial-1.jpg",
   },
-   {
+  {
     id: 5,
     title: "SUPPORT",
     text: "Support our mission by getting involved in our activities...",
     img: "/testimonial-1.jpg",
   },
-   {
+  {
     id: 6,
     title: "SUPPORT",
     text: "Support our mission by getting involved in our activities...",
@@ -77,7 +78,6 @@ export default function ReviewSlider() {
       >
         {cards.map((card, i) => {
           const isActive = index === i;
-          const isSide = Math.abs(index - i) === 1;
 
           return (
             <div
@@ -105,14 +105,14 @@ export default function ReviewSlider() {
 
               {/* MAIN CARD */}
               <div className="bg-[#b8962e] text-white rounded-xl px-10 pt-16 pb-10 shadow-xl text-center">
-                <h2 className="text-2xl font-bold mb-4">{card.title}</h2>
+                <h2 className="text-2xl font-bold mb-4"><T>{card.title}</T></h2>
 
                 <p className="text-sm leading-relaxed mb-6">
-                  {card.text}
+                  <T>{card.text}</T>
                 </p>
 
                 <button className="bg-white text-red-600 font-semibold px-5 py-2 rounded-full hover:bg-red-100 transition">
-                  Read Now
+                  <T>Read Now</T>
                 </button>
               </div>
             </div>
@@ -128,3 +128,4 @@ export default function ReviewSlider() {
     </div>
   );
 }
+

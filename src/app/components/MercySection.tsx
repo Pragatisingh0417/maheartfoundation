@@ -24,6 +24,9 @@ export default function MercySection() {
           </div>
 
           <div className="text-sm text-gray-700 leading-relaxed flex-1">
+             <h2 className="text-xl font-bold text-red-600 mb-3">
+                <T>A Word from Mercy</T>
+              </h2>
             <p>
               <T>I wish you a warm welcome to the website of the Mercy Azoh-Mbi Heart Foundation.</T>
             </p>
@@ -76,6 +79,9 @@ export default function MercySection() {
               </div>
 
               <div className="text-sm text-gray-700 leading-relaxed flex-1">
+                 <h2 className="text-xl font-bold text-red-600 mb-3">
+                <T>The Book that Tells our Story</T>
+              </h2>
                 <p>
                   <T>Mercy’s story is chronicled in the best-selling memoir Miracle of Mercy: A True Story of Courage in the Face of Adversity, available on Amazon.</T>
                 </p>
@@ -126,4 +132,4 @@ export default function MercySection() {
 
     </section>
   );
-}
+}

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import T from "./Translate";
 
 export default function LatestNews() {
   return (
@@ -11,7 +12,7 @@ export default function LatestNews() {
         {/* TITLE */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-red-600">
-            Latest News
+            <T>Latest News</T>
           </h2>
 
           <svg
@@ -92,20 +93,23 @@ function NewsCard({ image, title, description, link }: CardProps) {
       {/* CONTENT */}
       <div className="p-6 text-white flex flex-col flex-1">
         <h3 className="text-lg font-bold uppercase">
-          {title}
+          <T>{title}</T>
         </h3>
 
-        <p className="text-sm text-gray-100 mt-3 leading-relaxed">
-          {description}
-        </p>
+        {description && (
+          <p className="text-sm text-gray-100 mt-3 leading-relaxed">
+            <T>{description}</T>
+          </p>
+        )}
 
         {/* BUTTON */}
-        <Link href={link} className="mt-6">
+        <Link href={link} className="mt-auto pt-6">
           <button className="w-full bg-red-500 hover:bg-red-600 transition py-3 rounded-full font-semibold">
-            Read More
+            <T>Read More</T>
           </button>
         </Link>
       </div>
     </div>
   );
 }
+
